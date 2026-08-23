@@ -1,6 +1,4 @@
-# Kinderville Teacher Wiki
-
-This is the English-language part of the staff portal. The full wiki is in Russian for now; English sections are being added one by one.
+# Kinderville Teacher Portal
 
 Working materials for the school: programmes, yearly planning, assessment criteria, lesson frameworks.
 
@@ -8,13 +6,13 @@ Working materials for the school: programmes, yearly planning, assessment criter
 
 ## Sections
 
-- **[Science · Y2–Y6](en/science/README.md)** — yearly plan, enquiry lesson framework, assessment.
+- **[Courses](en/kursy.md)** — all school courses by year group: reading, science, and more as sections are added.
 
 ## Calendars and timetable
 
 - [School calendar 2026/27 (Y2–Y6)](https://marikales.github.io/kinderville-calendar/year2-6.html) — the page is bilingual
 - [Kindergarten calendar 2026/27 (Preschool – Year 1)](https://marikales.github.io/kinderville-calendar/kindergarten.html)
-- [School timetable 2026/27](https://docs.google.com/spreadsheets/d/1kGtdoYBSfuCQ6q4942uqVbJw2bOfNURyjPfgC2ESvM0)
+- [School timetable 2026/27](en/raspisanie.md) — in Russian for now
 
 ---
 

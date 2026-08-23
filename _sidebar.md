@@ -1,5 +1,6 @@
 - [Главная](README.md)
 - [Курсы](kursy.md)
+- [Расписание](raspisanie.md)
 
 - **Чтение · Reception–Y2**
   - [Курс чтения (по Мельниковой)](https://marikales.github.io/kinderville-reading/)

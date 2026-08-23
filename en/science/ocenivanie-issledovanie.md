@@ -6,7 +6,7 @@ This page is shared by all classes and all topics.
 
 Knowing the topic and being able to work scientifically are two different things. A child can tell a fluent story about magnets and still not manage to run an experiment, record the result and compare it with their prediction. And the other way round: measure and record neatly, but never connect it to the topic.
 
-So we assess them separately. **Topic assessment** lives on each class's own pages. **Thinking and Working Scientifically** is assessed against this page, and it's one page for the whole year: not per topic, but about how the child works in general.
+So we assess them separately. **Topic assessment** lives on each class's own page: [Year 3](en/science/ocenivanie-year3.md) · [Year 4](en/science/ocenivanie-year4.md) · [Year 5](en/science/ocenivanie-year5.md) · [Year 6](en/science/ocenivanie-year6.md). **Thinking and Working Scientifically** is assessed against this page, and it's one page for the whole year: not per topic, but about how the child works in general.
 
 **The English science lesson is assessed against this same page.** In English the child works with a topic already covered in Russian — so we're not re-checking understanding of the topic, we're checking how they observe, measure, record, test a prediction and talk about the result. The English words matter, but they are not the grade by themselves: a memorised word list with no doing is not yet science.
 

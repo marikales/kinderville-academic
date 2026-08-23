@@ -36,9 +36,9 @@
 
 Also on the wiki:
 
-- [Enquiry Lesson Framework](en/science/lesson-framework.md) — how to build a lesson where children find things out for themselves; one or two such lessons per module is enough.
-- Topic assessment: [Year 3](science/ocenivanie-year3.md) · [Year 4](science/ocenivanie-year4.md) · [Year 5](science/ocenivanie-year5.md) · [Year 6](science/ocenivanie-year6.md) *(in Russian for now)* — four levels, same as in the school documents.
-- [Assessment: Thinking and Working Scientifically](en/science/assessment-working-scientifically.md) — one shared page for Y2–Y6; the English science lesson is assessed against this page too.
+- [Enquiry Lesson Framework](en/science/karkas-uroka.md) — how to build a lesson where children find things out for themselves; one or two such lessons per module is enough.
+- Topic assessment: [Year 3](en/science/ocenivanie-year3.md) · [Year 4](en/science/ocenivanie-year4.md) · [Year 5](en/science/ocenivanie-year5.md) · [Year 6](en/science/ocenivanie-year6.md) — four levels, same as in the school documents.
+- [Assessment: Thinking and Working Scientifically](en/science/ocenivanie-issledovanie.md) — one shared page for Y2–Y6; the English science lesson is assessed against this page too.
 
 ---
 

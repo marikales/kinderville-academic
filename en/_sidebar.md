@@ -1,9 +1,14 @@
 - [Home](en/README.md)
+- [Courses](en/kursy.md)
+- [Timetable](en/raspisanie.md)
 
 - **Science · Y2–Y6**
   - [Yearly plan](en/science/README.md)
-  - [Enquiry Lesson Framework](en/science/lesson-framework.md)
-  - [Assessment: Thinking and Working Scientifically](en/science/assessment-working-scientifically.md)
+  - [Enquiry lesson framework](en/science/karkas-uroka.md)
+  - [Thinking and Working Scientifically](en/science/ocenivanie-issledovanie.md)
+  - [Assessment Year 3](en/science/ocenivanie-year3.md)
+  - [Assessment Year 4](en/science/ocenivanie-year4.md)
+  - [Assessment Year 5](en/science/ocenivanie-year5.md)
+  - [Assessment Year 6](en/science/ocenivanie-year6.md)
 
-- **Русская версия**
-  - [Полная версия (русский)](/README.md)
+- [Полная версия (русский)](/README.md)
