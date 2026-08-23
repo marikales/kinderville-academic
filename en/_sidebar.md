@@ -3,7 +3,7 @@
 - [Timetable](en/raspisanie.md)
 
 - **Science · Y2–Y6**
-  - [Yearly plan](en/science/README.md)
+  - [Yearly plan and course aims](en/science/README.md)
   - [Enquiry lesson framework](en/science/karkas-uroka.md)
   - [Thinking and Working Scientifically](en/science/ocenivanie-issledovanie.md)
   - [Assessment Year 3](en/science/ocenivanie-year3.md)

@@ -15,7 +15,7 @@
 
 Курс идёт на двух языках — час по-русски и час по-английски в неделю, по одной теме: тема модуля общая для всей школы, каждый класс на глубине своего года.
 
-- [Тематическое планирование](science/README.md)
+- [Тематическое планирование и цели курса](science/README.md)
 - [Каркас урока-исследования](science/karkas-uroka.md)
 - Оценивание по темам: [Year 3](science/ocenivanie-year3.md) · [Year 4](science/ocenivanie-year4.md) · [Year 5](science/ocenivanie-year5.md) · [Year 6](science/ocenivanie-year6.md)
 - [Оценивание умения исследовать (Y2–Y6)](science/ocenivanie-issledovanie.md) — по ней же оценивается английский урок

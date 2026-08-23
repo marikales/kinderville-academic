@@ -4,6 +4,80 @@
 
 **How the course is built.** Science runs in two languages: one lesson a week in Russian and one in English. Each module has one big topic shared by the whole school; every class goes into it at its own depth (following its year's Cambridge objectives). Each big topic comes back once a year — deeper than the year before.
 
+## Course aims
+
+We teach one science course through two lessons a week: one in Russian, one in English. These are not two separate subjects, and not the same lesson taught twice. The topic and the investigation are shared, but each lesson has its own job. **In Russian, children work out how things happen. In English, they talk about it — as far as their English takes them, and that reach grows month by month.**
+
+### The Russian lesson: working out why
+
+**Children will understand**
+- how something works, and why it happens this way and not another
+- which part is the cause and which is the result
+- what we know for certain and what is still only a guess
+- how people found this out in the first place
+
+**Children will be able to say**
+- in their own words, what happens and why
+- what they expect before the experiment: "I think this will happen"
+- that their idea turned out wrong — and that this is a normal part of the work
+- a question that an experiment could actually answer
+
+**Children will be able to explain**
+- the reason, not just the fact: not "it just does", but "this happens because…"
+- why they think so: "I decided this because we saw…"
+- the idea to a classmate, so that the classmate understands it
+- in a disagreement, whose idea fits the evidence better
+
+Here the bar is the same for everyone and does not depend on language: reasoning without support, arguing about competing ideas, building new understanding — that is the work of the Russian lesson.
+
+### The English lesson: talking about what you have already worked out
+
+**Children will understand**
+- instructions for an experiment, and the teacher's questions about what they see and do
+- a familiar topic in English words — they have already worked through the topic in Russian
+- that they are expected to talk, not just to carry out the task in silence
+
+**Children will be able to say** — this is a ladder, and every child stands on their own step:
+- **name** — objects, materials, parts, equipment
+- **describe** — what is happening, what changed, what came out
+- **report** — what we did, in what order, and what happened
+- over the year, every child moves up at least one step
+
+**Children will be able to explain**
+- say why it happened — in the words they have
+- check a prediction against the result: "I thought… but it was…"
+- a beginner will say it briefly and simply, a strong speaker will say it fully and use "because". **These are not different tasks. It is the same idea carried by different means.**
+
+**What this looks like on one topic.** We ask everyone why a volcano erupts — and all three of these are honest answers:
+
+| Level | What the child says |
+|---|---|
+| beginner | *"Hot rock comes up. The mountain opens."* |
+| developing | *"The volcano erupts because hot rock pushes up."* |
+| strong | *"It erupts because pressure builds up under the ground until the rock breaks through."* |
+
+All three are reasoning about cause. Simple words do not mean simple thinking: a child thinks at their age and speaks at their level of English.
+
+### What the two lessons share
+
+- **One topic** — both lessons follow it in the same week, Russian first.
+- **One investigation** — an experiment may start in the Russian lesson and carry on in the English one.
+- **Investigation skills grow in both**: observing, measuring, recording, testing your own prediction.
+
+### Where we look for what
+
+- **In Russian we ask for understanding, and the bar is the same for all.** Working out the cause, explaining it to a classmate, defending an idea — we expect this from every child.
+- **In English we ask at the child's own level, and the bar is personal.** A gap means a child speaking **below their own level of English**. Falling short of the stronger group is not a gap.
+- **Silence is always a gap.** If a child has done the work with their hands and said nothing about it, the lesson did not happen — whatever their level.
+- We do not guess a child's level: we take it from the English teachers — beginner or advanced group.
+
+**One thing about our classes.** Science is taught by class, not by language group, so both levels sit in the same room. The ladder works inside a single lesson: one experiment, one set of words on the board, different expectations for the answer. Give the weaker child a sentence frame and accept a short answer; do not let the strong one off with two words — from them, expect the reason and "because".
+
+> **The shortest version, and one you can say to the children:**
+> **in Russian I work out why. In English I say the same thing — in my own English words. The more words I have, the more I can say.**
+
+---
+
 **Order of lessons.** The Russian and English science lessons cover the same topic in the same week. Russian comes first, English second: the Russian lesson carries the topic itself; the English lesson brings the vocabulary and a hands-on task around it — then the vocabulary gets harder, consolidated through making and experimenting.
 
 **The rule for the English lesson.** In every English lesson the child must *do* something with their hands and *say* something in their own words. Not repeat after the teacher — say what they saw and what happened. If a lesson goes by with the child only listening and repeating words, that was an English language lesson, not a science lesson.
@@ -33,6 +107,16 @@
 | **III. Forces and Motion** | Forces change movement and shape; an object won't start moving by itself | The force meter; the Earth's pull; friction; smooth and rough surfaces | Energy is everywhere; it can't be created or destroyed, only transferred | **Y5:** gravity, upthrust, air and water resistance; several forces acting at once; force diagrams · **Y6:** mass and weight, forces on an object at rest and in motion, what floating depends on |
 | **IV. Light, Sound, Electricity, Magnets** | Sources of light; darkness is the absence of light; electrical safety; parts of a simple circuit | Transparent, translucent, opaque; shadows and their size; magnets, poles, attraction and repulsion | Light travels in straight lines; reflection; how we see objects; breaking a circuit and switches; conductors and insulators | **Y5:** sound comes from vibration, volume and pitch and how to change them; a magnet vs a magnetic material, force at a distance · **Y6:** reflection in a mirror, refraction; circuit diagrams, series and parallel circuits |
 | **V. Living Things and Connections in Nature** | How animals are alike and different; teeth and looking after them; food, hygiene, exercise; how young animals grow; habitats | Parts of a plant and their jobs; animal groups; **human organs**; what plants need; food chains | Bones, muscles, the skeleton; vertebrates and invertebrates; medicines and vaccines; energy for growth; habitats | **Y5:** parts of a flower, pollination and seeds, digestion, diet, adaptations, predator and prey · **Y6:** the circulatory, respiratory and reproductive systems, growing up, pathogens and how the body defends itself, food webs |
+
+## How the joint Y5–Y6 lesson works
+
+Y5 and Y6 do science together — in both the Russian and the English lesson. The principles:
+
+- **One topic, one experiment.** The same material and the same investigation for everyone — we prepare one lesson, not two.
+- **Each year has its own depth.** The questions and tasks around the shared experiment differ: Y5 answers against its year's objectives, Y6 against its own (see the columns in the table above).
+- **Records and assessment are separate.** Each child keeps records at their own year's level; assessment follows their own year's page (Year 5 and Year 6).
+- **Y6 are the seniors in the pair.** In joint work they take the leading and checking roles — part of their preparation for the final primary year.
+- **The years can split.** When a topic is clearly one year's own (like growing up for Y6 in Module V), the classes separate for a lesson or two and Y6 takes its part on its own.
 
 Also on the wiki:
 

@@ -15,7 +15,7 @@ The Russian reading course based on T. Melnikova's method: the method map, the c
 
 Science in two languages: each module has one whole-school topic, and every class works on it at its own year's depth.
 
-- [Yearly plan](en/science/README.md)
+- [Yearly plan and course aims](en/science/README.md)
 - [Enquiry lesson framework](en/science/karkas-uroka.md)
 - Topic assessment: [Year 3](en/science/ocenivanie-year3.md) · [Year 4](en/science/ocenivanie-year4.md) · [Year 5](en/science/ocenivanie-year5.md) · [Year 6](en/science/ocenivanie-year6.md)
 - [Assessing Thinking and Working Scientifically (Y2–Y6)](en/science/ocenivanie-issledovanie.md) — the English lesson is assessed against this page
