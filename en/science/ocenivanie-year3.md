@@ -13,7 +13,9 @@ The same ones as in the school documents and in reports to parents.
 
 **The level is given per topic, not per child.** The same child can be Exceeding in one topic and Working Towards in the next. That's normal, and it says nothing about the child overall.
 
-Thinking and Working Scientifically (observing, measuring, recording, testing a prediction) is assessed separately — [one shared page for all classes](en/science/ocenivanie-issledovanie.md). The English science lesson is assessed against that page too.
+**This page is about the Russian lesson.** Here we look for understanding of the topic: the cause, "why I think so", weighing up competing ideas. The bar here is the same for everyone and does not depend on language — see the [Course aims](en/science/README.md).
+
+**The English lesson is assessed differently** — against the [Thinking and Working Scientifically page](en/science/ocenivanie-issledovanie.md): same topic, but the bar is personal, set by the child's level of English.
 
 ---
 

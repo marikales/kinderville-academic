@@ -15,7 +15,9 @@ The same ones as in the school documents and in reports to parents.
 
 Year 6 is the final year of primary school, so the expected standard here leans more on explaining through causes: not just "what happens", but "why exactly" and "how we know".
 
-Thinking and Working Scientifically (observing, measuring, recording, testing a prediction) is assessed separately — [one shared page for all classes](en/science/ocenivanie-issledovanie.md). The English science lesson is assessed against that page too.
+**This page is about the Russian lesson.** Here we look for understanding of the topic: the cause, "why I think so", weighing up competing ideas. The bar here is the same for everyone and does not depend on language — see the [Course aims](en/science/README.md).
+
+**The English lesson is assessed differently** — against the [Thinking and Working Scientifically page](en/science/ocenivanie-issledovanie.md): same topic, but the bar is personal, set by the child's level of English.
 
 ---
 

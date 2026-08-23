@@ -38,17 +38,56 @@ In other words, the table below describes the **Meeting** level for each class. 
 
 ---
 
+## The bar in the English lesson — personal to each child
+
+In the English lesson we are asking two different questions, and they must not be mixed up.
+
+**What the child did as an investigator** — this bar is the same for the whole class, and it's in the table above. Predicting before the experiment, repeating a measurement, filling in a table properly — these are scientific moves, and they don't depend on how many English words a child has.
+
+**How they talked about it** — this bar is personal, set by their level of English.
+
+How the personal bar works:
+
+- **A gap means a child speaking below their own level.** A beginner who says two words that are to the point has done their job. A strong speaker who gets away with the same two words has not.
+- **Falling short of the stronger group is not a gap.** We don't compare children with each other.
+- **Silence is always a gap.** If a child has done the work with their hands and said nothing about it, the lesson did not happen — whatever their level.
+- **Explaining "why" in English is not off limits — it is expected, at the child's level.** We ask "why" of everyone. It's the answers that differ, not the question.
+
+**The ladder of talk.** Within one lesson children stand on different steps: name → describe → report → explain why. Over the year every child moves up at least one.
+
+**The same idea at three levels.** The question "why does a volcano erupt?":
+
+| Level | What the child says |
+|---|---|
+| beginner | *"Hot rock comes up. The mountain opens."* |
+| developing | *"The volcano erupts because hot rock pushes up."* |
+| strong | *"It erupts because pressure builds up under the ground until the rock breaks through."* |
+
+All three are reasoning about cause. Simple words do not mean simple thinking.
+
+**Where the level comes from.** Not from guesswork: at the start of the year, and after every regrouping of the English sets, the science teacher gets a list from the English teachers — who is in the beginner group and who is in the advanced one. Without that list the personal bar turns into a hunch, and the assessment drifts.
+
+More on this in the [Course aims](en/science/README.md), section "Where we look for what".
+
+---
+
 ## What this looks like in the English lesson
 
-Three examples, so it's clear what we count.
+In each example the level is given for the **scientific move**, while the talk is shown at three levels: all three count, as long as they match the child's own level.
 
-**Y3, shadows.** The child sets up a torch and an object, traces the shadow, moves the torch, traces again, points and says: *"The shadow is longer now."* — Meeting. If before the experiment they said *"I think it will be longer"* and then checked — Exceeding.
+**Y3, shadows.**
+*Science:* traced the shadow, moved the torch, traced again, showed the difference — Meeting. Said "I think it will be longer" before the experiment and then checked — Exceeding.
+*Talk:* *"Long. More long."* · *"The shadow is longer now."* · *"The shadow is longer because the torch is lower."*
 
-**Y4, conductors.** The child builds a circuit, puts objects in one by one, ticks a table and says: *"Metal — yes. Plastic — no."* — Meeting. If they suggested testing something else on their own and explained why — Exceeding.
+**Y4, conductors.**
+*Science:* built the circuit, tested objects one by one, ticked the table — Meeting. Suggested testing something else and said why — Exceeding.
+*Talk:* *"Metal — yes. Plastic — no."* · *"The metal spoon works, the plastic one doesn't."* · *"Metals let the electricity through, so the bulb lights up."*
 
-**Y5, sound.** The child stretches a rubber band tighter and looser, listens, records and says: *"Tight — high. Loose — low."* — Meeting. If they repeated the test to make sure — Exceeding.
+**Y5, sound.**
+*Science:* changed the tension, listened, recorded — Meeting. Repeated the test to make sure — Exceeding.
+*Talk:* *"Tight — high. Loose — low."* · *"When it is tighter, the sound is higher."* · *"The tighter the band, the faster it vibrates, so the pitch goes up."*
 
-**What we don't count:** the child correctly repeated ten words after the teacher and did nothing with their hands. Learning the words is good — but that's the outcome of an English language lesson, not a science lesson.
+**What we don't count at any level:** the child correctly repeated ten words after the teacher and did nothing with their hands. Learning the words is good — but that's the outcome of an English language lesson, not a science lesson.
 
 ---
 
