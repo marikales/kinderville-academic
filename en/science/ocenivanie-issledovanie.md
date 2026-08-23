@@ -67,6 +67,8 @@ All three are reasoning about cause. Simple words do not mean simple thinking.
 
 **Where the level comes from.** Not from guesswork: at the start of the year, and after every regrouping of the English sets, the science teacher gets a list from the English teachers — who is in the beginner group and who is in the advanced one. Without that list the personal bar turns into a hunch, and the assessment drifts.
 
+**The first weeks of September,** while the diagnostics are still running and the sets don't exist yet: the science teacher sets each child's level provisionally, from what she sees in the lesson. Once the diagnostics are done, the levels are checked against the list, and Module I assessments are revisited where they differ.
+
 More on this in the [Course aims](en/science/README.md), section "Where we look for what".
 
 ---
