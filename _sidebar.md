@@ -1,4 +1,8 @@
 - [Главная](README.md)
+- [Расписание · день](schedule/day.html ':ignore')
+  - [По классам](schedule/classes.html ':ignore')
+  - [По педагогам](schedule/teachers.html ':ignore')
+- [Уроки по модулям (для КТП)](ktp.md)
 - [Курсы](kursy.md)
   - **Чтение на русском · Reception–Y2**
     - [Курс чтения (по Мельниковой)](https://marikales.github.io/kinderville-reading/)
@@ -10,7 +14,3 @@
     - [Оценивание Year 4](science/ocenivanie-year4.md)
     - [Оценивание Year 5](science/ocenivanie-year5.md)
     - [Оценивание Year 6](science/ocenivanie-year6.md)
-- [Расписание · день](schedule/day.html)
-  - [По классам](schedule/classes.html)
-  - [По педагогам](schedule/teachers.html)
-- [Уроки по модулям (для КТП)](ktp.md)

@@ -16,4 +16,4 @@
 - [Календарь школы 2026/27 (Y2–Y6)](https://marikales.github.io/kinderville-calendar/year2-6.html)
 - [Календарь сада 2026/27 (Preschool – Year 1)](https://marikales.github.io/kinderville-calendar/kindergarten.html)
 - [Уроки по модулям (для КТП)](ktp.md) — сколько уроков каждого предмета в каждом модуле
-- [Расписание · день](schedule/day.html) · [по классам](schedule/classes.html) · [по педагогам](schedule/teachers.html)
+- [Расписание · день](schedule/day.html ':ignore') · [по классам](schedule/classes.html ':ignore') · [по педагогам](schedule/teachers.html ':ignore')
