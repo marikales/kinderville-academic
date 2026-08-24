@@ -1,8 +1,8 @@
 - [Home](en/README.md)
 - [Courses](en/kursy.md)
-- [Timetable: day](schedule/day.html?lang=en)
-- [Timetable by class](schedule/classes.html?lang=en)
-- [Timetable by teacher](schedule/teachers.html?lang=en)
+- [Timetable: day](schedule/day.html?lang=en ':ignore')
+- [Timetable by class](schedule/classes.html?lang=en ':ignore')
+- [Timetable by teacher](schedule/teachers.html?lang=en ':ignore')
 - [Lessons per module](en/ktp.md)
 
 - **Science · Y2–Y6**
