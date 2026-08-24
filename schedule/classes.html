@@ -117,6 +117,22 @@ function render(){
       h += "</tr>";
     });
     h += "</table>";
+    // выкладка по классу: какие предметы кто ведёт и по скольку уроков в неделю
+    const agg = {};
+    for (const t of slots(c)) for (let d = 0; d < 5; d++){
+      const v = get(d, t, c); if (!v) continue;
+      const key = v[0] + "||" + v[1].join("+");
+      agg[key] = (agg[key] || 0) + 1;
+    }
+    const srows = Object.keys(agg).map(k => {
+      const [s, w] = k.split("||"); return [s, w, agg[k]];
+    }).sort((a,b) => b[2]-a[2] || a[0].localeCompare(b[0]));
+    const total = srows.reduce((n,r) => n + r[2], 0);
+    h += `<h2>${c} — ${L?"subjects & hours":"предметы и часы"}</h2><table style="max-width:640px">` +
+         `<tr><th>${L?"Subject":"Предмет"}</th><th>${L?"Teacher":"Ведёт"}</th><th style="text-align:right">${L?"Lessons/week":"Уроков/нед"}</th></tr>` +
+         srows.map(([s,w,n]) =>
+           `<tr><td>${trS(s)}</td><td>${engLabel(s) || w.split("+").map(trT).join(", ")}</td><td style="text-align:right">${n}</td></tr>`).join("") +
+         `<tr><th colspan="2">${L?"Total":"Всего"}</th><th style="text-align:right">${total}</th></tr></table>`;
   }
   document.getElementById("content").innerHTML = h;
 }
