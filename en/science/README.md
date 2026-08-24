@@ -90,11 +90,28 @@ All three are reasoning about cause. Simple words do not mean simple thinking: a
 
 | Module | Shared topic | Russian lesson — depth | English lesson — talk and doing |
 |---|---|---|---|
-| **I**<br>1 Sep – 9 Oct<br>~6 lessons | **Earth and Space**<br>Where we live and what's around us | What the Earth is made of. Why day turns into night and where the seasons come from. Why the Moon changes shape. Sky-watching with a diary — an "observing over time" enquiry | Earth, Sun, Moon, planet, star, orbit; day, night, season, shadow. Doing: an Earth–Sun–Moon model, observing and recording. Talk: "The Earth turns, so we have day and night" |
-| **II**<br>19 Oct – 18 Dec<br>~8–9 lessons | **Substances and Materials**<br>What the world is made of and how it changes | Why an object is made of this material and not another. What happens when we heat and cool things. A fair test: what dissolves and what doesn't. The key question of the year: where does the sugar go in water | Wood, metal, plastic, glass, fabric; hard, soft, transparent, waterproof; solid, liquid, gas; melt, freeze, dissolve, mix. Talk: "It is made of… because it is…", "When I heat it, it melts" |
-| **III**<br>5 Jan – 12 Feb<br>~6 lessons | **Forces and Motion**<br>What makes things move | Push and pull. Why a moving object stops. Why everything falls down. An experiment with repeated measurements: what rolls further and why | Push, pull, force, friction, gravity, float, sink, heavy, light. Doing: measure and repeat, build a table. Talk: "It stopped because of friction" |
-| **IV**<br>22 Feb – 9 Apr<br>~7 lessons | **Light, Sound, Electricity and Magnets** | Where a shadow comes from and why it changes. How sound is born. Why the bulb won't light if the circuit is broken. What a magnet attracts — and why that's a property of the material, not of the object | Light, shadow, transparent, opaque, reflect; sound, loud, quiet, high, low, vibrate; circuit, battery, wire, bulb, switch; magnet, attract, repel. Talk: "If I add another battery, the bulb gets brighter" |
-| **V**<br>21 Apr – 25 Jun<br>~9 lessons | **Living Things and Connections in Nature**<br>+ end-of-year project | How a living organism is built and how it works. Who depends on whom: habitats and food chains. The year ends with each child's own investigation of their own question, with a product and a presentation | Living, non-living, plant, animal, organ, grow; habitat, food chain, producer, consumer, predator, prey. Presentation talk: "First we…, then we found that…, so we think…" |
+| **I**<br>1 Sep – 9 Oct<br>5–6 lessons | **Earth and Space**<br>Where we live and what's around us | What the Earth is made of. Why day turns into night and where the seasons come from. Why the Moon changes shape. Sky-watching with a diary — an "observing over time" enquiry | Earth, Sun, Moon, planet, star, orbit; day, night, season, shadow. Doing: an Earth–Sun–Moon model, observing and recording. Talk: "The Earth turns, so we have day and night" |
+| **II**<br>19 Oct – 18 Dec<br>8–9 lessons | **Substances and Materials**<br>What the world is made of and how it changes | Why an object is made of this material and not another. What happens when we heat and cool things. A fair test: what dissolves and what doesn't. The key question of the year: where does the sugar go in water | Wood, metal, plastic, glass, fabric; hard, soft, transparent, waterproof; solid, liquid, gas; melt, freeze, dissolve, mix. Talk: "It is made of… because it is…", "When I heat it, it melts" |
+| **III**<br>5 Jan – 12 Feb<br>5–6 lessons | **Forces and Motion**<br>What makes things move | Push and pull. Why a moving object stops. Why everything falls down. An experiment with repeated measurements: what rolls further and why | Push, pull, force, friction, gravity, float, sink, heavy, light. Doing: measure and repeat, build a table. Talk: "It stopped because of friction" |
+| **IV**<br>22 Feb – 9 Apr<br>6–7 lessons | **Light, Sound, Electricity and Magnets** | Where a shadow comes from and why it changes. How sound is born. Why the bulb won't light if the circuit is broken. What a magnet attracts — and why that's a property of the material, not of the object | Light, shadow, transparent, opaque, reflect; sound, loud, quiet, high, low, vibrate; circuit, battery, wire, bulb, switch; magnet, attract, repel. Talk: "If I add another battery, the bulb gets brighter" |
+| **V**<br>21 Apr – 25 Jun<br>8–10 lessons | **Living Things and Connections in Nature**<br>+ end-of-year project | How a living organism is built and how it works. Who depends on whom: habitats and food chains. The year ends with each child's own investigation of their own question, with a product and a presentation | Living, non-living, plant, animal, organ, grow; habitat, food chain, producer, consumer, predator, prey. Presentation talk: "First we…, then we found that…, so we think…" |
+
+---
+
+### How many lessons actually stand in the timetable
+
+The number differs between classes: each class has its science lesson on its own day of the week, and holidays fall unevenly. Exact count against the 2026/27 calendar, shown as **Russian lesson / English lesson**:
+
+| Class | I | II | III | IV | V | Year |
+|---|---|---|---|---|---|---|
+| Y2 | 5 / 6 | 8 / 9 | 5 / 6 | 7 / 7 | 9 / 9 | 34 / 37 |
+| Y3-1 | 5 / 5 | 8 / 8 | 5 / 5 | 7 / 7 | 9 / 9 | 34 / 34 |
+| Y3-2 | 6 / 6 | 9 / 9 | 6 / 6 | 7 / 7 | 9 / 9 | 37 / 37 |
+| Y4 | 5 / 6 | 8 / 9 | 5 / 6 | 7 / 7 | 9 / 9 | 34 / 37 |
+| Y5 | 6 / 5 | 9 / 8 | 6 / 5 | 7 / 6 | 10 / 8 | 38 / 32 |
+| Y6 | 6 / 5 | 9 / 8 | 6 / 6 | 7 / 6 | 9 / 8 | 37 / 33 |
+
+**Tests sit on top of the topics.** Checks and tests are not counted in the topic list: give them their own line in your plan — about 1 lesson per module. We do not plan a separate reserve line: plan your topics against your class's lesson count minus the test — whatever is left over is your reserve for illness and slippage.
 
 ---
 
