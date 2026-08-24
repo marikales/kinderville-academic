@@ -32,6 +32,7 @@ header { background:#fff; color:#000; padding:6px 0 0 6px; } body { background:#
 <a id="cr1" href="day.html">День</a> · <a id="cr2" href="classes.html">По классам</a> · <a id="cr3" href="teachers.html">По педагогам</a></nav>
 <main>
 <div class="draft" id="draftNote">Версия 24.08 — согласована со всеми вводными; действует с 1 сентября. При изменениях мастер-расписания страница обновляется.</div>
+<div class="draft" id="lightNote"></div>
 <div id="content"></div>
 </main>
 <script>
@@ -54,6 +55,10 @@ function applyChrome(){
   document.title = (L?TITLE_EN:TITLE_RU);
   const cr = [["← Портал педагогов","← Teacher Portal"],["День","Day"],["По классам","By class"],["По педагогам","By teacher"]];
   cr.forEach((p,i)=>{ const el=document.getElementById("cr"+i); if(el) el.textContent=p[L?1:0]; });
+  const ln = document.getElementById("lightNote");
+  if(ln) ln.textContent = L
+    ? "Light programme: Light children can only be in Y3-2, Y4 and Y5. Y2, Y3-1 and Y6 cannot take Light children — their core lessons may sit after lesson 4."
+    : "Программа Light: Light-дети могут быть только в Y3-2, Y4 и Y5. В Y2, Y3-1 и Y6 Light-детей быть не может — обязательные уроки этих классов могут стоять после 4-го урока.";
   const d = document.getElementById("draftNote");
   if(d) d.textContent = L ? "Version 24.08 — aligned with all inputs; in effect from 1 September. Updated whenever the master timetable changes."
                           : "Версия 24.08 — согласована со всеми вводными; действует с 1 сентября. При изменениях мастер-расписания страница обновляется.";
