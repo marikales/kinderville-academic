@@ -1,6 +1,9 @@
 - [Home](en/README.md)
 - [Courses](en/kursy.md)
-- [Timetable](en/raspisanie.md)
+- [Timetable: day](schedule/day.html?lang=en)
+- [Timetable by class](schedule/classes.html?lang=en)
+- [Timetable by teacher](schedule/teachers.html?lang=en)
+- [Lessons per module](en/ktp.md)
 
 - **Science · Y2–Y6**
   - [Yearly plan and course aims](en/science/README.md)

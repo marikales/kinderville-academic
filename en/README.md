@@ -12,7 +12,8 @@ Working materials for the school: programmes, yearly planning, assessment criter
 
 - [School calendar 2026/27 (Y2–Y6)](https://marikales.github.io/kinderville-calendar/year2-6.html) — the page is bilingual
 - [Kindergarten calendar 2026/27 (Preschool – Year 1)](https://marikales.github.io/kinderville-calendar/kindergarten.html)
-- [School timetable 2026/27](en/raspisanie.md) — in Russian for now
+- [School timetable 2026/27](en/raspisanie.md) — day · by class · by teacher (bilingual pages)
+- [Lessons per module for planning](en/ktp.md)
 
 ---
 
