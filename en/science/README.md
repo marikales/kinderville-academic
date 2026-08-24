@@ -84,6 +84,8 @@ All three are reasoning about cause. Simple words do not mean simple thinking: a
 
 **The rule for the Russian lesson.** The Russian lesson carries understanding: why this happens, how we know, why I think so. Within the lesson we move from a problem to a solution — when and how depends on the topic. Within each module there should be at least one real investigation: with a question, a prediction, a test and a conclusion — not just a story with pictures.
 
+**The first week (1–4 September).** The year starts on a Tuesday, so Y2's first English science lesson (Tue 1 Sep) lands before the Russian one: run it as a review in English, and introduce the topic in the Russian lesson the following week. Y3-1 has both science lessons on Mondays, so their science starts from the second week of the year. For all other classes the "Russian → English" order holds from week one.
+
 ---
 
 ## The five modules of the year
