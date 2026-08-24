@@ -111,7 +111,7 @@ The number differs between classes: each class has its science lesson on its own
 | Y3-2 | 6 / 6 | 9 / 7 | 6 / 6 | 7 / 5 | 9 / 8 | 37 / 32 |
 | Y4 | 6 / 6 | 9 / 7 | 6 / 6 | 7 / 5 | 9 / 8 | 37 / 32 |
 | Y5 | 5 / 5 | 8 / 7 | 5 / 5 | 7 / 5 | 9 / 8 | 34 / 30 |
-| Y6 | 5 / 6 | 8 / 9 | 5 / 6 | 7 / 7 | 9 / 10 | 34 / 38 |
+| Y6 | 5 / 5 | 8 / 8 | 5 / 6 | 7 / 6 | 9 / 8 | 34 / 33 |
 
 **Tests sit on top of the topics.** Checks and tests are not counted in the topic list: give them their own line in your plan — about 1 lesson per module. We do not plan a separate reserve line: plan your topics against your class's lesson count minus the test — whatever is left over is your reserve for illness and slippage.
 
