@@ -90,8 +90,10 @@ function render(){
            <button class="act" onclick="window.print()">🖨 ${L?"Print":"Печать"}</button>
            <button class="act" onclick="toggleLang()">${L?"RU":"EN"}</button></div>`;
   h += `<h2>${L?(T_EN[name]||name):(T_RU[name]||name)} — ${Object.keys(sch).length} ${L?"h/week":"ч/нед"}</h2>`;
-  h += `<table><tr><th class="timecol">${L?"Slot":"Слот"}</th>` +
-       DAYS.map((x,i)=>`<th>${L?DAYS_EN[i]:x}</th>`).join("") + "</tr>";
+  const busyDay = DAYS.map((x,i)=> Object.keys(sch).some(k=>k.startsWith(i+"|")));
+  h += `<table style="table-layout:fixed"><colgroup><col style="width:130px">` +
+       `<col span="5"></colgroup><tr><th class="timecol">${L?"Slot":"Слот"}</th>` +
+       DAYS.map((x,i)=>`<th>${L?DAYS_EN[i]:x}${busyDay[i]?"":(L?" · free":" · свободен")}</th>`).join("") + "</tr>";
   const isCurLower = name === "Ольга Сальникова", isCurUpper = name === "Лиза";
   for (const t of ORDER){
     if (t === "4U" && (isCurLower || isCurUpper)){
