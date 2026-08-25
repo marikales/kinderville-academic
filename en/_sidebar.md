@@ -4,6 +4,7 @@
 - [Timetable by class](schedule/classes.html?lang=en ':ignore')
 - [Timetable by teacher](schedule/teachers.html?lang=en ':ignore')
 - [Lessons per module](en/ktp.md)
+- [Team meetings](en/meetings.md)
 
 - **Science · Y2–Y6**
   - [Yearly plan and course aims](en/science/README.md)

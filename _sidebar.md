@@ -3,6 +3,7 @@
   - [По классам](schedule/classes.html ':ignore')
   - [По педагогам](schedule/teachers.html ':ignore')
 - [Уроки по модулям (для КТП)](ktp.md)
+- [Встречи команды](meetings.md)
 - [Курсы](kursy.md)
   - **Чтение на русском · Reception–Y2**
     - [Курс чтения (по Мельниковой)](https://marikales.github.io/kinderville-reading/)
