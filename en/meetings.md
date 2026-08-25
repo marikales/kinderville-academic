@@ -6,13 +6,13 @@ Weekly circles at a fixed time. Slots are chosen from the current 2026/27 timeta
 |---|---|---|---|
 | Monday | 14:10–15:00 | Homeroom Circle | Maria, Olga S., Elizaveta |
 | Tuesday | 11:05–11:55 | English Circle | Maria, Albina, Sam |
-| Wednesday | 16:05–16:50 | Science Circle | Albina, Olga S., Elizaveta, Margarita |
+| Wednesday | 16:05–16:50 | Science Circle | Albina, Sam, Olga S., Elizaveta, Margarita |
 
 Why these slots:
 
 - **Homeroom** — right after lunch and homework: the children leave for electives and the curators' free half of the day begins.
 - **English** — Albina's and Sam's shared window between lessons (after the 2nd, before the 4th).
-- **Science** — the only after-school circle: all of Albina's afternoon slots are teaching, so there is no in-grid overlap with the curators. On Wednesday Albina and Margarita finish lesson 6 at 16:00 sharp.
+- **Science** — the only after-school circle: all of Albina's afternoon slots are teaching, so there is no in-grid overlap with the curators. On Wednesday Albina, Sam and Margarita finish lesson 6 at 16:00 sharp.
 
 ## Curator + the class's subject teachers
 
