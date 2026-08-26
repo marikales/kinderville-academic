@@ -4,6 +4,8 @@
   - [По педагогам](schedule/teachers.html ':ignore')
 - [Уроки по модулям (для КТП)](ktp.md)
 - [Встречи команды](meetings.md)
+- **Памятки**
+  - [Сложное поведение на уроке](povedenie.md)
 - [Курсы](kursy.md)
   - **Чтение на русском · Reception–Y2**
     - [Курс чтения (по Мельниковой)](https://marikales.github.io/kinderville-reading/)

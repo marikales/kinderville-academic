@@ -5,6 +5,8 @@
 - [Timetable by teacher](schedule/teachers.html?lang=en ':ignore')
 - [Lessons per module](en/ktp.md)
 - [Team meetings](en/meetings.md)
+- **Memos**
+  - [Challenging behaviour in class](en/povedenie.md)
 
 - **Science · Y2–Y6**
   - [Yearly plan and course aims](en/science/README.md)
