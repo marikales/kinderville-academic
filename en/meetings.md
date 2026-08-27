@@ -1,5 +1,7 @@
 # Team meetings
 
+> ⚠️ **Work in progress.** Membership and frequency are still being discussed — until this is announced to the team, treat it as a working draft, not a schedule.
+
 Slots are taken from the current 2026/27 timetable so that each meeting sits right next to its participants' lessons — nobody comes in early or waits afterwards. Each circle has a working language: the membership is built so the conversation runs without translation.
 
 ## Weekly
@@ -7,17 +9,26 @@ Slots are taken from the current 2026/27 timetable so that each meeting sits rig
 | Day | Time | Circle | Who | Language |
 |---|---|---|---|---|
 | Monday | 14:10–15:00 | Homeroom | Maria, Olga S., Elizaveta | RU |
-| Tuesday | 11:05–11:55 | English | Maria, Albina, Sam | EN |
-| Wednesday | 10:05–10:55 | Y4–Y5 pair | Margarita, Elizaveta | RU |
-| Friday | 10:05–10:55 | Y2 pair | Margarita, Olga S. | RU |
-| Friday | 14:10–15:00 | Academic circle | Olga S., Elizaveta, Gaiane, Olga P. | RU |
 
 ## Every two weeks
 
 | Day | Time | Circle | Who | Language |
 |---|---|---|---|---|
+| Friday | 16:05–17:00 | **Whole-team circle** | the whole primary team | RU |
+| Tuesday | 11:05–11:55 | English | Maria, Albina, Sam | EN |
+| Wednesday | 10:05–10:55 | Y4–Y5 pair | Margarita, Elizaveta | RU |
 | Wednesday | 16:05–16:50 | Science | Albina, Olga S., Elizaveta | RU |
 | Thursday | 11:05–11:55 | Y4 Science | Elizaveta, Sam | EN |
+| Friday | 10:05–10:55 | Y2 pair | Margarita, Olga S. | RU |
+| Friday | 14:10–15:00 | Academic circle | Olga S., Elizaveta, Gaiane, Olga P. | RU |
+
+The whole-team circle and the academic circle fall in different weeks: in a whole-team week the academic circle does not meet.
+
+## The whole-team circle
+
+The only time in the week when the entire primary team can gather: Olga S., Elizaveta, Maria, Margarita, Gaiane, Olga P., Albina, Sam. Seven of the eight finish teaching at 16:00 and simply stay where they are.
+
+This is the place for what does not fit into pairs and small circles: brainstorming, shared decisions, anything that concerns everyone at once. Every two weeks, one hour.
 
 ## Once per module — on staff-training days
 
@@ -25,7 +36,7 @@ Subject verticals: **mathematics** (Olga P., Olga S., Sam) and **Russian languag
 
 Staff-training days: 12–13 October, 21–22 December, 15–17 February, 19–20 April.
 
-Exception for Module I: the language-and-literature vertical meets weekly, on Thursdays at 12:00. This is where the Y3 reading entry check lives. From Module II — once per module, like the others.
+Exception for Module I: the language-and-literature vertical meets more often — on Thursdays at 12:00. This is where the Y3 reading entry check lives. From Module II — once per module, like the others.
 
 ## On signal, not on schedule
 
