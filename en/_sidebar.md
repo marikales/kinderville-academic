@@ -3,6 +3,7 @@
 - [Timetable: day](schedule/day.html?lang=en ':ignore')
 - [Timetable by class](schedule/classes.html?lang=en ':ignore')
 - [Timetable by teacher](schedule/teachers.html?lang=en ':ignore')
+- [1 September · Welcome Day](schedule/sep1.html?lang=en ':ignore')
 - [Lessons per module](en/ktp.md)
 - [Team meetings](en/meetings.md)
 - **Memos**

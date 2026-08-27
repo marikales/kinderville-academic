@@ -1,0 +1,190 @@
+<!DOCTYPE html><html lang="ru"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>1 сентября · День знакомства</title><style>
+:root { --ink:#1a3c40; --petrol:#0f6b70; --soft:#e8f2f2; --line:#d5e2e2; }
+* { box-sizing:border-box; } body { font:15px/1.45 -apple-system,'Segoe UI',Roboto,sans-serif;
+color:var(--ink); margin:0; background:#fafcfc; }
+header { background:var(--petrol); color:#fff; padding:12px 22px; }
+header h1 { font-size:17px; margin:0; font-weight:600; display:inline; color:#e9f0ef; letter-spacing:.02em; }
+header .sub { color:#c7d8d7; opacity:1; font-size:12.5px; margin-left:10px; }
+nav.crumbs { padding:10px 22px 0; font-size:13.5px; } nav.crumbs a { color:var(--petrol); }
+main { padding:12px 22px 40px; }
+.controls { display:flex; gap:10px; align-items:center; flex-wrap:wrap; margin:8px 0 4px; }
+button.act { font-size:14px; padding:6px 12px; border-radius:8px; border:1px solid var(--petrol);
+background:var(--petrol); color:#fff; cursor:pointer; }
+table { border-collapse:collapse; margin:14px 0 26px; width:100%; max-width:1200px; }
+th, td { border:1px solid var(--line); padding:6px 8px; vertical-align:top; text-align:center; }
+th { background:var(--soft); font-weight:600; font-size:13px; }
+td .s { font-weight:600; font-size:13.5px; } td .t { color:#4a6b6e; font-size:12px; }
+td.eng { background:#e9f1fb; } td.elect { background:#ecf6e8; }
+td.brk { background:#fbf6ea; color:#8a7a55; font-size:12.5px; }
+td.brk b { color:#6f5f38; }
+h2 { font-size:16px; margin:16px 0 2px; }
+.note { color:#5b7a7d; font-size:13px; margin:4px 0 8px; max-width:900px; }
+.timecol { white-space:nowrap; font-size:12.5px; color:#4a6b6e; }
+.staff { background:var(--soft); border:1px solid var(--line); border-radius:8px; padding:8px 12px;
+font-size:13.5px; margin:8px 0 4px; max-width:900px; }
+.staff b { color:var(--petrol); }
+.busy { background:#fdeeee; }
+table.adults { max-width:900px; }
+table.adults td { text-align:left; font-size:13px; }
+table.adults td.who { font-weight:600; white-space:nowrap; }
+.wrap { overflow-x:auto; -webkit-overflow-scrolling:touch; margin:14px 0 26px; }
+.wrap table { margin:0; }
+body.en .lang-ru { display:none; } body:not(.en) .lang-en { display:none; }
+@media (max-width: 720px){
+  header { padding:10px 14px; }
+  nav.crumbs { padding:8px 12px 0; }
+  main { padding:10px 10px 32px; }
+  table { max-width:none; }
+  .wrap table { width:auto; min-width:100%; }
+  .wrap th, .wrap td { min-width:108px; padding:5px 6px; }
+  .wrap th { font-size:12px; }
+  .wrap td .s { font-size:12.5px; }
+  .wrap td .t { font-size:11.5px; }
+  .wrap th.timecol, .wrap td.timecol { position:sticky; left:0; z-index:1;
+    background:#fafcfc; min-width:0; box-shadow:2px 0 0 var(--line); }
+  .wrap th.timecol { background:var(--soft); }
+}
+@media print {
+  nav.crumbs, .controls { display:none !important; }
+  header { background:#fff !important; padding:0 0 4px; }
+  header h1 { color:#000 !important; font-size:14px; }
+  header .sub { color:#555 !important; }
+  body { background:#fff !important; }
+  main { padding:0; }
+  table { font-size:10px; margin:4px 0 8px; max-width:100%; page-break-inside:avoid; break-inside:avoid; }
+  th, td { padding:2px 4px; }
+  th { font-size:9.5px; } td .s { font-size:9.5px; } td .t { font-size:8px; }
+  .wrap { overflow:visible; margin:4px 0 8px; }
+  .staff { font-size:9px; padding:2px 6px; margin:2px 0; background:#fff !important; }
+  .timecol { font-size:8.5px; }
+  h2 { font-size:12px; margin:2px 0; }
+  .note { font-size:8.5px; margin:2px 0; }
+  table.adults td { font-size:8.5px; }
+  * { -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+}
+@page { size: A4 landscape; margin: 9mm; }
+</style></head><body>
+<header><h1><span class="lang-ru">1 сентября · День знакомства</span><span class="lang-en">1 September · Welcome Day</span></h1>
+<span class="sub"><span class="lang-ru">вторник · особая сетка первого дня</span><span class="lang-en">Tuesday · special first-day timetable</span></span></header>
+<nav class="crumbs"><a href="../#/" class="lang-ru">← Портал педагогов</a><a href="../#/en/" class="lang-en">← Teacher Portal</a> ·
+<a href="day.html"><span class="lang-ru">День</span><span class="lang-en">Day</span></a> ·
+<a href="classes.html"><span class="lang-ru">По классам</span><span class="lang-en">By class</span></a> ·
+<a href="teachers.html"><span class="lang-ru">По педагогам</span><span class="lang-en">By teacher</span></a></nav>
+<main>
+<div class="controls">
+  <button class="act" onclick="document.body.classList.toggle('en')"><span class="lang-ru">EN</span><span class="lang-en">RU</span></button>
+  <button class="act" onclick="window.print()">🖨 <span class="lang-ru">Печать</span><span class="lang-en">Print</span></button>
+</div>
+
+<div class="staff">
+  <span class="lang-ru"><b>Y2–Y3</b> — куратор Ольга Сальникова · ассистенты Пи Энн и Пи Мон<br>
+  <b>Y4–Y6</b> — куратор Елизавета Хоша · ассистенты Пи Ди и Кру Пим</span>
+  <span class="lang-en"><b>Y2–Y3</b> — curator Olga Salnikova · assistants Pee Ann &amp; Pee Mon<br>
+  <b>Y4–Y6</b> — curator Elizaveta Khosha · assistants Pee Dee &amp; Kru Pim</span>
+</div>
+
+<p class="note"><span class="lang-ru">Уроки 3–6 — знакомства с педагогами: каждая группа за день проходит математику, русский язык, English и творчество. Y2 почти весь день вместе с Y3-1; отдельно — на 3-м уроке (творчество с Пи Ди) и на 6-м (математика с Ольгой С.). Если линейка затянется — сдвигается кураторское время, уроки с 11:05 стоят жёстко.</span>
+<span class="lang-en">Lessons 3–6 are meet-the-teacher sessions: during the day each group visits Mathematics, Russian, English and Creativity. Y2 stays with Y3-1 for most of the day, except lesson 3 (Creativity with Pee Dee) and lesson 6 (Mathematics with Olga S.). If the assembly runs late, curator time absorbs the delay — lessons start at 11:05 sharp.</span></p>
+
+<div class="wrap"><table>
+<tr><th class="timecol"><span class="lang-ru">Время</span><span class="lang-en">Time</span></th>
+<th>Y2</th><th>Y3-1</th><th>Y3-2</th><th>Y4</th><th>Y5</th><th>Y6</th></tr>
+
+<tr><td class="timecol">8:00–8:50</td>
+<td class="brk" colspan="6"><span class="lang-ru">Приём детей, завтрак, свободная игра — <b>кураторы и ассистенты своих ступеней</b></span><span class="lang-en">Arrival, breakfast, free play — <b>curators and assistants of each stage</b></span></td></tr>
+
+<tr><td class="timecol">9:00–9:30</td>
+<td colspan="6"><div class="s"><span class="lang-ru">Линейка</span><span class="lang-en">Assembly</span></div>
+<div class="t"><span class="lang-ru">вся школа, все педагоги</span><span class="lang-en">whole school, all teachers</span></div></td></tr>
+
+<tr><td class="timecol">9:30–10:55</td>
+<td colspan="3"><div class="s"><span class="lang-ru">Кураторское время</span><span class="lang-en">Curator time</span></div>
+<div class="t"><span class="lang-ru">знакомство, социгры · Ольга С. + Пи Энн и Пи Мон</span><span class="lang-en">getting to know each other, social games · Olga S. + Pee Ann &amp; Pee Mon</span></div></td>
+<td colspan="3"><div class="s"><span class="lang-ru">Кураторское время</span><span class="lang-en">Curator time</span></div>
+<div class="t"><span class="lang-ru">знакомство, социгры · Елизавета + Пи Ди и Кру Пим</span><span class="lang-en">getting to know each other, social games · Elizaveta + Pee Dee &amp; Kru Pim</span></div></td></tr>
+
+<tr><td class="timecol">11:05–11:55<br><span class="lang-ru">урок 3</span><span class="lang-en">lesson 3</span></td>
+<td class="elect"><div class="s"><span class="lang-ru">Творчество</span><span class="lang-en">Creativity</span></div>
+<div class="t"><span class="lang-ru">Пи Ди · рядом Пи Мон</span><span class="lang-en">Pee Dee · with Pee Mon</span></div></td>
+<td><div class="s"><span class="lang-ru">Математика</span><span class="lang-en">Mathematics</span></div><div class="t"><span class="lang-ru">Ольга П.</span><span class="lang-en">Olga Porubova</span></div></td>
+<td><div class="s"><span class="lang-ru">Русский язык</span><span class="lang-en">Russian</span></div><div class="t"><span class="lang-ru">Гаянэ и Маргарита</span><span class="lang-en">Gaiane &amp; Margarita</span></div></td>
+<td class="eng"><div class="s">English</div><div class="t"><span class="lang-ru">Альбина и Сэм</span><span class="lang-en">Albina &amp; Sam</span></div></td>
+<td class="elect" colspan="2"><div class="s"><span class="lang-ru">Рисование</span><span class="lang-en">Painting</span></div><div class="t"><span class="lang-ru">Мария</span><span class="lang-en">Maria</span></div></td></tr>
+
+<tr><td class="timecol">11:55–12:25</td>
+<td class="brk" colspan="3"><span class="lang-ru"><b>Обед</b> · Ольга С. + Пи Энн и Пи Мон</span><span class="lang-en"><b>Lunch</b> · Olga S. + Pee Ann &amp; Pee Mon</span></td>
+<td colspan="3"></td></tr>
+
+<tr><td class="timecol">12:00–12:50<br><span class="lang-ru">урок 4 · старшие</span><span class="lang-en">lesson 4 · upper</span></td>
+<td colspan="3"></td>
+<td class="elect"><div class="s"><span class="lang-ru">Творчество</span><span class="lang-en">Creativity</span></div><div class="t"><span class="lang-ru">Мария</span><span class="lang-en">Maria</span></div></td>
+<td colspan="2"><div class="s"><span class="lang-ru">Математика</span><span class="lang-en">Mathematics</span></div><div class="t"><span class="lang-ru">Ольга П.</span><span class="lang-en">Olga Porubova</span></div></td></tr>
+
+<tr><td class="timecol">12:25–13:10</td>
+<td class="brk" colspan="3"><span class="lang-ru"><b>Отдых, прогулка</b> · Ольга С. + Пи Энн и Пи Мон</span><span class="lang-en"><b>Rest &amp; outdoor play</b> · Olga S. + Pee Ann &amp; Pee Mon</span></td>
+<td colspan="3"></td></tr>
+
+<tr><td class="timecol">12:50–13:20</td>
+<td colspan="3"></td>
+<td class="brk" colspan="3"><span class="lang-ru"><b>Обед</b> · Елизавета + Пи Ди и Кру Пим</span><span class="lang-en"><b>Lunch</b> · Elizaveta + Pee Dee &amp; Kru Pim</span></td></tr>
+
+<tr><td class="timecol">13:15–14:05<br><span class="lang-ru">урок 4 · младшие</span><span class="lang-en">lesson 4 · lower</span></td>
+<td colspan="2"><div class="s"><span class="lang-ru">Русский язык</span><span class="lang-en">Russian</span></div><div class="t"><span class="lang-ru">Гаянэ и Маргарита</span><span class="lang-en">Gaiane &amp; Margarita</span></div></td>
+<td class="eng"><div class="s">English</div><div class="t"><span class="lang-ru">Альбина и Сэм</span><span class="lang-en">Albina &amp; Sam</span></div></td>
+<td class="brk" colspan="3"><span class="lang-ru"><b>Отдых</b> 13:20–14:05 · Елизавета + Пи Ди и Кру Пим</span><span class="lang-en"><b>Rest</b> 13:20–14:05 · Elizaveta + Pee Dee &amp; Kru Pim</span></td></tr>
+
+<tr><td class="timecol">14:10–15:00<br><span class="lang-ru">урок 5</span><span class="lang-en">lesson 5</span></td>
+<td class="eng" colspan="2"><div class="s">English</div><div class="t"><span class="lang-ru">Альбина и Сэм</span><span class="lang-en">Albina &amp; Sam</span></div></td>
+<td class="elect"><div class="s"><span class="lang-ru">Творчество</span><span class="lang-en">Creativity</span></div><div class="t"><span class="lang-ru">Пи Ди</span><span class="lang-en">Pee Dee</span></div></td>
+<td><div class="s"><span class="lang-ru">Математика</span><span class="lang-en">Mathematics</span></div><div class="t"><span class="lang-ru">Ольга П.</span><span class="lang-en">Olga Porubova</span></div></td>
+<td colspan="2"><div class="s"><span class="lang-ru">Русский язык</span><span class="lang-en">Russian</span></div><div class="t"><span class="lang-ru">Гаянэ и Маргарита</span><span class="lang-en">Gaiane &amp; Margarita</span></div></td></tr>
+
+<tr><td class="timecol">15:10–16:00<br><span class="lang-ru">урок 6</span><span class="lang-en">lesson 6</span></td>
+<td><div class="s"><span class="lang-ru">Математика</span><span class="lang-en">Mathematics</span></div><div class="t"><span class="lang-ru">Ольга С.</span><span class="lang-en">Olga Salnikova</span></div></td>
+<td class="elect"><div class="s"><span class="lang-ru">Творчество</span><span class="lang-en">Creativity</span></div><div class="t"><span class="lang-ru">Пи Ди</span><span class="lang-en">Pee Dee</span></div></td>
+<td><div class="s"><span class="lang-ru">Математика</span><span class="lang-en">Mathematics</span></div><div class="t"><span class="lang-ru">Ольга П.</span><span class="lang-en">Olga Porubova</span></div></td>
+<td><div class="s"><span class="lang-ru">Русский язык</span><span class="lang-en">Russian</span></div><div class="t"><span class="lang-ru">Гаянэ и Маргарита</span><span class="lang-en">Gaiane &amp; Margarita</span></div></td>
+<td class="eng" colspan="2"><div class="s">English</div><div class="t"><span class="lang-ru">Альбина и Сэм</span><span class="lang-en">Albina &amp; Sam</span></div></td></tr>
+
+<tr><td class="timecol">16:05–16:20</td>
+<td colspan="6"><div class="s"><span class="lang-ru">Рефлексия</span><span class="lang-en">Reflection</span></div>
+<div class="t"><span class="lang-ru">закрывающий круг дня — кураторы</span><span class="lang-en">closing circle of the day — curators</span></div></td></tr>
+
+<tr><td class="timecol">16:20–16:30</td>
+<td class="brk" colspan="6"><span class="lang-ru">Полдник · кураторы и ассистенты ступеней</span><span class="lang-en">Snack · stage curators and assistants</span></td></tr>
+</table></div>
+
+<h2><span class="lang-ru">Кураторы и ассистенты: кто когда занят</span><span class="lang-en">Curators and assistants: who is busy when</span></h2>
+<p class="note"><span class="lang-ru">Розовым — слоты, где взрослый ведёт занятие и НЕ может быть со ступенью.</span><span class="lang-en">Pink — slots where the adult is teaching and NOT available for their stage.</span></p>
+
+<div class="wrap"><table class="adults">
+<tr><th><span class="lang-ru">Кто</span><span class="lang-en">Who</span></th>
+<th><span class="lang-ru">Ведёт занятия</span><span class="lang-en">Teaching</span></th>
+<th><span class="lang-ru">С детьми на обеде и отдыхе</span><span class="lang-en">With children at lunch &amp; rest</span></th></tr>
+<tr><td class="who"><span class="lang-ru">Ольга Сальникова</span><span class="lang-en">Olga Salnikova</span></td>
+<td class="busy"><span class="lang-ru"><b>урок 6 (15:10–16:00)</b> — математика Y2</span><span class="lang-en"><b>lesson 6 (15:10–16:00)</b> — Mathematics Y2</span></td>
+<td><span class="lang-ru">обед 11:55–12:25 и отдых 12:25–13:15 — младшие</span><span class="lang-en">lunch 11:55–12:25 and rest 12:25–13:15 — lower stage</span></td></tr>
+<tr><td class="who"><span class="lang-ru">Елизавета Хоша</span><span class="lang-en">Elizaveta Khosha</span></td>
+<td><span class="lang-ru">занятий не ведёт — весь день со ступенью Y4–Y6</span><span class="lang-en">no lessons — with Y4–Y6 all day</span></td>
+<td><span class="lang-ru">обед 12:50–13:20 и отдых 13:20–14:05 — старшие</span><span class="lang-en">lunch 12:50–13:20 and rest 13:20–14:05 — upper stage</span></td></tr>
+<tr><td class="who"><span class="lang-ru">Пи Ди</span><span class="lang-en">Pee Dee</span></td>
+<td class="busy"><span class="lang-ru"><b>уроки 3, 5, 6</b> — творчество (Y2 → Y3-2 → Y3-1)</span><span class="lang-en"><b>lessons 3, 5, 6</b> — Creativity (Y2 → Y3-2 → Y3-1)</span></td>
+<td><span class="lang-ru">обед 12:50–13:20 и отдых до 14:05 — старшие</span><span class="lang-en">lunch 12:50–13:20 and rest until 14:05 — upper stage</span></td></tr>
+<tr><td class="who"><span class="lang-ru">Пи Энн</span><span class="lang-en">Pee Ann</span></td>
+<td><span class="lang-ru">весь день с младшими, сопровождает переходы между кабинетами</span><span class="lang-en">with lower stage all day, walks groups between rooms</span></td>
+<td><span class="lang-ru">обед и отдых младших 11:55–13:15</span><span class="lang-en">lower-stage lunch and rest 11:55–13:15</span></td></tr>
+<tr><td class="who"><span class="lang-ru">Пи Мон</span><span class="lang-en">Pee Mon</span></td>
+<td class="busy"><span class="lang-ru"><b>урок 3 (11:05–11:55)</b> — с Y2 на творчестве у Пи Ди; дальше с младшими</span><span class="lang-en"><b>lesson 3 (11:05–11:55)</b> — with Y2 at Pee Dee's Creativity; then with lower stage</span></td>
+<td><span class="lang-ru">обед и отдых младших 11:55–13:15</span><span class="lang-en">lower-stage lunch and rest 11:55–13:15</span></td></tr>
+<tr><td class="who"><span class="lang-ru">Кру Пим</span><span class="lang-en">Kru Pim</span></td>
+<td><span class="lang-ru">весь день со старшими; на уроках 5–6 — единственный ассистент старших (Пи Ди на творчестве)</span><span class="lang-en">with upper stage all day; in lessons 5–6 the only upper-stage assistant (Pee Dee is teaching)</span></td>
+<td><span class="lang-ru">обед и отдых старших 12:50–14:05</span><span class="lang-en">upper-stage lunch and rest 12:50–14:05</span></td></tr>
+</table></div>
+
+</main>
+<script>
+if (new URLSearchParams(location.search).get("lang") === "en") document.body.classList.add("en");
+</script>
+</body></html>

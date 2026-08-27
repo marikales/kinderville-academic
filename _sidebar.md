@@ -2,6 +2,7 @@
 - [Расписание · день](schedule/day.html ':ignore')
   - [По классам](schedule/classes.html ':ignore')
   - [По педагогам](schedule/teachers.html ':ignore')
+  - [1 сентября · день знакомства](schedule/sep1.html ':ignore')
 - [Уроки по модулям (для КТП)](ktp.md)
 - [Встречи команды](meetings.md)
 - **Памятки**
