@@ -27,6 +27,25 @@ font-size:13px; margin:8px 0; max-width:900px; }
 .staff { background:var(--soft); border:1px solid var(--line); border-radius:8px; padding:8px 12px;
 font-size:13.5px; margin:8px 0 4px; max-width:900px; }
 .staff b { color:var(--petrol); }
+.stick { position:sticky; left:8px; display:inline-block; text-align:left; }
+.wrap { overflow-x:auto; -webkit-overflow-scrolling:touch; margin:14px 0 26px; }
+.wrap table { margin:0; }
+@media (max-width: 720px){
+  header { padding:10px 14px; }
+  nav.crumbs { padding:8px 12px 0; }
+  main { padding:10px 10px 32px; }
+  table { max-width:none; }
+  .wrap table { width:auto; min-width:100%; table-layout:auto !important; }
+  .wrap col { width:auto !important; }
+  .wrap th, .wrap td { min-width:108px; padding:5px 6px; }
+  .wrap th { font-size:12px; }
+  .wrap td .s { font-size:12.5px; }
+  .wrap td .t { font-size:11.5px; }
+  .wrap th.timecol, .wrap td.timecol { position:sticky; left:0; z-index:1;
+    background:#fafcfc; min-width:0; box-shadow:2px 0 0 var(--line); }
+  .wrap th.timecol { background:var(--soft); }
+  .wrap td.brk { min-width:0; }
+}
 @media print {
   nav.crumbs, .controls, .draft { display:none !important; }
   header { background:#fff !important; padding:0 0 4px; }
@@ -38,6 +57,8 @@ font-size:13.5px; margin:8px 0 4px; max-width:900px; }
   table { font-size:10px; margin:4px 0 8px; max-width:100%; page-break-inside:avoid; break-inside:avoid; }
   th, td { padding:2px 4px; }
   th { font-size:9.5px; } td .s { font-size:9.5px; } td .t { font-size:8px; }
+  .wrap { overflow:visible; margin:4px 0 8px; }
+  .wrap table { margin:0; }
   .staff { font-size:9px; padding:2px 6px; margin:2px 0; background:#fff !important; }
   .timecol { font-size:8.5px; }
   h2 { font-size:12px; margin:0 0 2px; page-break-before:always; break-before:page; }
@@ -116,16 +137,16 @@ function render(){
            <button class="act" onclick="window.print()">🖨 ${L?"Print":"Печать"}</button></div>`;
   h += `<p class="note">${L
     ? "English runs in level groups within the stage; on Literature lessons the teachers swap levels."
-    : "Английский идёт группами по уровню внутри подступени; на литературе педагоги уровней меняются местами. Обед: младшие 11:55–12:25 (домашняя работа 12:25–13:10), старшие 12:50–13:20 (домашняя работа 13:20–14:05); домашнюю работу ведут оба куратора (Ольга С. + Елизавета)."}</p>`;
+    : "Английский идёт группами по уровню внутри подступени; на литературе педагоги уровней меняются местами. Обед: младшие 11:55–12:25 (самостоятельная работа 12:25–13:10), старшие 12:50–13:20 (самостоятельная работа 13:20–14:05); самостоятельную работу ведут оба куратора (Ольга С. + Елизавета)."}</p>`;
   for (const c of CLASSES){
-    h += `<h2>${c}</h2><table><tr><th class="timecol">${L?"Lesson · time":"Урок · время"}</th>` +
+    h += `<h2>${c}</h2><div class="wrap"><table><tr><th class="timecol">${L?"Lesson · time":"Урок · время"}</th>` +
          DAYS.map((x,i)=>`<th>${L?DAYS_EN[i]:x}</th>`).join("") + "</tr>";
     slots(c).forEach((t,i)=>{
       h += `<tr><td class="timecol">${i+1} · ${TL[t]}</td>`;
       for (let d=0; d<5; d++) h += cellHtml(get(d,t,c));
       h += "</tr>";
     });
-    h += "</table>";
+    h += "</table></div>";
     // выкладка по классу: какие предметы кто ведёт и по скольку уроков в неделю
     const agg = {};
     for (const t of slots(c)) for (let d = 0; d < 5; d++){

@@ -27,6 +27,25 @@ font-size:13px; margin:8px 0; max-width:900px; }
 .staff { background:var(--soft); border:1px solid var(--line); border-radius:8px; padding:8px 12px;
 font-size:13.5px; margin:8px 0 4px; max-width:900px; }
 .staff b { color:var(--petrol); }
+.stick { position:sticky; left:8px; display:inline-block; text-align:left; }
+.wrap { overflow-x:auto; -webkit-overflow-scrolling:touch; margin:14px 0 26px; }
+.wrap table { margin:0; }
+@media (max-width: 720px){
+  header { padding:10px 14px; }
+  nav.crumbs { padding:8px 12px 0; }
+  main { padding:10px 10px 32px; }
+  table { max-width:none; }
+  .wrap table { width:auto; min-width:100%; table-layout:auto !important; }
+  .wrap col { width:auto !important; }
+  .wrap th, .wrap td { min-width:108px; padding:5px 6px; }
+  .wrap th { font-size:12px; }
+  .wrap td .s { font-size:12.5px; }
+  .wrap td .t { font-size:11.5px; }
+  .wrap th.timecol, .wrap td.timecol { position:sticky; left:0; z-index:1;
+    background:#fafcfc; min-width:0; box-shadow:2px 0 0 var(--line); }
+  .wrap th.timecol { background:var(--soft); }
+  .wrap td.brk { min-width:0; }
+}
 @media print {
   nav.crumbs, .controls, .draft { display:none !important; }
   header { background:#fff !important; padding:0 0 4px; }
@@ -38,6 +57,8 @@ font-size:13.5px; margin:8px 0 4px; max-width:900px; }
   table { font-size:10px; margin:4px 0 8px; max-width:100%; page-break-inside:avoid; break-inside:avoid; }
   th, td { padding:2px 4px; }
   th { font-size:9.5px; } td .s { font-size:9.5px; } td .t { font-size:8px; }
+  .wrap { overflow:visible; margin:4px 0 8px; }
+  .wrap table { margin:0; }
   .staff { font-size:9px; padding:2px 6px; margin:2px 0; background:#fff !important; }
   .timecol { font-size:8.5px; }
   h2 { font-size:12px; margin:0 0 2px; page-break-before:always; break-before:page; }
@@ -136,24 +157,24 @@ function render(){
            <button class="act" onclick="toggleLang()">${L?"RU":"EN"}</button></div>`;
   h += `<h2>${L?(T_EN[name]||name):(T_RU[name]||name)} — ${Object.keys(sch).length} ${L?"h/week":"ч/нед"}</h2>`;
   const busyDay = DAYS.map((x,i)=> Object.keys(sch).some(k=>k.startsWith(i+"|")));
-  h += `<table style="table-layout:fixed"><colgroup><col style="width:130px">` +
+  h += `<div class="wrap"><table style="table-layout:fixed"><colgroup><col style="width:130px">` +
        `<col span="5"></colgroup><tr><th class="timecol">${L?"Slot":"Слот"}</th>` +
        DAYS.map((x,i)=>`<th>${L?DAYS_EN[i]:x}${busyDay[i]?"":(L?" · free":" · свободен")}</th>`).join("") + "</tr>";
   const isCurLower = name === "Ольга Сальникова", isCurUpper = name === "Лиза";
   for (const t of ORDER){
     if (t === "4U" && (isCurLower || isCurUpper)){
       const own = isCurLower
-        ? (L?"lunch & homework of the lower stage — own group (11:55–13:10), then supporting Elizaveta with the upper stage (till 14:05)"
-           :"обед и домашняя работа младших — со своими (11:55–13:10), затем на подхвате у Елизаветы со старшими (до 14:05)")
-        : (L?"supporting Olga S. with the lower stage (11:55–13:10), then lunch & homework of the upper stage — own group (12:50–14:05)"
-           :"на подхвате у Ольги С. с младшими (11:55–13:10), затем обед и домашняя работа старших — со своими (12:50–14:05)");
-      h += `<tr><td class="timecol">11:55–14:05</td><td class="brk" colspan="5">${own}</td></tr>`;
+        ? (L?"lunch & prep of the lower stage — own group (11:55–13:10), then supporting Elizaveta with the upper stage (till 14:05)"
+           :"обед и самостоятельная работа младших — со своими (11:55–13:10), затем на подхвате у Елизаветы со старшими (до 14:05)")
+        : (L?"supporting Olga S. with the lower stage (11:55–13:10), then lunch & prep of the upper stage — own group (12:50–14:05)"
+           :"на подхвате у Ольги С. с младшими (11:55–13:10), затем обед и самостоятельная работа старших — со своими (12:50–14:05)");
+      h += `<tr><td class="timecol">11:55–14:05</td><td class="brk" colspan="5" style="text-align:left"><span class="stick">${own}</span></td></tr>`;
       continue;
     }
     if (t === "4L" && (isCurLower || isCurUpper)) continue;
     if (t === "LUNCH"){
       if (isCurLower || isCurUpper) continue;
-      h += `<tr><td class="timecol">${L?"Lunch":"Обед"} · 12:50–13:15</td><td class="brk" colspan="5">${L?"lunch break — 25 minutes":"обеденный перерыв — 25 минут"}</td></tr>`;
+      h += `<tr><td class="timecol">${L?"Lunch":"Обед"} · 12:50–13:15</td><td class="brk" colspan="5" style="text-align:left"><span class="stick">${L?"lunch break — 25 minutes":"обеденный перерыв — 25 минут"}</span></td></tr>`;
       continue;
     }
     h += `<tr><td class="timecol">${LBL[t]}</td>`;
@@ -166,7 +187,7 @@ function render(){
     }
     h += "</tr>";
   }
-  h += "</table>";
+  h += "</table></div>";
   // выкладка: какие предметы ведёт педагог и по скольку уроков в неделю
   const agg = {};
   for (const kk in sch){
@@ -182,7 +203,7 @@ function render(){
          `<tr><td>${trS(s)}</td><td>${c}</td><td style="text-align:right">${n}</td></tr>`).join("") +
        `<tr><th colspan="2">${L?"Total":"Всего"}</th><th style="text-align:right">${Object.keys(sch).length}</th></tr></table>`;
   if (isCurLower || isCurUpper)
-    h += `<p class="note">${L?"Also: Circle Time 8:45–9:00 daily (whole stage), curators meet at 8:15.":"Плюс ежедневно: утренний круг 8:45–9:00 всем потоком, встреча кураторов в 8:15."}</p>`;
+    h += `<p class="note">${L?"Also: Circle Time 8:45–9:00 daily (each curator with their own stage), curators meet at 8:15.":"Плюс ежедневно: утренний круг 8:45–9:00 со своей ступенью, встреча кураторов в 8:15."}</p>`;
   document.getElementById("content").innerHTML = h;
   const sel = document.getElementById("selT");
   names.forEach(n=>{ const o=document.createElement("option");

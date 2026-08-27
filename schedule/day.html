@@ -27,6 +27,25 @@ font-size:13px; margin:8px 0; max-width:900px; }
 .staff { background:var(--soft); border:1px solid var(--line); border-radius:8px; padding:8px 12px;
 font-size:13.5px; margin:8px 0 4px; max-width:900px; }
 .staff b { color:var(--petrol); }
+.stick { position:sticky; left:8px; display:inline-block; text-align:left; }
+.wrap { overflow-x:auto; -webkit-overflow-scrolling:touch; margin:14px 0 26px; }
+.wrap table { margin:0; }
+@media (max-width: 720px){
+  header { padding:10px 14px; }
+  nav.crumbs { padding:8px 12px 0; }
+  main { padding:10px 10px 32px; }
+  table { max-width:none; }
+  .wrap table { width:auto; min-width:100%; table-layout:auto !important; }
+  .wrap col { width:auto !important; }
+  .wrap th, .wrap td { min-width:108px; padding:5px 6px; }
+  .wrap th { font-size:12px; }
+  .wrap td .s { font-size:12.5px; }
+  .wrap td .t { font-size:11.5px; }
+  .wrap th.timecol, .wrap td.timecol { position:sticky; left:0; z-index:1;
+    background:#fafcfc; min-width:0; box-shadow:2px 0 0 var(--line); }
+  .wrap th.timecol { background:var(--soft); }
+  .wrap td.brk { min-width:0; }
+}
 @media print {
   nav.crumbs, .controls, .draft { display:none !important; }
   header { background:#fff !important; padding:0 0 4px; }
@@ -38,6 +57,8 @@ font-size:13.5px; margin:8px 0 4px; max-width:900px; }
   table { font-size:10px; margin:4px 0 8px; max-width:100%; page-break-inside:avoid; break-inside:avoid; }
   th, td { padding:2px 4px; }
   th { font-size:9.5px; } td .s { font-size:9.5px; } td .t { font-size:8px; }
+  .wrap { overflow:visible; margin:4px 0 8px; }
+  .wrap table { margin:0; }
   .staff { font-size:9px; padding:2px 6px; margin:2px 0; background:#fff !important; }
   .timecol { font-size:8.5px; }
   h2 { font-size:12px; margin:0 0 2px; page-break-before:always; break-before:page; }
@@ -116,7 +137,7 @@ function render(){
   const L = LANG==="en";
   const rows = [
     [L?"8:20–8:35":"8:20–8:35", "TXT", L?"Morning exercise (optional)":"Зарядка (для тех, кто уже пришёл)"],
-    [L?"8:45–9:00":"8:45–9:00", "TXT", L?"Circle Time — curators, whole stage together":"Утренний круг — кураторы, всем потоком"],
+    [L?"8:45–9:00":"8:45–9:00", "TXT", L?"Circle Time — curators, each with their own stage":"Утренний круг — кураторы по своим ступеням"],
     ["9:05–9:55","1","1"], ["10:05–10:55","2","2"], ["11:05–11:55","3","3"],
     ["11:55–12:25","LUNCH",null], ["12:00–12:50",null,"4U"], ["12:25–13:10","HW",null],
     ["12:50–13:20",null,"LUNCH"], ["13:15–14:05","4L","HW"],
@@ -124,22 +145,23 @@ function render(){
     ["16:05–16:20","TXT", L?"Reflection":"Рефлексия"],
     ["16:20–16:30","TXT", L?"Snack":"Полдник"],
   ];
-  let h = `<h2>${L?DAYS_EN[d]:DAYS[d]}</h2><table><tr><th class="timecol">${L?"Time":"Время"}</th>` +
+  let h = `<h2>${L?DAYS_EN[d]:DAYS[d]}</h2><div class="wrap"><table><tr><th class="timecol">${L?"Time":"Время"}</th>` +
           CLASSES.map(c=>`<th>${c}</th>`).join("") + "</tr>";
   for (const r of rows){
     const [time, lo, up] = r;
     h += `<tr><td class="timecol">${time}</td>`;
-    if (lo === "TXT"){ h += `<td class="brk" colspan="6">${up}</td></tr>`; continue; }
+    if (lo === "TXT"){ h += `<td class="brk" colspan="6" style="text-align:left"><span class="stick">${up}</span></td></tr>`; continue; }
     for (const c of CLASSES){
-      const code = LOWER.includes(c) ? lo : up;
+      const low = LOWER.includes(c);
+      const code = low ? lo : up;
       if (code === null) h += "<td></td>";
-      else if (code === "LUNCH") h += brk(L?"lunch":"обед");
-      else if (code === "HW") h += brk((L?"homework — ":"домашняя работа — ") + (L?"Olga S. + Elizaveta":"Ольга С. + Елизавета"));
+      else if (code === "LUNCH") h += brk((L?"lunch":"обед") + " · " + (low?"11:55–12:25":"12:50–13:20"));
+      else if (code === "HW") h += brk((L?"Prep":"самостоятельная работа") + " · " + (low?"12:25–13:10":"13:20–14:05") + (L?" — Olga S. + Elizaveta":" — Ольга С. + Елизавета"));
       else h += cellHtml(get(d, code, c));
     }
     h += "</tr>";
   }
-  h += `</table><p class="note">${L
+  h += `</table></div><p class="note">${L
     ? "Before lessons: 8:00–8:45 breakfast & play · 8:15 curators meet the day · first Monday of each month 8:00–8:40 staff meeting (assistants until 8:30, then they meet the children)."
     : "До уроков: 8:00–8:45 завтрак и игры · 8:15 — встреча кураторов · в первый понедельник месяца 8:00–8:40 сбор педагогов (до 8:30 вместе с ассистентами, дальше ассистенты — на приёме детей)."}</p>`;
   document.getElementById("content").innerHTML =
