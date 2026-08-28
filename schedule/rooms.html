@@ -17,6 +17,10 @@ table { border-collapse:collapse; margin:14px 0 26px; width:100%; max-width:1200
 th, td { border:1px solid var(--line); padding:6px 8px; vertical-align:top; text-align:center; }
 th { background:var(--soft); font-weight:600; font-size:13px; }
 td .s { font-weight:600; font-size:13.5px; } td .t { color:#4a6b6e; font-size:12px; }
+.rooms { display:flex; flex-wrap:wrap; gap:3px; justify-content:center; margin-top:4px; }
+.r { font-size:11px; font-weight:600; letter-spacing:.02em; color:#7a5a1e;
+background:#f6efdd; border:1px solid #e6d7b4; border-radius:4px; padding:1px 5px;
+display:inline-block; white-space:nowrap; }
 td.eng { background:#e9f1fb; } td.elect { background:#ecf6e8; }
 td.brk { background:#fbf6ea; color:#8a7a55; font-size:12.5px; }
 h2 { font-size:16px; margin:16px 0 2px; }
@@ -41,6 +45,8 @@ font-size:13.5px; margin:8px 0 4px; max-width:900px; }
   .wrap th { font-size:12px; }
   .wrap td .s { font-size:12.5px; }
   .wrap td .t { font-size:11.5px; }
+  .wrap td .r { font-size:10.5px; padding:0 4px; }
+  .wrap td .rooms { gap:2px; margin-top:3px; }
   .wrap th.timecol, .wrap td.timecol { position:sticky; left:0; z-index:1;
     background:#fafcfc; min-width:0; box-shadow:2px 0 0 var(--line); }
   .wrap th.timecol { background:var(--soft); }
@@ -57,6 +63,7 @@ font-size:13.5px; margin:8px 0 4px; max-width:900px; }
   table { font-size:10px; margin:4px 0 8px; max-width:100%; page-break-inside:avoid; break-inside:avoid; }
   th, td { padding:2px 4px; }
   th { font-size:9.5px; } td .s { font-size:9.5px; } td .t { font-size:8px; }
+  .r { font-size:7.5px; padding:0 3px; } .rooms { gap:2px; margin-top:2px; }
   .wrap { overflow:visible; margin:4px 0 8px; }
   .wrap table { margin:0; }
   .staff { font-size:9px; padding:2px 6px; margin:2px 0; background:#fff !important; }
@@ -91,7 +98,7 @@ const ROOM_EN = {"Столовая":"Canteen"};
 const HWR = {"Y2":"Alfa 2","Y3-1":"Alfa 3","Y3-2":"Alfa 1",
              "Y4":"Alfa 4","Y5":"Alfa 5","Y6":"Alfa 5"};
 function trR(r){ return LANG==="en" ? (ROOM_EN[r]||r) : r; }
-function roomLine(r){ return r ? `<div class="r">${trR(r)}</div>` : ""; }
+function roomLine(r){ return r ? `<div class="rooms"><span class="r">${trR(r)}</span></div>` : ""; }
 const DAYS = ["Пн","Вт","Ср","Чт","Пт"];
 const DAYS_EN = ["Monday","Tuesday","Wednesday","Thursday","Friday"];
 const CLASSES = ["Y2","Y3-1","Y3-2","Y4","Y5","Y6"];
@@ -139,10 +146,10 @@ function cellHtml(v, d, t, c){
   let cls = subj.includes("Английск") ? "eng" : (subj.includes("электив") ? "elect" : "");
   const who = engLabel(subj) || ts.map(trT).join(", ");
   const rm = RM[d+"|"+t+"|"+c];
-  const rHtml = rm ? `<div class="r">${rm.split(" · ").map(p=>{
+  const rHtml = rm ? `<div class="rooms">${rm.split(" · ").map(p=>{
       const i = p.indexOf(" → ");
-      return i < 0 ? trR(p) : p.slice(0,i+3) + trR(p.slice(i+3));
-    }).join(" · ")}</div>` : "";
+      return `<span class="r">${i < 0 ? trR(p) : p.slice(0,i+3) + trR(p.slice(i+3))}</span>`;
+    }).join("")}</div>` : "";
   return `<td class="${cls}"><div class="s">${trS(subj)}</div><div class="t">${who}</div>${rHtml}</td>`;
 }
 
