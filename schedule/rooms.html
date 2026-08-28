@@ -1,6 +1,6 @@
 <!DOCTYPE html><html lang="ru"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Расписание по педагогам</title><style>
+<title>Кабинеты</title><style>
 :root { --ink:#1a3c40; --petrol:#0f6b70; --soft:#e8f2f2; --line:#d5e2e2; }
 * { box-sizing:border-box; } body { font:15px/1.45 -apple-system,'Segoe UI',Roboto,sans-serif;
 color:var(--ink); margin:0; background:#fafcfc; }
@@ -68,7 +68,7 @@ font-size:13.5px; margin:8px 0 4px; max-width:900px; }
 }
 @page { size: A4 landscape; margin: 9mm; }
 </style></head><body>
-<header><h1 id="pageTitle">Расписание по педагогам</h1><span class="sub">2026/27 · Module I</span></header>
+<header><h1 id="pageTitle">Кабинеты</h1><span class="sub">2026/27 · Module I</span></header>
 <nav class="crumbs"><a id="cr0" href="../#/">← Портал педагогов</a> ·
 <a id="cr1" href="day.html">День</a> · <a id="cr2" href="classes.html">По классам</a> · <a id="cr3" href="teachers.html">По педагогам</a> · <a id="cr4" href="rooms.html">Кабинеты</a></nav>
 <main>
@@ -100,7 +100,7 @@ let LANG = (new URLSearchParams(location.search).get("lang") === "en") ? "en" : 
 const TL = {"1":"9:05–9:55","2":"10:05–10:55","3":"11:05–11:55","4L":"13:15–14:05",
             "4U":"12:00–12:50","5":"14:10–15:00","6":"15:10–16:00"};
 function slots(c){ return ["1","2","3", LOWER.includes(c)?"4L":"4U", "5","6"]; }
-const TITLE_RU = "Расписание по педагогам", TITLE_EN = "Timetable by Teacher";
+const TITLE_RU = "Кабинеты", TITLE_EN = "Rooms";
 function applyChrome(){
   const L = LANG==="en";
   document.getElementById("pageTitle").textContent = L?TITLE_EN:TITLE_RU;
@@ -146,97 +146,31 @@ function cellHtml(v, d, t, c){
   return `<td class="${cls}"><div class="s">${trS(subj)}</div><div class="t">${who}</div>${rHtml}</td>`;
 }
 
-const teachers = {};
-for (const k in DATA){
-  const [d,t,c] = k.split("|");
-  for (const tch of DATA[k][1]){
-    teachers[tch] = teachers[tch] || {};
-    const kk = d+"|"+t;
-    teachers[tch][kk] = teachers[tch][kk] || {subj: DATA[k][0], cls: []};
-    teachers[tch][kk].cls.push(c);
-  }
-}
-const names = Object.keys(teachers).sort((a,b)=>
-  Object.keys(teachers[b]).length - Object.keys(teachers[a]).length);
-let CUR = 0;
 function render(){
   const L = LANG==="en";
-  const name = names[CUR];
-  const sch = teachers[name];
-  const ORDER = ["1","2","3","4U","LUNCH","4L","5","6"];
-  const LBL = {"1":"1 · 9:05","2":"2 · 10:05","3":"3 · 11:05",
-    "4U": (L?"4 (upper) · 12:00–12:50":"4 (ст.) · 12:00–12:50"), "4L": (L?"4 (lower) · 13:15–14:05":"4 (мл.) · 13:15–14:05"),
-    "5":"5 · 14:10","6":"6 · 15:10"};
-  let h = `<div class="controls"><label>${L?"Teacher":"Педагог"}: <select id="selT"></select></label>
-           <button class="act" onclick="window.print()">🖨 ${L?"Print":"Печать"}</button>
+  let h = `<div class="controls"><button class="act" onclick="window.print()">🖨 ${L?"Print":"Печать"}</button>
            <button class="act" onclick="toggleLang()">${L?"RU":"EN"}</button></div>`;
-  h += `<h2>${L?(T_EN[name]||name):(T_RU[name]||name)} — ${Object.keys(sch).length} ${L?"h/week":"ч/нед"}</h2>`;
-  const busyDay = DAYS.map((x,i)=> Object.keys(sch).some(k=>k.startsWith(i+"|")));
-  h += `<div class="wrap"><table style="table-layout:fixed"><colgroup><col style="width:130px">` +
-       `<col span="5"></colgroup><tr><th class="timecol">${L?"Slot":"Слот"}</th>` +
-       DAYS.map((x,i)=>`<th>${L?DAYS_EN[i]:x}${busyDay[i]?"":(L?" · free":" · свободен")}</th>`).join("") + "</tr>";
-  const isCurLower = name === "Ольга Сальникова", isCurUpper = name === "Лиза";
-  for (const t of ORDER){
-    if (t === "4U" && (isCurLower || isCurUpper)){
-      const own = isCurLower
-        ? (L?"lunch & prep of the lower stage — own group (11:55–13:10), then supporting Elizaveta with the upper stage (till 14:05)"
-           :"обед и самостоятельная работа младших — со своими (11:55–13:10), затем на подхвате у Елизаветы со старшими (до 14:05)")
-        : (L?"supporting Olga S. with the lower stage (11:55–13:10), then lunch & prep of the upper stage — own group (12:50–14:05)"
-           :"на подхвате у Ольги С. с младшими (11:55–13:10), затем обед и самостоятельная работа старших — со своими (12:50–14:05)");
-      h += `<tr><td class="timecol">11:55–14:05</td><td class="brk" colspan="5" style="text-align:left"><span class="stick">${own}</span>` +
-           `<span class="r" style="display:inline-block">${L?"lower":"младшие"}: Year 2 · Year 3 · Library</span> ` +
-           `<span class="r" style="display:inline-block">${L?"upper":"старшие"}: Year 4 · Year 5+6</span></td></tr>`;
-      continue;
-    }
-    if (t === "4L" && (isCurLower || isCurUpper)) continue;
-    if (t === "LUNCH"){
-      if (isCurLower || isCurUpper) continue;
-      h += `<tr><td class="timecol">${L?"Lunch":"Обед"} · 12:50–13:15</td><td class="brk" colspan="5" style="text-align:left"><span class="stick">${L?"lunch break — 25 minutes":"обеденный перерыв — 25 минут"}</span></td></tr>`;
-      continue;
-    }
-    h += `<tr><td class="timecol">${LBL[t]}</td>`;
-    for (let d=0; d<5; d++){
-      const v = sch[d+"|"+t];
-      if (v){
-        let cls = v.subj.includes("Английск") ? "eng" : (v.subj.includes("электив") ? "elect" : "");
-        h += `<td class="${cls}"><div class="s">${trS(v.subj)}</div><div class="t">${v.cls.join(" + ")}</div>${roomLine(RT[name+"|"+d+"|"+t])}</td>`;
-      } else h += "<td></td>";
-    }
-    h += "</tr>";
+  h += `<p class="note">${L
+    ? "Who owns each room and who just comes in for a few lessons. The shelf column is a hint for storage, not a rule."
+    : "Кто в помещении хозяин, а кто заходит на несколько уроков. Столбец о полках — подсказка для хранения, не правило."}</p>`;
+  for (const r of RINFO.order){
+    const v = RINFO.rooms[r];
+    h += `<h2>${trR(r)}</h2><p class="note">${L?v.purpose_en:v.purpose}</p>`;
+    h += `<div class="wrap"><table style="max-width:720px">` +
+         `<tr><th>${L?"Teacher":"Педагог"}</th><th>${L?"Role":"Роль"}</th>` +
+         `<th>${L?"Storage":"Место для материалов"}</th>` +
+         `<th style="text-align:right">${L?"Lessons/week":"Уроков/нед"}</th></tr>` +
+         v.people.map(p => {
+           const nm = L ? (T_EN[p[0]]||p[0]) : (T_RU[p[0]]||p[0]);
+           return `<tr><td>${p[1]?"<b>"+nm+"</b>":nm}</td>` +
+             `<td>${p[1]?(L?"based here":"базируется здесь"):(L?"comes for lessons":"приходит на уроки")}</td>` +
+             `<td>${L?p[4]:p[3]}</td>` +
+             `<td style="text-align:right">${p[2]}</td></tr>`;
+         }).join("") +
+         `<tr><th colspan="3">${L?"Booked per week":"Занято за неделю"}</th>` +
+         `<th style="text-align:right">${v.hours} ${L?"of":"из"} 35</th></tr></table></div>`;
   }
-  h += "</table></div>";
-  // выкладка: какие предметы ведёт педагог и по скольку уроков в неделю
-  const agg = {};
-  for (const kk in sch){
-    const v = sch[kk];
-    const key = v.subj + "||" + v.cls.slice().sort().join(" + ");
-    agg[key] = (agg[key] || 0) + 1;
-  }
-  const srows = Object.keys(agg).map(k => { const [s,c] = k.split("||"); return [s,c,agg[k]]; })
-    .sort((a,b)=> b[2]-a[2] || a[0].localeCompare(b[0]) || a[1].localeCompare(b[1]));
-  h += `<h2>${L?"Subjects & hours":"Предметы и часы"}</h2><table style="max-width:560px">` +
-       `<tr><th>${L?"Subject":"Предмет"}</th><th>${L?"Class":"Класс"}</th><th style="text-align:right">${L?"Lessons/week":"Уроков/нед"}</th></tr>` +
-       srows.map(([s,c,n]) =>
-         `<tr><td>${trS(s)}</td><td>${c}</td><td style="text-align:right">${n}</td></tr>`).join("") +
-       `<tr><th colspan="2">${L?"Total":"Всего"}</th><th style="text-align:right">${Object.keys(sch).length}</th></tr></table>`;
-  const rcnt = {};
-  for (const kk in sch){ const r = RT[name+"|"+kk]; if (r) rcnt[r] = (rcnt[r]||0)+1; }
-  const home = PRIM[name];
-  const rlist = Object.keys(rcnt).sort((a,b)=>
-    (b===home?1:0)-(a===home?1:0) || rcnt[b]-rcnt[a] || a.localeCompare(b));
-  h += `<h2>${L?"Rooms":"Кабинеты"}</h2><table style="max-width:420px">` +
-       `<tr><th>${L?"Room":"Помещение"}</th><th style="text-align:right">${L?"Lessons/week":"Уроков/нед"}</th></tr>` +
-       rlist.map(r => r===home
-         ? `<tr><td><b>${trR(r)}</b> — ${L?"shelves here":"полочки здесь"}</td><td style="text-align:right"><b>${rcnt[r]}</b></td></tr>`
-         : `<tr><td>${trR(r)}</td><td style="text-align:right">${rcnt[r]}</td></tr>`).join("") + `</table>`;
-  if (isCurLower || isCurUpper)
-    h += `<p class="note">${L?"Also: Circle Time 8:45–9:00 daily (each curator with their own stage), curators meet at 8:15.":"Плюс ежедневно: утренний круг 8:45–9:00 со своей ступенью, встреча кураторов в 8:15."}</p>`;
   document.getElementById("content").innerHTML = h;
-  const sel = document.getElementById("selT");
-  names.forEach(n=>{ const o=document.createElement("option");
-    o.text = (L?(T_EN[n]||n):(T_RU[n]||n)) + " — " + Object.keys(teachers[n]).length; sel.add(o); });
-  sel.selectedIndex = CUR;
-  sel.onchange = () => { CUR = sel.selectedIndex; render(); };
 }
 function toggleLang(){ LANG = LANG==="ru" ? "en" : "ru"; applyChrome(); render(); }
 applyChrome();
