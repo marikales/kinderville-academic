@@ -29,6 +29,42 @@
       box-shadow: 0 1px 4px rgba(0,0,0,.15);
     }
     #lang-toggle:hover { opacity: .85; }
+
+    /* ---------- Мобильная версия ---------- */
+    /* Штатная тема docsify открывает боковое меню через transform на fixed-
+       элементе и одновременно сдвигает текст вправо. В мобильном Safari слой
+       меню не отрисовывался: текст уезжал, а слева оставалось пустое поле.
+       Здесь меню выезжает поверх текста через left, текст остаётся на месте. */
+    @media screen and (max-width: 768px) {
+      .sidebar {
+        width: min(86vw, 320px);
+        left: -100vw;
+        padding-top: 52px !important; /* перебиваем плагин поиска — иначе поле уезжает под кнопку */
+        background: #fff;
+        box-shadow: 2px 0 18px rgba(0, 0, 0, .18);
+        transform: none !important;
+        transition: none !important;
+        z-index: 60;
+      }
+      body.close .sidebar { left: 0; }
+
+      .content,
+      body.close .content { transform: none !important; }
+
+      /* Кнопка меню — сверху слева: снизу её перекрывает панель браузера */
+      .sidebar-toggle,
+      body.close .sidebar-toggle {
+        top: 0; bottom: auto;
+        width: auto;
+        padding: 14px 16px;
+        background: transparent;
+        z-index: 70;
+      }
+      .sidebar-toggle span { width: 22px; height: 2px; margin-bottom: 5px; }
+
+      .markdown-section { padding-top: 44px; }
+      body.close #lang-toggle { display: none; }
+    }
   </style>
 </head>
 <body>
