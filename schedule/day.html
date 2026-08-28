@@ -151,7 +151,7 @@ function render(){
   const brk = (txt) => `<td class="brk">${txt}</td>`;
   const L = LANG==="en";
   const rows = [
-    [L?"8:20–8:35":"8:20–8:35", "TXT", L?"Morning exercise (optional)":"Зарядка (для тех, кто уже пришёл)"],
+    [L?"8:20–8:35":"8:20–8:35", "TXT", L?"Wake up (optional)":"Wake up (для тех, кто уже пришёл)"],
     [L?"8:45–9:00":"8:45–9:00", "TXT", L?"Circle Time — curators, each with their own stage":"Утренний круг — кураторы по своим ступеням"],
     ["9:05–9:55","1","1"], ["10:05–10:55","2","2"], ["11:05–11:55","3","3"],
     ["11:55–12:25","LUNCH",null], ["12:00–12:50",null,"4U"], ["12:25–13:10","HW",null],
@@ -165,7 +165,7 @@ function render(){
   for (const r of rows){
     const [time, lo, up] = r;
     h += `<tr><td class="timecol">${time}</td>`;
-    if (lo === "TXT"){ h += `<td class="brk" colspan="6" style="text-align:left"><span class="stick">${up}</span></td></tr>`; continue; }
+    if (lo === "TXT"){ h += `<td class="brk" colspan="6">${up}</td></tr>`; continue; }
     for (const c of CLASSES){
       const low = LOWER.includes(c);
       const code = low ? lo : up;
