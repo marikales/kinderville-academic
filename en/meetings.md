@@ -14,10 +14,10 @@ Slots are taken from the current 2026/27 timetable so that each meeting sits rig
 
 | Day | Time | Circle | Who | Language |
 |---|---|---|---|---|
-| Friday | 16:05–17:00 | **Whole-team circle** | the whole primary team | RU |
+| Friday | 16:35–17:25 | **Whole-team circle** | the whole primary team | RU |
 | Tuesday | 11:05–11:55 | English | Maria, Albina, Sam | EN |
 | Wednesday | 10:05–10:55 | Y4–Y5 pair | Margarita, Elizaveta | RU |
-| Wednesday | 16:05–16:50 | Science | Albina, Olga S., Elizaveta | RU |
+| Wednesday | 16:35–17:15 | Science | Albina, Olga S., Elizaveta | RU |
 | Thursday | 11:05–11:55 | Y4 Science | Elizaveta, Sam | EN |
 | Friday | 10:05–10:55 | Y2 pair | Margarita, Olga S. | RU |
 | Friday | 14:10–15:00 | Academic circle | Olga S., Elizaveta, Gaiane, Olga P. | RU |
@@ -26,9 +26,9 @@ The whole-team circle and the academic circle fall in different weeks: in a whol
 
 ## The whole-team circle
 
-The only time in the week when the entire primary team can gather: Olga S., Elizaveta, Maria, Margarita, Gaiane, Olga P., Albina, Sam. Seven of the eight finish teaching at 16:00 and simply stay where they are.
+The only time in the week when the entire primary team can gather: Olga S., Elizaveta, Maria, Margarita, Gaiane, Olga P., Albina, Sam. Lessons end at 16:00 for everyone, but the curators — Olga S. and Elizaveta — run reflection until 16:20 and the snack until 16:30, so the circle starts at 16:35, once the children's day is over for all of them.
 
-This is the place for what does not fit into pairs and small circles: brainstorming, shared decisions, anything that concerns everyone at once. Every two weeks, one hour.
+This is the place for what does not fit into pairs and small circles: brainstorming, shared decisions, anything that concerns everyone at once. Every two weeks, fifty minutes.
 
 ## Once per module — on staff-training days
 
@@ -56,4 +56,4 @@ Separate from the circles is the curators' daily 8:15 briefing. That one is abou
 
 The science topic table (Russian → English), the Peterson ↔ Cambridge mapping a module ahead, and the shared standard for presenting written work. Anything that passes on a fact rather than works out a decision.
 
-*Checked against the timetable of 27 Aug. Re-check the slots whenever the master timetable is rebuilt.*
+*Checked against the timetable of 27 Aug and against the curators' duties (28 Aug): morning circle, lunch and prep 11:55–14:05, reflection and snack 16:05–16:30 — no circles in those windows. Re-check the slots whenever the master timetable is rebuilt.*
