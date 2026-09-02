@@ -35,7 +35,7 @@ This is the place for what does not fit into pairs and small circles: brainstorm
 At 16:05 the curators normally hold reflection, so on whole-team and Science days the children's day closes differently — without losing the reflection itself:
 
 - **Reflection happens at the end of prep** — led by the curator of that stage, as always: for the younger stage at the end of the 12:25–13:10 block, for the older one at the end of 13:20–14:05.
-- **The snack and home time, 16:05–16:30, are run by the assistants**: Pee Ann and Pee Mon with the younger stage, Pee Dee and Kru Pim with the older one.
+- **Home time, 16:05–16:30, is run by the assistants**: Pee Ann and Pee Mon with the younger stage, Pee Dee and Kru Pim with the older one.
 
 The shape of the children's day does not change: reflection stays daily and stays with the curator — only its place inside the day moves.
 
@@ -65,4 +65,4 @@ Separate from the circles is the curators' daily 8:15 briefing. That one is abou
 
 The science topic table (Russian → English), the Peterson ↔ Cambridge mapping a module ahead, and the shared standard for presenting written work. Anything that passes on a fact rather than works out a decision.
 
-*Checked against the timetable of 28 Aug (cells moved for the curators' lunch window and for the literacy window). Windows kept free of circles: the morning circle; 11:05–11:55, both curators' lunch; 11:55–14:05, lunch and prep with the children. The 16:05–16:30 window (reflection and snack) is open to circles only on the terms above: reflection at the end of prep, assistants afterwards. Three circles moved with the timetable: Homeroom from 14:10 to 15:10 on Monday, English from Tuesday 11:05 to 12:05, Y4 Science from Thursday 11:05 to 10:05. Re-check the slots whenever the master timetable is rebuilt.*
+*Checked against the timetable of 28 Aug (cells moved for the curators' lunch window and for the literacy window). Windows kept free of circles: the morning circle; 11:05–11:55, both curators' lunch; 11:55–14:05, lunch and prep with the children. The 16:05–16:30 window (reflection and home time) is open to circles only on the terms above: reflection at the end of prep, assistants afterwards. Three circles moved with the timetable: Homeroom from 14:10 to 15:10 on Monday, English from Tuesday 11:05 to 12:05, Y4 Science from Thursday 11:05 to 10:05. Re-check the slots whenever the master timetable is rebuilt.*
