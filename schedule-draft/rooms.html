@@ -1,0 +1,194 @@
+<!DOCTYPE html><html lang="ru"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Кабинеты · ЧЕРНОВИК</title><style>
+:root { --ink:#1a3c40; --petrol:#0f6b70; --soft:#e8f2f2; --line:#d5e2e2; }
+* { box-sizing:border-box; } body { font:15px/1.45 -apple-system,'Segoe UI',Roboto,sans-serif;
+color:var(--ink); margin:0; background:#fafcfc; }
+header { background:var(--petrol); color:#fff; padding:12px 22px; }
+header h1 { font-size:17px; margin:0; font-weight:600; display:inline; color:#e9f0ef; letter-spacing:.02em; }
+header .sub { color:#c7d8d7; opacity:1; font-size:12.5px; margin-left:10px; }
+.circle { background:#fff6e5; border-left:3px solid #c98a12; }
+.circle .cn { font-weight:600; color:#8a5c00; }
+.circle .cw { font-size:12px; color:#7a6a4a; }
+.circle .cf { font-size:11.5px; color:#9a8a6a; font-style:italic; }
+nav.crumbs { padding:10px 22px 0; font-size:13.5px; } nav.crumbs a { color:var(--petrol); }
+main { padding:12px 22px 40px; }
+.controls { display:flex; gap:10px; align-items:center; flex-wrap:wrap; margin:8px 0 4px; }
+select, button.act { font-size:14px; padding:6px 12px; border-radius:8px; border:1px solid var(--line);
+background:#fff; cursor:pointer; }
+button.act { background:var(--petrol); color:#fff; border-color:var(--petrol); }
+table { border-collapse:collapse; margin:14px 0 26px; width:100%; max-width:1200px; }
+th, td { border:1px solid var(--line); padding:6px 8px; vertical-align:top; text-align:center; }
+th { background:var(--soft); font-weight:600; font-size:13px; }
+td .s { font-weight:600; font-size:13.5px; } td .t { color:#4a6b6e; font-size:12px; }
+.rooms { display:flex; flex-wrap:wrap; gap:3px; justify-content:center; margin-top:4px; }
+.r { font-size:11px; font-weight:600; letter-spacing:.02em; color:#7a5a1e;
+background:#f6efdd; border:1px solid #e6d7b4; border-radius:4px; padding:1px 5px;
+display:inline-block; white-space:nowrap; }
+td.eng { background:#e9f1fb; } td.elect { background:#ecf6e8; }
+td.brk { background:#fbf6ea; color:#8a7a55; font-size:12.5px; }
+h2 { font-size:16px; margin:16px 0 2px; }
+.note { color:#5b7a7d; font-size:13px; margin:4px 0 8px; max-width:900px; }
+.timecol { white-space:nowrap; font-size:12.5px; color:#4a6b6e; }
+.draft { background:#fff3d6; border:1px solid #e8d49a; border-radius:8px; padding:6px 12px;
+font-size:13px; margin:8px 0; max-width:900px; }
+.staff { background:var(--soft); border:1px solid var(--line); border-radius:8px; padding:8px 12px;
+font-size:13.5px; margin:8px 0 4px; max-width:900px; }
+.staff b { color:var(--petrol); }
+.stick { position:sticky; left:8px; display:inline-block; text-align:left; }
+.wrap { overflow-x:auto; -webkit-overflow-scrolling:touch; margin:14px 0 26px; }
+.wrap table { margin:0; }
+@media (max-width: 720px){
+  header { padding:10px 14px; }
+  nav.crumbs { padding:8px 12px 0; }
+  main { padding:10px 10px 32px; }
+  table { max-width:none; }
+  .wrap table { width:auto; min-width:100%; table-layout:auto !important; }
+  .wrap col { width:auto !important; }
+  .wrap th, .wrap td { min-width:108px; padding:5px 6px; }
+  .wrap th { font-size:12px; }
+  .wrap td .s { font-size:12.5px; }
+  .wrap td .t { font-size:11.5px; }
+  .wrap td .r { font-size:10.5px; padding:0 4px; }
+  .wrap td .rooms { gap:2px; margin-top:3px; }
+  .wrap th.timecol, .wrap td.timecol { position:sticky; left:0; z-index:1;
+    background:#fafcfc; min-width:0; box-shadow:2px 0 0 var(--line); }
+  .wrap th.timecol { background:var(--soft); }
+  .wrap td.brk { min-width:0; }
+}
+@media print {
+  nav.crumbs, .controls, .draft { display:none !important; }
+  header { background:#fff !important; padding:0 0 4px; }
+  header h1 { color:#000 !important; font-size:14px; }
+  header .sub { color:#555 !important; }
+  body { background:#fff !important; }
+  html, body, main, #content { overflow:visible !important; height:auto !important; }
+  main { padding:0; }
+  table { font-size:10px; margin:4px 0 8px; max-width:100%; page-break-inside:avoid; break-inside:avoid; }
+  th, td { padding:2px 4px; }
+  th { font-size:9.5px; } td .s { font-size:9.5px; } td .t { font-size:8px; }
+  .r { font-size:7.5px; padding:0 3px; } .rooms { gap:2px; margin-top:2px; }
+  .wrap { overflow:visible; margin:4px 0 8px; }
+  .wrap table { margin:0; }
+  .staff { font-size:9px; padding:2px 6px; margin:2px 0; background:#fff !important; }
+  .timecol { font-size:8.5px; }
+  h2 { font-size:12px; margin:0 0 2px; page-break-before:always; break-before:page; }
+  h2:first-of-type { page-break-before:auto; break-before:auto; }
+  .note { font-size:8.5px; margin:2px 0; }
+  * { -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+}
+@page { size: A4 landscape; margin: 9mm; }
+.draftbar{background:#8a2b2b;color:#fff;padding:9px 22px;font-size:13px;line-height:1.4}.draftbar a{color:#ffd9d9}</style></head><body>
+<header><h1 id="pageTitle">Кабинеты</h1><span class="sub">2026/27 · Module I</span></header><div class="draftbar">ЧЕРНОВИК — новая схема английского младшей ступени (Y3-1 отдельно, Y3-2+Y2 полосой) и раздельные кураторские часы. Действующее расписание — <a href="../schedule/classes.html">в разделе «Расписание»</a>.</div>
+<nav class="crumbs"><a id="cr0" href="../#/">← Портал педагогов</a> ·
+<a id="cr1" href="day.html">День</a> · <a id="cr2" href="classes.html">По классам</a> · <a id="cr3" href="teachers.html">По педагогам</a> · <a id="cr4" href="rooms.html">Кабинеты</a></nav>
+<main>
+<div class="staff" id="staffNote"></div>
+<div class="draft" id="draftNote">Версия 24.08 — согласована со всеми вводными; действует с 1 сентября. При изменениях мастер-расписания страница обновляется.</div>
+<div class="draft" id="lightNote"></div>
+<div id="content"></div>
+</main>
+<script>
+const DATA = {"1|3|Y4": ["Английский (ядро)", ["Альбина", "Сэм"]], "1|3|Y5": ["Английский (ядро)", ["Альбина", "Сэм"]], "1|3|Y6": ["Английский (ядро)", ["Альбина", "Сэм"]], "3|4U|Y4": ["Английский (ядро)", ["Альбина", "Сэм"]], "3|4U|Y5": ["Английский (ядро)", ["Альбина", "Сэм"]], "3|4U|Y6": ["Английский (ядро)", ["Альбина", "Сэм"]], "4|2|Y4": ["Английский (ядро)", ["Альбина", "Сэм"]], "4|2|Y5": ["Английский (ядро)", ["Альбина", "Сэм"]], "4|2|Y6": ["Английский (ядро)", ["Альбина", "Сэм"]], "0|3|Y4": ["Английская литература", ["Альбина", "Сэм"]], "0|3|Y5": ["Английская литература", ["Альбина", "Сэм"]], "0|3|Y6": ["Английская литература", ["Альбина", "Сэм"]], "2|2|Y4": ["Английская литература", ["Альбина", "Сэм"]], "2|2|Y5": ["Английская литература", ["Альбина", "Сэм"]], "2|2|Y6": ["Английская литература", ["Альбина", "Сэм"]], "1|1|Y4": ["Soft Skills", ["Лиза"]], "2|3|Y4": ["Soft Skills", ["Лиза"]], "3|1|Y5": ["Soft Skills", ["Лиза"]], "3|1|Y6": ["Soft Skills", ["Лиза"]], "4|3|Y5": ["Soft Skills", ["Лиза"]], "4|3|Y6": ["Soft Skills", ["Лиза"]], "0|2|Y3-2": ["Английский (ядро)", ["Альбина", "Сэм"]], "0|2|Y2": ["Английский (ядро)", ["Альбина", "Сэм"]], "1|4L|Y3-2": ["Английский (ядро)", ["Альбина", "Сэм"]], "1|4L|Y2": ["Английский (ядро)", ["Альбина", "Сэм"]], "3|3|Y3-2": ["Английский (ядро)", ["Альбина", "Сэм"]], "3|3|Y2": ["Английский (ядро)", ["Альбина", "Сэм"]], "2|3|Y3-2": ["Английская литература", ["Альбина", "Сэм"]], "2|3|Y2": ["Английская литература", ["Альбина", "Сэм"]], "4|3|Y3-2": ["Английская литература", ["Альбина", "Сэм"]], "4|3|Y2": ["Английская литература", ["Альбина", "Сэм"]], "3|1|Y2": ["Soft Skills", ["Ольга Сальникова"]], "4|2|Y2": ["Soft Skills", ["Ольга Сальникова"]], "2|1|Y3-1": ["Soft Skills", ["Ольга Сальникова"]], "2|1|Y3-2": ["Soft Skills", ["Ольга Сальникова"]], "3|2|Y3-1": ["Soft Skills", ["Ольга Сальникова"]], "3|2|Y3-2": ["Soft Skills", ["Ольга Сальникова"]], "0|1|Y5": ["Наука (рус.)", ["Лиза"]], "0|1|Y6": ["Наука (рус.)", ["Лиза"]], "1|4U|Y5": ["Thai Culture", ["Пи Ди"]], "1|4U|Y6": ["Thai Culture", ["Пи Ди"]], "0|1|Y2": ["Математика", ["Ольга Сальникова"]], "2|2|Y2": ["Математика", ["Ольга Сальникова"]], "4|1|Y2": ["Математика", ["Ольга Сальникова"]], "0|3|Y2": ["Русский язык", ["Маргарита"]], "4|4L|Y2": ["Русский язык", ["Маргарита"]], "2|4L|Y2": ["Русская литература", ["Маргарита"]], "1|1|Y2": ["Наука (рус.)", ["Ольга Сальникова"]], "0|4L|Y2": ["Подготовка руки к письму", ["Маргарита"]], "3|4L|Y2": ["Cambridge Math", ["Сэм"]], "3|2|Y2": ["Thai Culture", ["Пи Ди"]], "1|3|Y2": ["Hand Made", ["Кру Пим"]], "2|1|Y2": ["Hand Made", ["Кру Пим"]], "1|2|Y2": ["Lego / Настольные игры", ["Пи Эн"]], "1|4L|Y3-1": ["Русский язык", ["Гаянэ"]], "2|2|Y3-1": ["Русский язык", ["Гаянэ"]], "4|2|Y3-1": ["Русский язык", ["Гаянэ"]], "2|3|Y3-1": ["Русская литература", ["Гаянэ"]], "4|3|Y3-1": ["Русская литература", ["Гаянэ"]], "0|3|Y3-1": ["Математика", ["Ольга Порубова"]], "1|3|Y3-1": ["Математика", ["Ольга Порубова"]], "3|3|Y3-1": ["Математика", ["Ольга Порубова"]], "4|4L|Y3-1": ["Математика", ["Ольга Порубова"]], "0|1|Y3-1": ["Cambridge Math", ["Сэм"]], "3|1|Y3-1": ["Cambridge Math", ["Сэм"]], "1|1|Y3-1": ["Наука (англ.)", ["Альбина"]], "0|2|Y3-1": ["Thai Culture", ["Пи Ди"]], "0|4L|Y3-2": ["Математика", ["Ольга Порубова"]], "2|2|Y3-2": ["Математика", ["Ольга Порубова"]], "3|4L|Y3-2": ["Математика", ["Ольга Порубова"]], "4|2|Y3-2": ["Математика", ["Ольга Порубова"]], "0|1|Y3-2": ["Русский язык", ["Гаянэ"]], "1|3|Y3-2": ["Русский язык", ["Гаянэ"]], "3|1|Y3-2": ["Русский язык", ["Гаянэ"]], "4|1|Y3-2": ["Русский язык", ["Гаянэ"]], "0|3|Y3-2": ["Русская литература", ["Гаянэ"]], "2|4L|Y3-2": ["Русская литература", ["Гаянэ"]], "4|4L|Y3-2": ["Русская литература", ["Гаянэ"]], "1|2|Y3-2": ["Наука (рус.)", ["Ольга Сальникова"]], "1|1|Y3-2": ["Thai Culture", ["Пи Ди"]], "0|1|Y4": ["Математика", ["Ольга Порубова"]], "1|4U|Y4": ["Математика", ["Ольга Порубова"]], "3|1|Y4": ["Математика", ["Ольга Порубова"]], "4|4U|Y4": ["Математика", ["Ольга Порубова"]], "0|2|Y4": ["Русский язык", ["Маргарита"]], "2|1|Y4": ["Русский язык", ["Маргарита"]], "3|2|Y4": ["Русский язык", ["Маргарита"]], "4|1|Y4": ["Русский язык", ["Маргарита"]], "0|4U|Y4": ["Русская литература", ["Маргарита"]], "2|4U|Y4": ["Русская литература", ["Маргарита"]], "4|3|Y4": ["Русская литература", ["Маргарита"]], "1|2|Y4": ["Наука (рус.)", ["Лиза"]], "3|3|Y4": ["Thai Culture", ["Пи Ди"]], "0|2|Y5": ["Математика", ["Ольга Порубова"]], "1|2|Y5": ["Математика", ["Ольга Порубова"]], "2|4U|Y5": ["Математика", ["Ольга Порубова"]], "4|1|Y5": ["Математика", ["Ольга Порубова"]], "0|4U|Y5": ["Русский язык", ["Гаянэ"]], "1|1|Y5": ["Русский язык", ["Гаянэ"]], "2|1|Y5": ["Русский язык", ["Гаянэ"]], "3|2|Y5": ["Русский язык", ["Гаянэ"]], "2|3|Y5": ["Русская литература", ["Маргарита"]], "3|3|Y5": ["Русская литература", ["Маргарита"]], "4|4U|Y5": ["Русская литература", ["Маргарита"]], "0|4U|Y6": ["Математика", ["Ольга Порубова"]], "1|1|Y6": ["Математика", ["Ольга Порубова"]], "2|1|Y6": ["Математика", ["Ольга Порубова"]], "3|2|Y6": ["Математика", ["Ольга Порубова"]], "0|2|Y6": ["Русский язык", ["Гаянэ"]], "1|2|Y6": ["Русский язык", ["Гаянэ"]], "2|4U|Y6": ["Русский язык", ["Гаянэ"]], "3|3|Y6": ["Русский язык", ["Гаянэ"]], "2|3|Y6": ["Cambridge Math", ["Ольга Порубова"]], "4|4U|Y6": ["Русская литература", ["Гаянэ"]], "4|1|Y6": ["Наука (англ.)", ["Альбина"]], "1|2|Y3-1": ["Английский (ядро)", ["Сэм"]], "2|4L|Y3-1": ["Английский (ядро)", ["Сэм"]], "4|1|Y3-1": ["Английский (ядро)", ["Сэм"]], "0|4L|Y3-1": ["Английская литература", ["Альбина"]], "3|4L|Y3-1": ["Английская литература", ["Альбина"]], "0|5|Y4": ["Спорт-электив", ["Маргарита", "Кру Най", "Алекс"]], "0|5|Y5": ["Спорт-электив", ["Маргарита", "Кру Най", "Алекс"]], "0|5|Y6": ["Спорт-электив", ["Маргарита", "Кру Най", "Алекс"]], "0|5|Y2": ["Lego / Настольные игры", ["Пи Эн"]], "0|5|Y3-1": ["Наука (рус.)", ["Ольга Сальникова"]], "0|5|Y3-2": ["Cambridge Math", ["Сэм"]], "0|6|Y2": ["Спорт-электив", ["Маргарита", "Кру Най", "Алекс"]], "0|6|Y3-1": ["Спорт-электив", ["Маргарита", "Кру Най", "Алекс"]], "0|6|Y3-2": ["Спорт-электив", ["Маргарита", "Кру Най", "Алекс"]], "0|6|Y4": ["Английский (верхний)", ["Альбина", "Сэм"]], "0|6|Y5": ["Английский (верхний)", ["Альбина", "Сэм"]], "0|6|Y6": ["Английский (верхний)", ["Альбина", "Сэм"]], "1|5|Y2": ["Арт-электив", ["Альбина", "Мария", "Лиза"]], "1|5|Y3-1": ["Арт-электив", ["Альбина", "Мария", "Лиза"]], "1|5|Y3-2": ["Арт-электив", ["Альбина", "Мария", "Лиза"]], "1|5|Y4": ["Cambridge Math", ["Сэм"]], "1|5|Y5": ["Cambridge Math", ["Ольга Порубова"]], "1|5|Y6": ["Русская литература", ["Гаянэ"]], "1|6|Y4": ["Арт-электив", ["Мария", "Лиза"]], "1|6|Y5": ["Арт-электив", ["Мария", "Лиза"]], "1|6|Y6": ["Арт-электив", ["Мария", "Лиза"]], "1|6|Y3-1": ["Русская литература", ["Гаянэ"]], "1|6|Y3-2": ["Cambridge Math", ["Сэм"]], "1|6|Y2": ["Наука (англ.)", ["Альбина"]], "2|5|Y4": ["Спорт-электив", ["Маргарита", "Кру Най", "Алекс"]], "2|5|Y5": ["Спорт-электив", ["Маргарита", "Кру Най", "Алекс"]], "2|5|Y6": ["Спорт-электив", ["Маргарита", "Кру Най", "Алекс"]], "2|5|Y2": ["Английский (верхний)", ["Альбина"]], "2|5|Y3-1": ["Английский (верхний)", ["Сэм"]], "2|5|Y3-2": ["Английский (верхний)", ["Альбина"]], "2|6|Y2": ["Спорт-электив", ["Маргарита", "Кру Най", "Алекс"]], "2|6|Y3-1": ["Спорт-электив", ["Маргарита", "Кру Най", "Алекс"]], "2|6|Y3-2": ["Спорт-электив", ["Маргарита", "Кру Най", "Алекс"]], "2|6|Y4": ["Английский (верхний)", ["Альбина", "Сэм"]], "2|6|Y5": ["Английский (верхний)", ["Альбина", "Сэм"]], "2|6|Y6": ["Английский (верхний)", ["Альбина", "Сэм"]], "3|5|Y2": ["Арт-электив", ["Альбина", "Мария", "Лиза"]], "3|5|Y3-1": ["Арт-электив", ["Альбина", "Мария", "Лиза"]], "3|5|Y3-2": ["Арт-электив", ["Альбина", "Мария", "Лиза"]], "3|5|Y4": ["Наука (англ.)", ["Сэм"]], "3|5|Y5": ["Cambridge Math", ["Ольга Порубова"]], "3|5|Y6": ["Русская литература", ["Гаянэ"]], "3|6|Y4": ["Арт-электив", ["Мария", "Лиза"]], "3|6|Y5": ["Арт-электив", ["Мария", "Лиза"]], "3|6|Y6": ["Арт-электив", ["Мария", "Лиза"]], "3|6|Y3-1": ["Русский язык", ["Гаянэ"]], "3|6|Y3-2": ["Наука (англ.)", ["Альбина"]], "3|6|Y2": ["Hand Made", ["Кру Пим"]], "4|5|Y4": ["Спорт-электив", ["Маргарита", "Кру Най", "Алекс"]], "4|5|Y5": ["Спорт-электив", ["Маргарита", "Кру Най", "Алекс"]], "4|5|Y6": ["Спорт-электив", ["Маргарита", "Кру Най", "Алекс"]], "4|5|Y2": ["Английский (верхний)", ["Альбина"]], "4|5|Y3-1": ["Английский (верхний)", ["Сэм"]], "4|5|Y3-2": ["Английский (верхний)", ["Альбина"]], "4|6|Y2": ["Спорт-электив", ["Маргарита", "Кру Най", "Алекс"]], "4|6|Y3-1": ["Спорт-электив", ["Маргарита", "Кру Най", "Алекс"]], "4|6|Y3-2": ["Спорт-электив", ["Маргарита", "Кру Най", "Алекс"]], "4|6|Y4": ["Cambridge Math", ["Сэм"]], "4|6|Y5": ["Наука (англ.)", ["Альбина"]], "4|6|Y6": ["Cambridge Math", ["Ольга Порубова"]]};
+const SUBJ_EN = {"Математика": "Mathematics", "Русский язык": "Russian", "Русская литература": "Russian Literature", "Английский (ядро)": "English (core)", "Английская литература": "English Literature", "Английский (верхний)": "English (extension)", "Cambridge Math": "Cambridge Math", "Наука (рус.)": "Science (in Russian)", "Science (EN)": "Science (in English)", "Наука (англ.)": "Science (in English)", "Окружающий мир (рус.)": "Science (in Russian)", "Thai Culture": "Thai Culture", "Hand Made": "Hand Made", "Lego / Настольные игры": "Lego / Board Games", "Подготовка руки к письму": "Pre-writing Skills", "Soft Skills": "Soft Skills", "Спорт-электив": "Sport Elective", "Арт-электив": "ART Elective"};
+const T_EN = {"Альбина": "Albina", "Сэм": "Sam", "Ольга Порубова": "Olga Porubova", "Гаянэ": "Gaiane", "Маргарита": "Margarita", "Ольга Сальникова": "Olga Salnikova", "Лиза": "Elizaveta", "Пи Ди": "Pee Dee", "Пи Эн": "Pee Ann", "Кру Най": "Kru Nai", "Кру Пим": "Kru Pim", "Пи Мон": "Pee Mon", "Алекс": "Alex", "Мария": "Maria", "Анастасия": "Anastasia"};
+const T_RU = {"Ольга Сальникова":"Ольга С.","Ольга Порубова":"Ольга П.","Лиза":"Елизавета"};
+const RM = {"0|1|Y5": "Alfa 3", "0|1|Y6": "Alfa 3", "0|1|Y2": "Alfa 2", "0|1|Y3-1": "Alfa 4", "0|1|Y3-2": "Beta 1", "0|1|Y4": "Alfa 5", "0|2|Y2": "нач. → Alfa 3 · усил. → Alfa 4", "0|2|Y3-2": "нач. → Alfa 3 · усил. → Alfa 4", "0|2|Y3-1": "Alfa 1", "0|2|Y4": "Alfa 2", "0|2|Y5": "Alfa 5", "0|2|Y6": "Beta 1", "0|3|Y4": "нач. → Alfa 4 · усил. → Alfa 3", "0|3|Y5": "нач. → Alfa 4 · усил. → Alfa 3", "0|3|Y6": "нач. → Alfa 4 · усил. → Alfa 3", "0|3|Y2": "Alfa 2", "0|3|Y3-1": "Alfa 5", "0|3|Y3-2": "Beta 1", "0|4L|Y2": "Alfa 2", "0|4L|Y3-2": "Alfa 1", "0|4L|Y3-1": "Alfa 3", "0|4U|Y4": "Alfa 4", "0|4U|Y5": "Beta 1", "0|4U|Y6": "Alfa 5", "0|5|Y4": "Танцы → Beta 1 · Футбол → Field · Плавание → Pool", "0|5|Y5": "Танцы → Beta 1 · Футбол → Field · Плавание → Pool", "0|5|Y6": "Танцы → Beta 1 · Футбол → Field · Плавание → Pool", "0|5|Y2": "Alfa 3", "0|5|Y3-1": "Alfa 2", "0|5|Y3-2": "Alfa 4", "0|6|Y2": "Танцы → Beta 1 · Футбол → Field · Плавание → Pool", "0|6|Y3-1": "Танцы → Beta 1 · Футбол → Field · Плавание → Pool", "0|6|Y3-2": "Танцы → Beta 1 · Футбол → Field · Плавание → Pool", "0|6|Y4": "нач. → Alfa 3 · усил. → Alfa 4", "0|6|Y5": "нач. → Alfa 3 · усил. → Alfa 4", "0|6|Y6": "нач. → Alfa 3 · усил. → Alfa 4", "1|1|Y4": "Alfa 5", "1|1|Y2": "Alfa 2", "1|1|Y3-1": "Alfa 3", "1|1|Y3-2": "Alfa 4", "1|1|Y5": "Beta 1", "1|1|Y6": "Alfa 1", "1|2|Y2": "Alfa 1", "1|2|Y3-2": "Alfa 2", "1|2|Y4": "Alfa 3", "1|2|Y5": "Alfa 5", "1|2|Y6": "Beta 1", "1|2|Y3-1": "Alfa 4", "1|3|Y4": "нач. → Alfa 3 · усил. → Alfa 4", "1|3|Y5": "нач. → Alfa 3 · усил. → Alfa 4", "1|3|Y6": "нач. → Alfa 3 · усил. → Alfa 4", "1|3|Y2": "Alfa 2", "1|3|Y3-1": "Alfa 5", "1|3|Y3-2": "Beta 1", "1|4L|Y2": "нач. → Alfa 2 · усил. → Alfa 3", "1|4L|Y3-2": "нач. → Alfa 2 · усил. → Alfa 3", "1|4L|Y3-1": "Beta 1", "1|4U|Y5": "Alfa 4", "1|4U|Y6": "Alfa 4", "1|4U|Y4": "Alfa 5", "1|5|Y2": "Живопись → Alfa 4 · Кулинария → Столовая · Крафт → Alfa 2", "1|5|Y3-1": "Живопись → Alfa 4 · Кулинария → Столовая · Крафт → Alfa 2", "1|5|Y3-2": "Живопись → Alfa 4 · Кулинария → Столовая · Крафт → Alfa 2", "1|5|Y4": "Alfa 3", "1|5|Y5": "Alfa 5", "1|5|Y6": "Beta 1", "1|6|Y4": "Живопись → Alfa 4 · Кулинария → Столовая", "1|6|Y5": "Живопись → Alfa 4 · Кулинария → Столовая", "1|6|Y6": "Живопись → Alfa 4 · Кулинария → Столовая", "1|6|Y3-1": "Beta 1", "1|6|Y3-2": "Alfa 3", "1|6|Y2": "Alfa 2", "2|1|Y3-1": "Alfa 3", "2|1|Y3-2": "Alfa 3", "2|1|Y2": "Alfa 2", "2|1|Y4": "Alfa 4", "2|1|Y5": "Beta 1", "2|1|Y6": "Alfa 5", "2|2|Y4": "нач. → Alfa 4 · усил. → Alfa 3", "2|2|Y5": "нач. → Alfa 4 · усил. → Alfa 3", "2|2|Y6": "нач. → Alfa 4 · усил. → Alfa 3", "2|2|Y2": "Alfa 2", "2|2|Y3-1": "Beta 1", "2|2|Y3-2": "Alfa 5", "2|3|Y4": "Alfa 5", "2|3|Y2": "нач. → Alfa 2 · усил. → Alfa 3", "2|3|Y3-2": "нач. → Alfa 2 · усил. → Alfa 3", "2|3|Y3-1": "Beta 1", "2|3|Y5": "Alfa 4", "2|3|Y6": "Alfa 1", "2|4L|Y2": "Alfa 2", "2|4L|Y3-2": "Beta 1", "2|4L|Y3-1": "Alfa 3", "2|4U|Y4": "Alfa 4", "2|4U|Y5": "Alfa 5", "2|4U|Y6": "Beta 1", "2|5|Y4": "Танцы → Beta 1 · Футбол → Field · Плавание → Pool", "2|5|Y5": "Танцы → Beta 1 · Футбол → Field · Плавание → Pool", "2|5|Y6": "Танцы → Beta 1 · Футбол → Field · Плавание → Pool", "2|5|Y2": "Alfa 5", "2|5|Y3-2": "Alfa 5", "2|5|Y3-1": "Alfa 3", "2|6|Y2": "Танцы → Beta 1 · Футбол → Field · Плавание → Pool", "2|6|Y3-1": "Танцы → Beta 1 · Футбол → Field · Плавание → Pool", "2|6|Y3-2": "Танцы → Beta 1 · Футбол → Field · Плавание → Pool", "2|6|Y4": "нач. → Alfa 5 · усил. → Alfa 3", "2|6|Y5": "нач. → Alfa 5 · усил. → Alfa 3", "2|6|Y6": "нач. → Alfa 5 · усил. → Alfa 3", "3|1|Y5": "Alfa 5", "3|1|Y6": "Alfa 5", "3|1|Y2": "Alfa 3", "3|1|Y3-1": "Alfa 4", "3|1|Y3-2": "Beta 1", "3|1|Y4": "Alfa 1", "3|2|Y3-1": "Alfa 3", "3|2|Y3-2": "Alfa 3", "3|2|Y2": "Alfa 2", "3|2|Y4": "Alfa 4", "3|2|Y5": "Beta 1", "3|2|Y6": "Alfa 5", "3|3|Y2": "нач. → Alfa 5 · усил. → Alfa 3", "3|3|Y3-2": "нач. → Alfa 5 · усил. → Alfa 3", "3|3|Y3-1": "Alfa 1", "3|3|Y4": "Alfa 2", "3|3|Y5": "Alfa 4", "3|3|Y6": "Beta 1", "3|4L|Y2": "Alfa 2", "3|4L|Y3-2": "Alfa 1", "3|4L|Y3-1": "Alfa 3", "3|4U|Y4": "нач. → Alfa 5 · усил. → Alfa 4", "3|4U|Y5": "нач. → Alfa 5 · усил. → Alfa 4", "3|4U|Y6": "нач. → Alfa 5 · усил. → Alfa 4", "3|5|Y2": "Живопись → Alfa 4 · Кулинария → Столовая · Крафт → Alfa 3", "3|5|Y3-1": "Живопись → Alfa 4 · Кулинария → Столовая · Крафт → Alfa 3", "3|5|Y3-2": "Живопись → Alfa 4 · Кулинария → Столовая · Крафт → Alfa 3", "3|5|Y4": "Alfa 2", "3|5|Y5": "Alfa 5", "3|5|Y6": "Beta 1", "3|6|Y4": "Живопись → Alfa 4 · Кулинария → Столовая", "3|6|Y5": "Живопись → Alfa 4 · Кулинария → Столовая", "3|6|Y6": "Живопись → Alfa 4 · Кулинария → Столовая", "3|6|Y3-1": "Beta 1", "3|6|Y3-2": "Alfa 3", "3|6|Y2": "Alfa 2", "4|1|Y2": "Alfa 2", "4|1|Y3-2": "Alfa 1", "4|1|Y4": "Beta 1", "4|1|Y5": "Alfa 5", "4|1|Y6": "Alfa 3", "4|1|Y3-1": "Alfa 4", "4|2|Y4": "нач. → Alfa 2 · усил. → Alfa 4", "4|2|Y5": "нач. → Alfa 2 · усил. → Alfa 4", "4|2|Y6": "нач. → Alfa 2 · усил. → Alfa 4", "4|2|Y2": "Alfa 3", "4|2|Y3-1": "Beta 1", "4|2|Y3-2": "Alfa 5", "4|3|Y5": "Alfa 5", "4|3|Y6": "Alfa 5", "4|3|Y2": "нач. → Alfa 4 · усил. → Alfa 3", "4|3|Y3-2": "нач. → Alfa 4 · усил. → Alfa 3", "4|3|Y3-1": "Beta 1", "4|3|Y4": "Alfa 2", "4|4L|Y2": "Alfa 2", "4|4L|Y3-1": "Alfa 1", "4|4L|Y3-2": "Beta 1", "4|4U|Y4": "Alfa 5", "4|4U|Y5": "Alfa 4", "4|4U|Y6": "Beta 1", "4|5|Y4": "Танцы → Beta 1 · Футбол → Field · Плавание → Pool", "4|5|Y5": "Танцы → Beta 1 · Футбол → Field · Плавание → Pool", "4|5|Y6": "Танцы → Beta 1 · Футбол → Field · Плавание → Pool", "4|5|Y2": "Alfa 3", "4|5|Y3-2": "Alfa 3", "4|5|Y3-1": "Alfa 4", "4|6|Y2": "Танцы → Beta 1 · Футбол → Field · Плавание → Pool", "4|6|Y3-1": "Танцы → Beta 1 · Футбол → Field · Плавание → Pool", "4|6|Y3-2": "Танцы → Beta 1 · Футбол → Field · Плавание → Pool", "4|6|Y4": "Alfa 4", "4|6|Y5": "Alfa 3", "4|6|Y6": "Alfa 5"};        // кабинет класса в слоте
+const RT = {"Лиза|0|1": "Alfa 3", "Ольга Сальникова|0|1": "Alfa 2", "Сэм|0|1": "Alfa 4", "Гаянэ|0|1": "Beta 1", "Ольга Порубова|0|1": "Alfa 5", "Альбина|0|2": "Alfa 3", "Сэм|0|2": "Alfa 4", "Пи Ди|0|2": "Alfa 1", "Маргарита|0|2": "Alfa 2", "Ольга Порубова|0|2": "Alfa 5", "Гаянэ|0|2": "Beta 1", "Сэм|0|3": "Alfa 4", "Альбина|0|3": "Alfa 3", "Маргарита|0|3": "Alfa 2", "Ольга Порубова|0|3": "Alfa 5", "Гаянэ|0|3": "Beta 1", "Маргарита|0|4L": "Alfa 2", "Ольга Порубова|0|4L": "Alfa 1", "Альбина|0|4L": "Alfa 3", "Маргарита|0|4U": "Alfa 4", "Гаянэ|0|4U": "Beta 1", "Ольга Порубова|0|4U": "Alfa 5", "Маргарита|0|5": "Beta 1", "Кру Най|0|5": "Field", "Алекс|0|5": "Pool", "Пи Эн|0|5": "Alfa 3", "Ольга Сальникова|0|5": "Alfa 2", "Сэм|0|5": "Alfa 4", "Маргарита|0|6": "Beta 1", "Кру Най|0|6": "Field", "Алекс|0|6": "Pool", "Альбина|0|6": "Alfa 3", "Сэм|0|6": "Alfa 4", "Лиза|1|1": "Alfa 5", "Ольга Сальникова|1|1": "Alfa 2", "Альбина|1|1": "Alfa 3", "Пи Ди|1|1": "Alfa 4", "Гаянэ|1|1": "Beta 1", "Ольга Порубова|1|1": "Alfa 1", "Пи Эн|1|2": "Alfa 1", "Ольга Сальникова|1|2": "Alfa 2", "Лиза|1|2": "Alfa 3", "Ольга Порубова|1|2": "Alfa 5", "Гаянэ|1|2": "Beta 1", "Сэм|1|2": "Alfa 4", "Альбина|1|3": "Alfa 3", "Сэм|1|3": "Alfa 4", "Кру Пим|1|3": "Alfa 2", "Ольга Порубова|1|3": "Alfa 5", "Гаянэ|1|3": "Beta 1", "Альбина|1|4L": "Alfa 2", "Сэм|1|4L": "Alfa 3", "Гаянэ|1|4L": "Beta 1", "Пи Ди|1|4U": "Alfa 4", "Ольга Порубова|1|4U": "Alfa 5", "Мария|1|5": "Alfa 4", "Лиза|1|5": "Столовая", "Альбина|1|5": "Alfa 2", "Сэм|1|5": "Alfa 3", "Ольга Порубова|1|5": "Alfa 5", "Гаянэ|1|5": "Beta 1", "Мария|1|6": "Alfa 4", "Лиза|1|6": "Столовая", "Гаянэ|1|6": "Beta 1", "Сэм|1|6": "Alfa 3", "Альбина|1|6": "Alfa 2", "Ольга Сальникова|2|1": "Alfa 3", "Кру Пим|2|1": "Alfa 2", "Маргарита|2|1": "Alfa 4", "Гаянэ|2|1": "Beta 1", "Ольга Порубова|2|1": "Alfa 5", "Сэм|2|2": "Alfa 4", "Альбина|2|2": "Alfa 3", "Ольга Сальникова|2|2": "Alfa 2", "Гаянэ|2|2": "Beta 1", "Ольга Порубова|2|2": "Alfa 5", "Лиза|2|3": "Alfa 5", "Сэм|2|3": "Alfa 2", "Альбина|2|3": "Alfa 3", "Гаянэ|2|3": "Beta 1", "Маргарита|2|3": "Alfa 4", "Ольга Порубова|2|3": "Alfa 1", "Маргарита|2|4L": "Alfa 2", "Гаянэ|2|4L": "Beta 1", "Сэм|2|4L": "Alfa 3", "Маргарита|2|4U": "Alfa 4", "Ольга Порубова|2|4U": "Alfa 5", "Гаянэ|2|4U": "Beta 1", "Маргарита|2|5": "Beta 1", "Кру Най|2|5": "Field", "Алекс|2|5": "Pool", "Альбина|2|5": "Alfa 5", "Сэм|2|5": "Alfa 3", "Маргарита|2|6": "Beta 1", "Кру Най|2|6": "Field", "Алекс|2|6": "Pool", "Альбина|2|6": "Alfa 5", "Сэм|2|6": "Alfa 3", "Лиза|3|1": "Alfa 5", "Ольга Сальникова|3|1": "Alfa 3", "Сэм|3|1": "Alfa 4", "Гаянэ|3|1": "Beta 1", "Ольга Порубова|3|1": "Alfa 1", "Ольга Сальникова|3|2": "Alfa 3", "Пи Ди|3|2": "Alfa 2", "Маргарита|3|2": "Alfa 4", "Гаянэ|3|2": "Beta 1", "Ольга Порубова|3|2": "Alfa 5", "Альбина|3|3": "Alfa 5", "Сэм|3|3": "Alfa 3", "Ольга Порубова|3|3": "Alfa 1", "Пи Ди|3|3": "Alfa 2", "Маргарита|3|3": "Alfa 4", "Гаянэ|3|3": "Beta 1", "Сэм|3|4L": "Alfa 2", "Ольга Порубова|3|4L": "Alfa 1", "Альбина|3|4L": "Alfa 3", "Альбина|3|4U": "Alfa 5", "Сэм|3|4U": "Alfa 4", "Мария|3|5": "Alfa 4", "Лиза|3|5": "Столовая", "Альбина|3|5": "Alfa 3", "Сэм|3|5": "Alfa 2", "Ольга Порубова|3|5": "Alfa 5", "Гаянэ|3|5": "Beta 1", "Мария|3|6": "Alfa 4", "Лиза|3|6": "Столовая", "Гаянэ|3|6": "Beta 1", "Альбина|3|6": "Alfa 3", "Кру Пим|3|6": "Alfa 2", "Ольга Сальникова|4|1": "Alfa 2", "Гаянэ|4|1": "Alfa 1", "Маргарита|4|1": "Beta 1", "Ольга Порубова|4|1": "Alfa 5", "Альбина|4|1": "Alfa 3", "Сэм|4|1": "Alfa 4", "Альбина|4|2": "Alfa 2", "Сэм|4|2": "Alfa 4", "Ольга Сальникова|4|2": "Alfa 3", "Гаянэ|4|2": "Beta 1", "Ольга Порубова|4|2": "Alfa 5", "Лиза|4|3": "Alfa 5", "Сэм|4|3": "Alfa 4", "Альбина|4|3": "Alfa 3", "Гаянэ|4|3": "Beta 1", "Маргарита|4|3": "Alfa 2", "Маргарита|4|4L": "Alfa 2", "Ольга Порубова|4|4L": "Alfa 1", "Гаянэ|4|4L": "Beta 1", "Ольга Порубова|4|4U": "Alfa 5", "Маргарита|4|4U": "Alfa 4", "Гаянэ|4|4U": "Beta 1", "Маргарита|4|5": "Beta 1", "Кру Най|4|5": "Field", "Алекс|4|5": "Pool", "Альбина|4|5": "Alfa 3", "Сэм|4|5": "Alfa 4", "Маргарита|4|6": "Beta 1", "Кру Най|4|6": "Field", "Алекс|4|6": "Pool", "Сэм|4|6": "Alfa 4", "Альбина|4|6": "Alfa 3", "Ольга Порубова|4|6": "Alfa 5"};       // кабинет педагога в слоте
+const PRIM = {"Альбина": "Alfa 3", "Гаянэ": "Beta 1", "Кру Пим": "Alfa 2", "Лиза": "Alfa 5", "Маргарита": "Beta 1", "Мария": "Alfa 4", "Ольга Порубова": "Alfa 5", "Ольга Сальникова": "Alfa 2", "Пи Ди": "Alfa 4", "Пи Эн": "Alfa 3", "Сэм": "Alfa 4", "Кру Най": "Field", "Алекс": "Pool"};       // основной кабинет («полочки»)
+const MEET = [];       // круги команды (день · слот · кто · частота)
+const RINFO = {"order": ["Alfa 1", "Alfa 2", "Alfa 3", "Alfa 4", "Alfa 5", "Beta 1", "Столовая", "Field", "Pool"], "rooms": {"Alfa 1": {"purpose": "Библиотека, не учебный класс. Занята одним уроком в неделю, а на обеде и самостоятельной работе младших её занимает Y3-2.", "purpose_en": "The library, not a classroom. Booked for one lesson a week; during the lower-stage lunch and prep Y3-2 works here.", "hours": 10, "people": [["Ольга Порубова", false, 7, "половина полки", "half a shelf"], ["Гаянэ", false, 1, "ящик или ничего", "a drawer or nothing"], ["Пи Ди", false, 1, "ящик или ничего", "a drawer or nothing"], ["Пи Эн", false, 1, "ящик или ничего", "a drawer or nothing"]]}, "Alfa 2": {"purpose": "Обычный класс и главный кабинет науки — оборудование стоит здесь. На обеде и самостоятельной работе младших свободен: его занимает Y2.", "purpose_en": "A regular classroom and the main science room — the equipment lives here. Kept free during the lower-stage lunch and prep: Y2 works here.", "hours": 24, "people": [["Ольга Сальникова", true, 6, "небольшая полка", "a small shelf"], ["Кру Пим", true, 3, "небольшая полка", "a small shelf"], ["Маргарита", false, 6, "половина полки", "half a shelf"], ["Альбина", false, 4, "половина полки", "half a shelf"], ["Сэм", false, 3, "ящик или ничего", "a drawer or nothing"], ["Пи Ди", false, 2, "ящик или ничего", "a drawer or nothing"]]}, "Alfa 3": {"purpose": "Обычный класс, второй кабинет науки и место кураторского часа младших. На обеде и самостоятельной работе младших свободен: его занимает Y3-1.", "purpose_en": "A regular classroom, the second science room and home of the lower-stage curator hour. Kept free during the lower-stage lunch and prep: Y3-1 works here.", "hours": 29, "people": [["Альбина", true, 15, "полки и материалы", "shelves and materials"], ["Пи Эн", true, 1, "небольшая полка", "a small shelf"], ["Сэм", false, 7, "половина полки", "half a shelf"], ["Ольга Сальникова", false, 4, "половина полки", "half a shelf"], ["Лиза", false, 2, "ящик или ничего", "a drawer or nothing"]]}, "Alfa 4": {"purpose": "Обычный класс и студия живописи — там же, где она стояла в прошлом году. На обеде и самостоятельной работе старших свободен: его занимает Y4.", "purpose_en": "A regular classroom and the painting studio, where it was last year. Kept free during the upper-stage lunch and prep: Y4 works here.", "hours": 28, "people": [["Сэм", true, 15, "полки и материалы", "shelves and materials"], ["Мария", true, 4, "небольшая полка", "a small shelf"], ["Пи Ди", true, 2, "небольшая полка", "a small shelf"], ["Маргарита", false, 7, "половина полки", "half a shelf"]]}, "Alfa 5": {"purpose": "Обычный класс и место кураторского часа старших. На обеде и самостоятельной работе старших свободен: его занимают Y5 и Y6 вместе.", "purpose_en": "A regular classroom and home of the upper-stage curator hour. Kept free during the upper-stage lunch and prep: Y5 and Y6 work here together.", "hours": 25, "people": [["Ольга Порубова", true, 17, "полки и материалы", "shelves and materials"], ["Лиза", true, 4, "небольшая полка", "a small shelf"], ["Альбина", false, 4, "половина полки", "half a shelf"]]}, "Beta 1": {"purpose": "Зал в корпусе столовой: зеркала, доска, телевизор и парты. Полноценный кабинет, здесь же танцы.", "purpose_en": "The hall in the canteen building: mirrors, a board, a TV and desks. A full classroom, and the dance room.", "hours": 31, "people": [["Гаянэ", true, 24, "полки и материалы", "shelves and materials"], ["Маргарита", true, 7, "небольшая полка", "a small shelf"]]}, "Столовая": {"purpose": "Кухня для кулинарии — там готовить удобнее всего.", "purpose_en": "The kitchen for the cooking studio — the easiest place to actually cook.", "hours": 4, "people": [["Лиза", false, 4, "половина полки", "half a shelf"]]}, "Field": {"purpose": "Футбольное поле.", "purpose_en": "The football field.", "hours": 6, "people": [["Кру Най", true, 6, "небольшая полка", "a small shelf"]]}, "Pool": {"purpose": "Бассейн.", "purpose_en": "The swimming pool.", "hours": 6, "people": [["Алекс", true, 6, "небольшая полка", "a small shelf"]]}}};     // паспорт помещений
+const ROOM_EN = {"Столовая":"Canteen"};
+// Обед и домашка идут в своих кабинетах — они освобождены от уроков.
+const HWR = {"Y2":"Alfa 2","Y3-1":"Alfa 3","Y3-2":"Alfa 1",
+             "Y4":"Alfa 4","Y5":"Alfa 5","Y6":"Alfa 5"};
+function trR(r){ return LANG==="en" ? (ROOM_EN[r]||r) : r; }
+function roomLine(r){ return r ? `<div class="rooms"><span class="r">${trR(r)}</span></div>` : ""; }
+const DAYS = ["Пн","Вт","Ср","Чт","Пт"];
+const DAYS_EN = ["Monday","Tuesday","Wednesday","Thursday","Friday"];
+const CLASSES = ["Y2","Y3-1","Y3-2","Y4","Y5","Y6"];
+const LOWER = ["Y2","Y3-1","Y3-2"];
+let LANG = (new URLSearchParams(location.search).get("lang") === "en") ? "en" : "ru";
+const TL = {"1":"9:05–9:55","2":"10:05–10:55","3":"11:05–11:55","4L":"13:15–14:05",
+            "4U":"12:00–12:50","5":"14:10–15:00","6":"15:10–16:00"};
+function slots(c){ return ["1","2","3", LOWER.includes(c)?"4L":"4U", "5","6"]; }
+const TITLE_RU = "Кабинеты", TITLE_EN = "Rooms";
+function applyChrome(){
+  const L = LANG==="en";
+  document.getElementById("pageTitle").textContent = L?TITLE_EN:TITLE_RU;
+  document.title = (L?TITLE_EN:TITLE_RU);
+  const cr = [["← Портал педагогов","← Teacher Portal"],["День","Day"],["По классам","By class"],["По педагогам","By teacher"],["Кабинеты","Rooms"]];
+  cr.forEach((p,i)=>{ const el=document.getElementById("cr"+i); if(el) el.textContent=p[L?1:0]; });
+  const ln = document.getElementById("lightNote");
+  if(ln) ln.innerHTML = L
+    ? "Light programme: Light children can only be in Y3-2, Y4 and Y5.<br>Y2, Y3-1 and Y6 cannot take Light children — their core lessons may sit after lesson 4."
+    : "Программа Light: Light-дети могут быть только в Y3-2, Y4 и Y5.<br>В Y2, Y3-1 и Y6 Light-детей быть не может — обязательные уроки этих классов могут стоять после 4-го урока.";
+  const d = document.getElementById("draftNote");
+  if(d) d.textContent = L ? "Version 28.08 — rooms added. In effect from 1 September; updated whenever the master timetable changes."
+                          : "Версия 28.08 — добавлены кабинеты. Действует с 1 сентября; при изменениях мастер-расписания страница обновляется.";
+  const st = document.getElementById("staffNote");
+  if(st) st.innerHTML = L
+    ? "<b>Y2–Y3</b> — curator Olga Salnikova · assistants Pee Ann &amp; Pee Mon<br><b>Y4–Y6</b> — curator Elizaveta Khosha · assistants Pee Dee &amp; Kru Pim"
+    : "<b>Y2–Y3</b> — куратор Ольга Сальникова · ассистенты Пи Энн и Пи Мон<br><b>Y4–Y6</b> — куратор Елизавета Хоша · ассистенты Пи Ди и Кру Пим";
+  const home = document.getElementById("cr0");
+  if(home) home.setAttribute("href", L ? "../#/en/" : "../#/");
+  ["cr1","cr2","cr3"].forEach(id=>{ const el=document.getElementById(id);
+    if(el){ const base = el.getAttribute("href").split("?")[0]; el.setAttribute("href", L ? base+"?lang=en" : base); }});
+}
+function get(d,t,c){ return DATA[d+"|"+t+"|"+c] || null; }
+function trS(s){ return LANG==="en" ? (SUBJ_EN[s]||s) : s; }
+function trT(t){ return LANG==="en" ? (T_EN[t]||t) : (T_RU[t]||t); }
+function engLabel(subj){
+  if (subj==="Английский (ядро)" || subj==="Английский (верхний)")
+    return LANG==="en" ? "basic — Albina · advanced — Sam" : "начальный — Альбина · усиленный — Сэм";
+  if (subj==="Английская литература")
+    return LANG==="en" ? "basic — Sam · advanced — Albina" : "начальный — Сэм · усиленный — Альбина";
+  return null;
+}
+function cellHtml(v, d, t, c){
+  if (!v) return "<td></td>";
+  const [subj, ts] = v;
+  let cls = subj.includes("Английск") ? "eng" : (subj.includes("электив") ? "elect" : "");
+  const who = engLabel(subj) || ts.map(trT).join(", ");
+  const rm = RM[d+"|"+t+"|"+c];
+  const rHtml = rm ? `<div class="rooms">${rm.split(" · ").map(p=>{
+      const i = p.indexOf(" → ");
+      return `<span class="r">${i < 0 ? trR(p) : p.slice(0,i+3) + trR(p.slice(i+3))}</span>`;
+    }).join("")}</div>` : "";
+  return `<td class="${cls}"><div class="s">${trS(subj)}</div><div class="t">${who}</div>${rHtml}</td>`;
+}
+
+function render(){
+  const L = LANG==="en";
+  let h = `<div class="controls"><button class="act" onclick="window.print()">🖨 ${L?"Print":"Печать"}</button>
+           <button class="act" onclick="toggleLang()">${L?"RU":"EN"}</button></div>`;
+  h += `<p class="note">${L
+    ? "Who owns each room and who just comes in for a few lessons. The shelf column is a hint for storage, not a rule."
+    : "Кто в помещении хозяин, а кто заходит на несколько уроков. Столбец о полках — подсказка для хранения, не правило."}</p>`;
+  h += `<p class="note">${L
+    ? "<b>New room names.</b> The main building is Alfa: Alfa 1 (was Library), Alfa 2 (was Year 2), Alfa 3 (was Year 3), Alfa 4 (was Year 4), Alfa 5 (was Year 5+6). The canteen building keeps its names: Beta 1, Canteen."
+    : "<b>Новые названия кабинетов.</b> Основной корпус — Alfa: Alfa 1 (прежде Library), Alfa 2 (прежде Year 2), Alfa 3 (прежде Year 3), Alfa 4 (прежде Year 4), Alfa 5 (прежде Year 5+6). Корпус столовой без изменений: Beta 1, Столовая."}</p>`;
+  for (const r of RINFO.order){
+    const v = RINFO.rooms[r];
+    h += `<h2>${trR(r)}</h2><p class="note">${L?v.purpose_en:v.purpose}</p>`;
+    h += `<div class="wrap"><table style="max-width:720px">` +
+         `<tr><th>${L?"Teacher":"Педагог"}</th><th>${L?"Role":"Роль"}</th>` +
+         `<th>${L?"Storage":"Место для материалов"}</th>` +
+         `<th style="text-align:right">${L?"Lessons/week":"Уроков/нед"}</th></tr>` +
+         v.people.map(p => {
+           const nm = L ? (T_EN[p[0]]||p[0]) : (T_RU[p[0]]||p[0]);
+           return `<tr><td>${p[1]?"<b>"+nm+"</b>":nm}</td>` +
+             `<td>${p[1]?(L?"based here":"базируется здесь"):(L?"comes for lessons":"приходит на уроки")}</td>` +
+             `<td>${L?p[4]:p[3]}</td>` +
+             `<td style="text-align:right">${p[2]}</td></tr>`;
+         }).join("") +
+         `<tr><th colspan="3">${L?"Booked per week":"Занято за неделю"}</th>` +
+         `<th style="text-align:right">${v.hours} ${L?"of":"из"} 35</th></tr></table></div>`;
+  }
+  document.getElementById("content").innerHTML = h;
+}
+function toggleLang(){ LANG = LANG==="ru" ? "en" : "ru"; applyChrome(); render(); }
+applyChrome();
+render();
+
+</script></body></html>
