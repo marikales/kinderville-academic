@@ -171,6 +171,10 @@ for (const k in DATA){
 const names = Object.keys(teachers).sort((a,b)=>
   Object.keys(teachers[b]).length - Object.keys(teachers[a]).length);
 let CUR = 0;
+// Кабинет сотрудника открывает расписание сразу на нужном человеке:
+// ?t=Ольга%20Сальникова. Имя неизвестно или параметра нет — как раньше, первый в списке.
+{ const want = (new URLSearchParams(location.search).get("t") || "").trim();
+  if (want) { const i = names.indexOf(want); if (i >= 0) CUR = i; } }
 function render(){
   const L = LANG==="en";
   const name = names[CUR];
