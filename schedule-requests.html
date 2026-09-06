@@ -37,13 +37,11 @@
   .lead{font-size:11.5px;letter-spacing:2px;text-transform:uppercase;color:var(--grey);font-weight:600;margin:26px 0 12px}
 
   .legend{display:flex;flex-wrap:wrap;gap:8px}
-  .badge{display:inline-flex;align-items:center;gap:6px;border-radius:999px;padding:4px 12px;font-size:12px;font-weight:600;
+  .badge{display:inline-flex;align-items:center;border-radius:999px;padding:4px 12px;font-size:12px;font-weight:600;
          font-family:'Geologica';letter-spacing:.3px;white-space:nowrap}
-  .st-new{background:#eef1f0;color:#5d6b66}
   .st-work{background:#fff3d6;color:#8a6300}
   .st-done{background:#e3f3ef;color:var(--petrol)}
-  .st-rejected{background:#fbe9e4;color:var(--red)}
-  .legend .badge{cursor:default}
+  .st-no{background:#fbe9e4;color:var(--red)}
 
   .req{border:1px solid var(--cardborder);border-radius:16px;padding:20px 22px;margin-bottom:16px;background:var(--cardfill)}
   .req-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:10px;margin-bottom:4px}
@@ -54,11 +52,8 @@
   .item{background:#fff;border:1px solid var(--cardborder);border-radius:12px;padding:15px 17px;margin-top:12px}
   .item-top{display:flex;justify-content:space-between;align-items:flex-start;gap:12px}
   .ask{font-size:14.5px;line-height:1.55;font-weight:500;flex:1}
-  .field{margin-top:10px;font-size:13.5px;line-height:1.55}
-  .field .k{font-family:'Geologica';font-weight:600;font-size:11px;letter-spacing:1.2px;text-transform:uppercase;color:var(--grey);display:block;margin-bottom:2px}
-  .field.answer{border-top:1px dashed var(--hair);padding-top:10px}
-  .field .who{color:var(--muted);font-size:12px}
-  .q{color:#8a6300}
+  .note{margin-top:10px;padding-top:10px;border-top:1px dashed var(--hair);font-size:13.5px;line-height:1.55}
+  .note .k{font-family:'Geologica';font-weight:600;font-size:11px;letter-spacing:1.2px;text-transform:uppercase;color:var(--grey);display:block;margin-bottom:2px}
 
   .empty{font-size:14px;color:var(--muted);padding:18px 0}
 
@@ -79,22 +74,21 @@
     <span class="bg bg1"></span>
     <div class="inner">
       <h1>Правки расписания</h1>
-      <div class="sub">что просим изменить — и что с этим сделали</div>
+      <div class="sub">что просим изменить — и что с этим стало</div>
       <div class="divider"></div>
 
       <div class="rule">
-        <b>Правило страницы.</b> Всё, что пошло в работу, — публикуется здесь. Отклонённое тоже: со статусом и причиной.
-        Ничего не решается «в личке молча» — если правка принята, она видна всей команде вместе с ответом.
+        <b>Правило страницы.</b> Всё, что пошло в работу, — публикуется здесь. У каждого пункта виден статус:
+        решено, в работе или нет. Ничего не решается молча — если правка принята или отклонена, это видно всей команде.
       </div>
 
       <div class="howto" id="howto"></div>
 
       <div class="lead">Статусы</div>
       <div class="legend">
-        <span class="badge st-new">Поступила</span>
         <span class="badge st-work">В работе</span>
-        <span class="badge st-done">Сделано</span>
-        <span class="badge st-rejected">Отклонено</span>
+        <span class="badge st-done">Решено</span>
+        <span class="badge st-no">Нет</span>
       </div>
 
       <div class="lead">Запросы</div>
@@ -102,7 +96,7 @@
 
       <div class="foot">
         <span class="sl">Kinderville</span>
-        <span>Расписание · <a id="sched-link" href="https://academic.kindervilleschool.com/schedule/day.html">смотреть текущее</a></span>
+        <span>Расписание · <a href="https://academic.kindervilleschool.com/schedule/day.html">смотреть текущее</a></span>
         <span class="rt">Обновлено: <b id="updated"></b></span>
       </div>
     </div>
@@ -112,12 +106,14 @@
 <script>
 /* ------------------------------------------------------------------
    ДАННЫЕ СТРАНИЦЫ
-   Пока способ подачи не выбран — правки вносятся сюда руками (Тео).
-   Когда Марика выберет механизм: либо продолжаем править этот файл,
-   либо ставим SHEET_CSV = ссылка на опубликованный CSV Google-таблицы,
-   и страница начинает рисоваться из таблицы (Маша правит таблицу сама).
-   Колонки CSV: дата | автор | запрос | пункт | статус | ответ | уточняем | кто ответил | дата ответа
-   Статус в таблице пишется словом: поступила / в работе / сделано / отклонено
+   Только сам запрос и статус. Никаких сочинённых ответов: поле
+   «комментарий» показывается, ТОЛЬКО если его написали руками
+   (Марика или в таблице) — пустое поле не рисуется вовсе.
+
+   Когда таблица заведена: SHEET_CSV = ссылка на опубликованный CSV,
+   страница начинает жить из таблицы сама.
+   Колонки CSV: дата | автор | запрос | пункт | статус | комментарий
+   Статус словом: в работе / решено / нет (пусто = в работе)
 ------------------------------------------------------------------- */
 const SHEET_CSV = '';
 
@@ -134,39 +130,17 @@ const REQUESTS = [
     date: '5 сентября 2026',
     author: 'Мария Ветлова',
     title: 'Правки недели 1–5 сентября',
-    note: 'Первая неделя года: по факту работы сетки видно, где классные часы и кабинеты стоят неудобно.',
     items: [
-      {
-        ask: 'Классные часы у Елизаветы разделить: отдельно Year 4 и отдельно Y5+Y6.',
-        status: 'work',
-        answer: 'Взяли в текущую пересборку сетки. Разделение означает две группы вместо одной в том же слоте — нужен второй свободный слот у Елизаветы и кабинет под него. Ответ по осуществимости — здесь же, отдельной строкой.',
-        question: 'Обе группы с прежней частотой (по классному часу в неделю каждой) — или Y4 отдельно раз в неделю, а Y5+Y6 реже?',
-        who: 'Расписание',
-        answered: '6 сентября'
-      },
-      {
-        ask: 'Классные часы у Ольги С. разделить: отдельно Year 2 и отдельно Year 3.',
-        status: 'work',
-        answer: 'Взяли в ту же пересборку. Цена та же, что и по первому пункту: второй слот у куратора и кабинет. Считаем оба разделения вместе — они конкурируют за одни и те же свободные позиции дня.',
-        question: 'Если по слотам влезает только одно разделение из двух — какое приоритетнее: Y4 / Y5+6 или Y2 / Y3?',
-        who: 'Расписание',
-        answered: '6 сентября'
-      },
-      {
-        ask: 'Кабинеты: старшим на английский ставить Alfa 4 и Alfa 5, а Маргарите вместо этого отдать Beta 1.',
-        status: 'work',
-        answer: 'Взяли в пересборку по кабинетам. Alfa 4 и Alfa 5 старшим на английский — проверяем, свободны ли они во всех английских слотах старших.',
-        question: 'Beta 1 в прошлой раскладке держали свободным как трансформер (танцы, событийные форматы). Если он уходит Маргарите постоянно — что переезжает вместо него, или Beta 1 нужен ей только в её часы?',
-        who: 'Расписание',
-        answered: '6 сентября'
-      }
+      { ask: 'Классные часы у Елизаветы разделить: отдельно Year 4 и отдельно Y5+Y6.', status: 'work' },
+      { ask: 'Классные часы у Ольги С. разделить: отдельно Year 2 и отдельно Year 3.', status: 'work' },
+      { ask: 'Кабинеты: старшим на английский ставить Alfa 4 и Alfa 5, а Маргарите вместо этого отдать Beta 1.', status: 'work' }
     ]
   }
 ];
 
 /* ------------------------- отрисовка ------------------------- */
-const LABEL = { new:'Поступила', work:'В работе', done:'Сделано', rejected:'Отклонено' };
-const FROM_RU = { 'поступила':'new', 'в работе':'work', 'сделано':'done', 'отклонено':'rejected' };
+const LABEL = { work:'В работе', done:'Решено', no:'Нет' };
+const FROM_RU = { 'в работе':'work', 'решено':'done', 'нет':'no' };
 
 function esc(s){ return String(s == null ? '' : s).replace(/[&<>]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;'}[c])); }
 
@@ -176,20 +150,13 @@ function renderHowTo(){
 }
 
 function renderItem(it){
-  const st = it.status || 'new';
+  const st = LABEL[it.status] ? it.status : 'work';
   let h = '<div class="item"><div class="item-top">';
   h += '<div class="ask">' + esc(it.ask) + '</div>';
-  h += '<span class="badge st-' + st + '">' + (LABEL[st] || st) + '</span>';
+  h += '<span class="badge st-' + st + '">' + LABEL[st] + '</span>';
   h += '</div>';
-  if (it.answer) {
-    h += '<div class="field answer"><span class="k">Ответ</span>' + esc(it.answer);
-    if (it.who || it.answered) {
-      h += '<div class="who">' + esc([it.who, it.answered].filter(Boolean).join(' · ')) + '</div>';
-    }
-    h += '</div>';
-  }
-  if (it.question) {
-    h += '<div class="field q"><span class="k">Уточняем</span>' + esc(it.question) + '</div>';
+  if (it.note && String(it.note).trim()) {
+    h += '<div class="note"><span class="k">Комментарий</span>' + esc(it.note) + '</div>';
   }
   return h + '</div>';
 }
@@ -228,14 +195,11 @@ function parseCSV(text){
 function fromRows(rows){
   const out = [], byKey = {};
   rows.slice(1).forEach(r => {
-    const [date, author, title, ask, status, answer, question, who, answered] = r.map(v => (v || '').trim());
+    const [date, author, title, ask, status, note] = r.map(v => (v || '').trim());
     if (!ask) return;
     const key = date + '|' + title;
     if (!byKey[key]) { byKey[key] = { date, author, title: title || 'Правки', items: [] }; out.push(byKey[key]); }
-    byKey[key].items.push({
-      ask, status: FROM_RU[status.toLowerCase()] || 'new',
-      answer, question, who, answered
-    });
+    byKey[key].items.push({ ask, status: FROM_RU[status.toLowerCase()] || 'work', note });
   });
   return out;
 }
