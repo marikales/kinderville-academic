@@ -24,6 +24,7 @@
 - [Уроки по модулям (для КТП)](ktp.md) — сколько уроков каждого предмета в каждом модуле
 - [Расписание · день](schedule/day.html ':ignore') · [по классам](schedule/classes.html ':ignore') · [по педагогам](schedule/teachers.html ':ignore')
 - [1 сентября · День знакомства](schedule/sep1.html ':ignore') — особая сетка первого дня
+- [Правки расписания](schedule-requests.html ':ignore') — что просим изменить в сетке и что с этим сделали: статус и ответ по каждому пункту
 - [Планирование событий · Модули 1–2](https://docs.google.com/document/d/1mrBUkv-P2KU_4ed8Ozs0nRjznJxHSOB2hkKwxsiN550/edit) — рабочий документ: что за события и кто их готовит
 
 ---

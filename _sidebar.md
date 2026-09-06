@@ -4,6 +4,7 @@
   - [По педагогам](schedule/teachers.html ':ignore')
   - [Кабинеты](schedule/rooms.html ':ignore')
   - [1 сентября · день знакомства](schedule/sep1.html ':ignore')
+  - [Правки расписания](schedule-requests.html ':ignore')
 - [Уроки по модулям (для КТП)](ktp.md)
 - [Встречи команды](meetings.md)
 - **Памятки**
