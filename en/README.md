@@ -4,6 +4,10 @@ Working materials for the school: programmes, yearly planning, assessment criter
 
 **How to use this.** Everything here is a ready-made proposal — take it and teach. If something doesn't sit right with you, suggest a better way: we'll talk it through and quite possibly change it.
 
+## Start here
+
+- **[Teacher handbook](https://docs.google.com/document/d/1Kvk0EIqtJUKuqSlDjduAK7ikIaB-WcHY/edit?usp=sharing)** — how the school works: values and aims, communication culture, company structure, the academic year, staff meetings, the shape of the working day, a teacher's tools, purchases and reimbursements (in Russian)
+
 ## Sections
 
 - **[Courses](en/kursy.md)** — all school courses by year group: reading, science, and more as sections are added.

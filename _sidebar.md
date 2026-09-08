@@ -1,4 +1,5 @@
 - [Главная](README.md)
+- [Брошюра педагога](https://docs.google.com/document/d/1Kvk0EIqtJUKuqSlDjduAK7ikIaB-WcHY/edit?usp=sharing)
 - [Расписание · день](schedule/day.html ':ignore')
   - [По классам](schedule/classes.html ':ignore')
   - [По педагогам](schedule/teachers.html ':ignore')

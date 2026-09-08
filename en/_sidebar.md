@@ -1,4 +1,5 @@
 - [Home](en/README.md)
+- [Teacher handbook](https://docs.google.com/document/d/1Kvk0EIqtJUKuqSlDjduAK7ikIaB-WcHY/edit?usp=sharing)
 - [Courses](en/kursy.md)
 - [Timetable: day](schedule/day.html?lang=en ':ignore')
 - [Timetable by class](schedule/classes.html?lang=en ':ignore')
