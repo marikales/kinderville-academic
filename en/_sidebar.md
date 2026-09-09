@@ -4,6 +4,9 @@
 - [Timetable: day](schedule/day.html?lang=en ':ignore')
 - [Timetable by class](schedule/classes.html?lang=en ':ignore')
 - [Timetable by teacher](schedule/teachers.html?lang=en ':ignore')
+- [Timetable from 14 September: day](schedule-sep14/day.html?lang=en ':ignore')
+- [From 14 September: by class](schedule-sep14/classes.html?lang=en ':ignore')
+- [From 14 September: by teacher](schedule-sep14/teachers.html?lang=en ':ignore')
 - [Lessons per module](en/ktp.md)
 - [Team meetings](en/meetings.md)
 - **Memos**

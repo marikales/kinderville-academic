@@ -5,6 +5,10 @@
   - [По педагогам](schedule/teachers.html ':ignore')
   - [Кабинеты](schedule/rooms.html ':ignore')
   - [Правки расписания](schedule-requests.html ':ignore')
+- [Расписание с 14 сентября · день](schedule-sep14/day.html ':ignore')
+  - [По классам](schedule-sep14/classes.html ':ignore')
+  - [По педагогам](schedule-sep14/teachers.html ':ignore')
+  - [Кабинеты](schedule-sep14/rooms.html ':ignore')
 - [Уроки по модулям (для КТП)](ktp.md)
 - [Встречи команды](meetings.md)
 - **Памятки**
