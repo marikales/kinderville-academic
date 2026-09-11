@@ -181,10 +181,13 @@ let CUR = 0;
 // является. meetWho — состав без самого педагога (вся команда, если их больше четырёх);
 // meetKind — слово «круг» плюс частота, но без повтора, если слово уже есть в имени
 // («Большой круг»). Правка Марики 11.09.
-function meetWho(m, name, L){
-  const others = m.who.filter(w => w !== name).map(w => L?(T_EN[w]||w):(T_RU[w]||w));
-  if (others.length > 4) return L ? "whole team" : "вся команда началки";
-  return others.join(", ");
+function meetWho(m, L){
+  // ПОЛНЫЙ состав, включая самого педагога (правка Марики 11.09: на странице Сэм
+  // круг English читался «Marika, Maria, Albina» — «а куда делась Sam?»). Список без
+  // одного участника — это не состав круга, а «с кем ты», и он сбивает.
+  const all = m.who.map(w => L?(T_EN[w]||w):(T_RU[w]||w));
+  if (all.length > 5) return L ? "whole team" : "вся команда началки";
+  return all.join(", ");
 }
 function meetKind(m, L){
   const nm = L ? m.name_en : m.name;
@@ -242,7 +245,7 @@ function render(){
           // три строки, как у урока: имя · состав · «круг + частота» (правка Марики 11.09
           // — состав подписать, и чтобы было видно, что это круг, а не урок)
           h += `<td class="circle"><div class="s cn">${L?m.name_en:m.name}</div>` +
-               `<div class="t cw">${meetWho(m, name, L)}</div>` +
+               `<div class="t cw">${meetWho(m, L)}</div>` +
                `<div class="t cw">${meetKind(m, L)}</div></td>`;
         } else h += "<td></td>";
       }
@@ -257,7 +260,7 @@ function render(){
       const m = late.find(x => x.day === d);
       if (m){
         h += `<td class="circle"><div class="s cn">${L?m.name_en:m.name}</div>` +
-             `<div class="t cw">${meetWho(m, name, L)}</div>` +
+             `<div class="t cw">${meetWho(m, L)}</div>` +
              `<div class="t cw">${m.time} · ${meetKind(m, L)}</div></td>`;
       } else h += "<td></td>";
     }
