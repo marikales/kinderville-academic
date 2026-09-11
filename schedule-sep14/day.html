@@ -123,8 +123,8 @@ function applyChrome(){
   cr.forEach((p,i)=>{ const el=document.getElementById("cr"+i); if(el) el.textContent=p[L?1:0]; });
   const ln = document.getElementById("lightNote");
   if(ln) ln.innerHTML = L
-    ? "Light programme: Light children can only be in Y3-2, Y4 and Y5.<br>Y2, Y3-1 and Y6 cannot take Light children — their core lessons may sit after lesson 4."
-    : "Программа Light: Light-дети могут быть только в Y3-2, Y4 и Y5.<br>В Y2, Y3-1 и Y6 Light-детей быть не может — обязательные уроки этих классов могут стоять после 4-го урока.";
+    ? "Light programme: Light children can only be in Y3-1, Y4 and Y5.<br>Y2, Y3-2 and Y6 cannot take Light children — their core lessons may sit after lesson 4."
+    : "Программа Light: Light-дети могут быть только в Y3-1, Y4 и Y5.<br>В Y2, Y3-2 и Y6 Light-детей быть не может — обязательные уроки этих классов могут стоять после 4-го урока.";
   const d = document.getElementById("draftNote");
   if(d) d.textContent = L ? "Version 28.08 — rooms added. In effect from 1 September; updated whenever the master timetable changes."
                           : "Версия 28.08 — добавлены кабинеты. Действует с 1 сентября; при изменениях мастер-расписания страница обновляется.";
