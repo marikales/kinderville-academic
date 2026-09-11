@@ -14,9 +14,9 @@ Slots are taken from the timetable that comes into force **on 14 September**, so
 
 | Day | Time | Circle | Who | Language | When |
 |---|---|---|---|---|---|
-| Wednesday | 12:00–12:50 | English | Marika, Maria, Albina, Sam | EN | on even dates |
-| Wednesday | 16:00–16:30 | Mathematics | Marika, Maria, Olga P., Sam | RU | on odd dates |
-| Thursday | 12:00–12:50 | Russian | Marika, Maria, Gaiane, Margarita | RU | on even dates |
+| Wednesday | 12:00–12:50 | English | Maria, Albina, Sam, Marika (opt) | EN | on even dates |
+| Wednesday | 16:00–16:30 | Mathematics | Maria, Olga P., Sam, Marika (opt) | RU | on odd dates |
+| Thursday | 12:00–12:50 | Russian | Maria, Gaiane, Margarita, Marika (opt) | RU | on even dates |
 | Friday | 15:10–16:00 | Science | Albina, Olga S., Elizaveta | RU | on odd dates |
 
 The parity of the date is a simple rule instead of a calendar of weeks: two circles on the same weekday fall a week apart, and nobody has to remember "which week is it".
