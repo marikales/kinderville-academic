@@ -96,6 +96,15 @@
             }
             el.setAttribute('href', target);
             el.textContent = label;
+
+            // Заголовок в меню и вкладке — на языке страницы
+            var appName = document.querySelector('.app-name-link');
+            if (appName) {
+              appName.textContent = isEn ? 'Teacher portal' : 'Портал педагогов';
+              appName.setAttribute('href', isEn ? '#/en/' : '#/');
+            }
+            document.title = isEn ? 'Kinderville teacher portal' : 'Портал педагогов Kinderville';
+            document.documentElement.lang = isEn ? 'en' : 'ru';
           });
         }
       ],
@@ -104,8 +113,8 @@
       maxLevel: 4,
       homepage: 'README.md',
       search: {
-        placeholder: 'Поиск по порталу…',
-        noData: 'Ничего не найдено',
+        placeholder: { '/en/': 'Search the portal…', '/': 'Поиск по порталу…' },
+        noData: { '/en/': 'Nothing found', '/': 'Ничего не найдено' },
         depth: 4
       }
     }
