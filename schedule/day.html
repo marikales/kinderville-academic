@@ -39,6 +39,8 @@ td.blk { vertical-align:middle; } .bl { font-size:13px; } .bl b { color:#6b5a30;
 h2 { font-size:16px; margin:16px 0 2px; }
 .note { color:#5b7a7d; font-size:13px; margin:4px 0 8px; max-width:900px; }
 .timecol { white-space:nowrap; font-size:12.5px; color:#4a6b6e; }
+/* подпись реального времени урока в зоне обеда (строки оси там дробные) */
+.tm { font-size:11px; color:#7a8f92; margin-bottom:2px; } td.eng2 .tm { padding:4px 8px 0; margin:0; }
 .draft { background:#fff3d6; border:1px solid #e8d49a; border-radius:8px; padding:6px 12px;
 font-size:13px; margin:8px 0; max-width:900px; }
 .staff { background:var(--soft); border:1px solid var(--line); border-radius:8px; padding:8px 12px;
@@ -226,10 +228,11 @@ function render(){
     [L?"8:20–8:30":"8:20–8:30", "TXT", L?"Wake up (optional)":"Wake up (для тех, кто уже пришёл)"],
     [L?"8:45–9:00":"8:45–9:00", "TXT", L?"Circle Time — curators, each with their own stage":"Утренний круг — кураторы по своим ступеням"],
     ["9:05–9:55","1","1"], ["10:05–10:55","2","2"], ["11:05–11:55","3","3"],
-    // Обед + самостоятельная работа — один блок на ступень (rowspan), а не пять
-    // строк с пустыми клетками. BLOCK — начало блока, SKIP — строка внутри него.
-    ["11:55–12:25","BLOCK",null], ["12:00–12:50","SKIP","4U"], ["12:25–13:10","SKIP",null],
-    ["12:50–13:20","SKIP","BLOCK"], ["13:15–14:05","4L","SKIP"],
+    // Зона обеда 11:55–14:05: у ступеней разные границы, поэтому строки оси —
+    // интервалы между ВСЕМИ границами обоих потоков (без наложений), а клетки
+    // тянутся rowspan'ом по своим сегментам (Марика 16.09: «в столбце времени
+    // ячейки с пересечением друг друга»).
+    ["ZONE"],
     ["14:10–15:00","5","5"],
     ["15:00–15:10","TXT", L?"Snack":"Полдник"],
     ["15:10–16:00","6","6"],
@@ -255,25 +258,45 @@ function render(){
     return out;
   };
   // обед + самостоятельная работа одной ячейкой на ступень; кабинеты — по классам
-  const block = (low) => {
+  const block = (low, span) => {
     const stage = low ? LOWER : UPPER;
     const byRoom = {}; stage.forEach(c => { (byRoom[HWR[c]] = byRoom[HWR[c]] || []).push(c); });
     const rooms = Object.entries(byRoom).map(([r, cs]) => `<span class="r">${cs.join(", ")} — ${trR(r)}</span>`).join("");
-    return `<td class="brk blk" colspan="${stage.length}" rowspan="${low ? 4 : 2}">` +
+    return `<td class="brk blk" colspan="${stage.length}" rowspan="${span}">` +
       `<div class="bl"><b>${L?"Lunch":"Обед"}</b> · ${low ? "11:55–12:25" : "12:50–13:20"}</div>` +
       `<div class="bl"><b>${L?"Prep":"Самостоятельная работа"}</b> · ${low ? "12:25–13:10" : "13:20–14:05"}</div>` +
       `<div class="t">${L?"Olga S. + Elizaveta":"Ольга С. + Елизавета"}</div><div class="rooms">${rooms}</div></td>`;
   };
+  // высота строки пропорциональна минутам — иначе 5-минутная строка и урок равны
+  const toM = x => { const [hh, mm] = x.split(":").map(Number); return hh*60 + mm; };
+  const tcell = (a, b) => `<td class="timecol" style="height:${Math.round((toM(b)-toM(a))*1.3)}px">${a}–${b}</td>`;
+  // сегменты зоны обеда: [начало, конец, что]; BLOCK = обед + самостоятельная одной клеткой
+  const ZL = [["11:55","13:10","BLOCK"], ["13:15","14:05","4L"]];
+  const ZU = [["12:00","12:50","4U"], ["12:50","14:05","BLOCK"]];
+  const ZB = ["11:55","12:00","12:25","12:50","13:10","13:15","13:20","14:05"];   // все границы, с обедом/самостоятельной
+  const zone = () => {
+    let z = "";
+    for (let i = 0; i < ZB.length - 1; i++){
+      z += "<tr>" + tcell(ZB[i], ZB[i+1]);
+      for (const [segs, stage, low] of [[ZL, LOWER, true], [ZU, UPPER, false]]){
+        const cov = segs.find(sg => toM(sg[0]) <= toM(ZB[i]) && toM(ZB[i]) < toM(sg[1]));
+        if (!cov){ z += `<td colspan="${stage.length}"></td>`; continue; }
+        if (cov[0] !== ZB[i]) continue;                   // строка внутри rowspan'а
+        const span = ZB.filter(b => toM(cov[0]) <= toM(b) && toM(b) < toM(cov[1])).length;
+        if (cov[2] === "BLOCK") z += block(low, span);
+        else z += stageCells(cov[2], stage).replace(/<td([^>]*)>/g,
+               `<td$1 rowspan="${span}"><div class="tm">${cov[0]}–${cov[1]}</div>`);
+      }
+      z += "</tr>";
+    }
+    return z;
+  };
   for (const r of rows){
     const [time, lo, up] = r;
-    h += `<tr><td class="timecol">${time}</td>`;
+    if (time === "ZONE"){ h += zone(); continue; }
+    h += "<tr>" + tcell(...time.split("–"));
     if (lo === "TXT"){ h += `<td class="brk" colspan="6">${up}</td></tr>`; continue; }
-    for (const [code, stage, low] of [[lo, LOWER, true], [up, UPPER, false]]){
-      if (code === "SKIP") continue;                       // строка внутри блока обеда
-      if (code === null) h += `<td colspan="${stage.length}"></td>`;
-      else if (code === "BLOCK") h += block(low);
-      else h += stageCells(code, stage);
-    }
+    for (const [code, stage] of [[lo, LOWER], [up, UPPER]]) h += stageCells(code, stage);
     h += "</tr>";
   }
   h += "</table></div>";
