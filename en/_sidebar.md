@@ -4,7 +4,6 @@
   - [By class](schedule/classes.html?lang=en ':ignore')
   - [By teacher](schedule/teachers.html?lang=en ':ignore')
   - [Rooms](schedule/rooms.html?lang=en ':ignore')
-  - [Timetable change requests (in Russian)](schedule-requests.html ':ignore')
 - [Lessons per module](en/ktp.md)
 - [Team meetings](en/meetings.md)
 - **Memos**

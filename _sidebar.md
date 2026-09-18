@@ -4,7 +4,6 @@
   - [По классам](schedule/classes.html ':ignore')
   - [По педагогам](schedule/teachers.html ':ignore')
   - [Кабинеты](schedule/rooms.html ':ignore')
-  - [Правки расписания](schedule-requests.html ':ignore')
 - [Уроки по модулям (для КТП)](ktp.md)
 - [Встречи команды](meetings.md)
 - **Памятки**

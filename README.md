@@ -24,7 +24,6 @@
 - [Календарь школы 2026/27 (Y2–Y6)](https://marikales.github.io/kinderville-calendar/year2-6.html)
 - [Уроки по модулям (для КТП)](ktp.md) — сколько уроков каждого предмета в каждом модуле
 - [Расписание · день](schedule/day.html ':ignore') · [по классам](schedule/classes.html ':ignore') · [по педагогам](schedule/teachers.html ':ignore')
-- [Правки расписания](schedule-requests.html ':ignore') — что просим изменить в сетке и что с этим сделали: статус и ответ по каждому пункту
 - [Планирование событий · Модули 1–2](https://docs.google.com/document/d/1mrBUkv-P2KU_4ed8Ozs0nRjznJxHSOB2hkKwxsiN550/edit) — рабочий документ: что за события и кто их готовит
 
 ---
