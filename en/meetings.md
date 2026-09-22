@@ -4,23 +4,25 @@ The timetable has settled, and the regular methodological meetings were announce
 
 ## Weekly
 
-| Day | Time | Circle | Who | Language |
-|---|---|---|---|---|
-| Monday | 10:05–10:55 | Homeroom | Maria, Olga S., Elizaveta | RU |
+| Day | Time | Circle | Who | Language | Dates |
+|---|---|---|---|---|---|
+| Monday | 10:05–10:55 | Homeroom | Maria, Olga S., Elizaveta | RU | 28 Sep, 5 Oct, 19 Oct, 26 Oct, 2 Nov, 9 Nov, 16 Nov, 23 Nov, 30 Nov, 14 Dec |
 
 ## Every two weeks — by the parity of the week
 
+Week 1 is the week of 1 September (31 Aug – 6 Sep), and it is **odd**; weeks are then counted straight through the calendar, holiday weeks included. The current week is always visible from the dates in the table.
+
 | Day | Time | Circle | Who | Language | When |
 |---|---|---|---|---|---|
-| Wednesday | 12:00–12:50 | English | Maria, Albina, Sam, Marika (opt) | EN | on even weeks |
-| Thursday | 12:00–12:50 | Russian | Maria, Gaiane, Margarita, Marika (opt) | RU | on even weeks |
-| Friday | 15:10–16:00 | Science | Albina, Olga S., Elizaveta | RU | on odd weeks |
+| Wednesday | 12:00–12:50 | English | Maria, Albina, Sam, Marika (opt) | EN | on even weeks (23 Sep, 7 Oct, 21 Oct, 4 Nov, 18 Nov, 2 Dec, 16 Dec) |
+| Thursday | 12:00–12:50 | Russian | Maria, Gaiane, Margarita, Marika (opt) | RU | on even weeks (24 Sep, 8 Oct, 22 Oct, 5 Nov, 19 Nov, 3 Dec, 17 Dec) |
+| Friday | 15:10–16:00 | Science | Albina, Olga S., Elizaveta | RU | on odd weeks (2 Oct, 30 Oct, 13 Nov, 27 Nov, 11 Dec) |
 
 ## Every three weeks
 
-| Day | Time | Circle | Who | Language |
-|---|---|---|---|---|
-| Friday | 16:30–17:30 | **Whole-team circle** | the whole primary team | RU |
+| Day | Time | Circle | Who | Language | Dates |
+|---|---|---|---|---|---|
+| Friday | 16:30–17:30 | **Whole-team circle** | the whole primary team | RU | 2 Oct, 23 Oct, 13 Nov, 4 Dec |
 
 ## The whole-team circle
 
@@ -36,6 +38,7 @@ No circle sits on reflection or home time: Homeroom, English, Russian and Scienc
 
 - **Homeroom** moved from Monday 15:10 to Monday 10:05–10:55.
 - Circles now alternate **by week**, not by the parity of the date.
+- Each circle now lists its dates up to the winter break next to its frequency; the autumn break (12–16 Oct), the 7 Dec holiday and 18 Dec (concerts) are skipped.
 - There is no **Mathematics** circle in the regular schedule: the mathematics vertical runs in writing (the Peterson ↔ Cambridge mapping) and on signal.
 
 Earlier, on 11 September, the circles became fewer and larger: the Y2 pair, the Y4–Y5 pair, Y4 Science and the academic circle were discontinued; the language-and-literature vertical was folded into the Russian circle.
