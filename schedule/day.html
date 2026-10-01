@@ -238,7 +238,9 @@ function render(){
     ["14:00–14:50","5","5"],
     // 01.10: перемена перед последним уроком 20 минут — старшие после плавания
     // возвращаются к 15:00, едят и идут на 6-й урок вовремя (решение Марики 30.09)
-    ["14:50–15:10","TXT", L?"Long break and snack — 20 minutes; upper-stage swimmers are back at school by 15:00":"Длинная перемена и полдник — 20 минут; пловцы старшей ступени возвращаются в школу к 15:00"],
+    // приписка про пловцов — только в дни плавания (Марика 01.10: «НЕ вт и чт»)
+    ["14:50–15:10","TXT", (L?"Long break and snack — 20 minutes":"Длинная перемена и полдник — 20 минут")
+      + (SWIM_DAYS.includes(d) ? (L?"; upper-stage swimmers are back at school by 15:00":"; пловцы старшей ступени возвращаются в школу к 15:00") : "")],
     ["15:10–16:00","6","6"],
     ["16:05–16:20","TXT", MEET.some(m => m.day === d && m.cover)
       ? (L?"Reflection — at the end of prep on circle days; here the assistants take over":
