@@ -16,7 +16,7 @@ Week 1 is the week of 1 September (31 Aug – 6 Sep), and it is **odd**; weeks a
 |---|---|---|---|---|---|
 | Wednesday | 12:00–12:50 | English | Maria, Albina, Sam, Marika (opt) | EN | on even weeks (23 Sep, 7 Oct, 21 Oct, 4 Nov, 18 Nov, 2 Dec, 16 Dec) |
 | Thursday | 12:00–12:50 | Russian | Maria, Gaiane, Margarita, Marika (opt) | RU | on even weeks (24 Sep, 8 Oct, 22 Oct, 5 Nov, 19 Nov, 3 Dec, 17 Dec) |
-| Friday | 15:10–16:00 | Science | Albina, Olga S., Elizaveta | RU | on odd weeks (2 Oct, 30 Oct, 13 Nov, 27 Nov, 11 Dec) |
+| Friday | 15:15–16:05 | Science | Albina, Olga S., Elizaveta | RU | on odd weeks (2 Oct, 30 Oct, 13 Nov, 27 Nov, 11 Dec) |
 
 ## Every three weeks
 
@@ -63,4 +63,4 @@ Separate from the circles is the curators' daily 8:15 briefing. That one is abou
 
 The science topic table (Russian → English), the Peterson ↔ Cambridge mapping a module ahead, and the shared standard for presenting written work. Anything that passes on a fact rather than works out a decision.
 
-*Checked against the timetable in force (checked 22 Sep): on Monday at 10:05 Maria, Olga S. and Elizaveta have no lessons. Windows kept free of circles: the morning circle; 11:05–11:55, both curators' lunch; 11:55–13:55, lunch and prep with the children (closed for the curators; teachers who have no children at that time are free in it — that is where English and Russian sit, and their 12:50–13:15 lunch stays intact). Re-check the slots whenever the master timetable is rebuilt.*
+*Checked against the timetable in force (checked 22 Sep): on Monday at 10:05 Maria, Olga S. and Elizaveta have no lessons. Windows kept free of circles: the morning circle; 11:05–11:55, both curators' lunch; 11:55–14:00, lunch and prep with the children (closed for the curators; teachers who have no children at that time are free in it — that is where English and Russian sit, and their 12:50–13:10 lunch stays intact). Re-check the slots whenever the master timetable is rebuilt.*
