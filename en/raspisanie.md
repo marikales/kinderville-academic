@@ -24,6 +24,6 @@ The break before the last lesson is 20 minutes (14:55–15:15): the upper stage 
 
 **Swimmers (Mon/Wed/Fri).** Upper stage: prep ends at 13:40 — the children change and leave for the pool at 13:45; the driver is at the pool at 14:45, back at school by 15:00 — snack and lesson 6 at 15:15. Lower stage: leave at 15:05, during the long break; back at school by 16:10, in time for reflection.
 
-In force from 14 September 2026. The previous timetable (1–13 September) is [in the archive](archive/schedule-2026-09-01/day.html?lang=en ':ignore').
+In force from 19 October 2026: upper-stage curator hours are Y4+Y5 together and Y6 on its own (Y4–Y6 lessons re-arranged on Tuesday, Thursday and Friday; everything else unchanged). Previous timetables are in the archive: [14 September – 9 October](archive/schedule-2026-09-14/day.html?lang=en ':ignore'), [1–13 September](archive/schedule-2026-09-01/day.html?lang=en ':ignore').
 
 Subject hours for your teaching plan — on the [Lessons per module](en/ktp.md) page.
