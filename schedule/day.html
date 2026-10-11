@@ -275,7 +275,7 @@ function render(){
       `<div class="bl"><b>${L?"Prep":"Самостоятельная работа"}</b> · ${low ? "12:25–13:00" : "13:10–14:00"}</div>` +
       // пловцы старших в дни плавания: с самостоятельной уходят в 13:40 (Марика 30.09/01.10)
       (!low && SWIM_DAYS.includes(d) ? `<div class="bl"><b>🏊 ${L?"Swimmers":"Пловцы"}</b> · ${L?"prep till 13:40, then change and leave for the pool at 13:45; back at school by 15:00":"самостоятельная работа до 13:40, затем переодеться и в 13:45 выехать в бассейн; в школе к 15:00"}</div>` : "") +
-      `<div class="t">${L?"Olga S. + Elizaveta":"Ольга С. + Елизавета"}</div><div class="rooms">${rooms}</div></td>`;
+      `<div class="t">${low ? (L?"Olga S. + assistants":"Ольга С. + ассистенты") : (L?"Elizaveta + Maria":"Елизавета + Мария")}</div><div class="rooms">${rooms}</div></td>`;
   };
   // высота строки пропорциональна минутам — иначе 5-минутная строка и урок равны
   const toM = x => { const [hh, mm] = x.split(":").map(Number); return hh*60 + mm; };

@@ -285,20 +285,28 @@ function render(){
   h += `<div class="wrap"><table style="table-layout:fixed"><colgroup><col style="width:130px">` +
        `<col span="5"></colgroup><tr><th class="timecol">${L?"Slot":"Слот"}</th>` +
        DAYS.map((x,i)=>`<th>${L?DAYS_EN[i]:x}${busyDay[i]?"":(L?" · free":" · свободен")}</th>`).join("") + "</tr>";
-  const isCurLower = name === "Ольга Сальникова", isCurUpper = name === "Лиза";
+  const isCurLower = name === "Ольга Сальникова", isCurUpper = name === "Лиза", isPrepHelper = name === "Мария";
+  // 11.10 (Марика): кураторы друг другу на обеде и самостоятельной НЕ помогают, «обед — свой час»
+  // у них не рисуем. Ольга С. с младшими — сама, с ассистентами; Лизе на самостоятельной
+  // работе старших помогает Мария Ветлова.
+  const prepRow = (time, text, rooms) => `<tr><td class="timecol">${time}</td><td class="brk" colspan="5" style="text-align:left"><span class="stick">${text}</span>` +
+           `<span class="r" style="display:inline-block">${rooms}</span></td></tr>`;
+  const ROOMS_L = (L?"lower":"младшие") + ": Alfa 1 · Alfa 2 · Alfa 3", ROOMS_U = (L?"upper":"старшие") + ": Alfa 4 · Alfa 5";
   for (const t of ORDER){
-    if (t === "4U" && (isCurLower || isCurUpper)){
-      const own = isCurLower
-        ? (L?"lunch & prep of the lower stage — own group (11:55–13:00), then supporting Elizaveta with the upper stage (till 14:00)"
-           :"обед и самостоятельная работа младших — со своими (11:55–13:00), затем на подхвате у Елизаветы со старшими (до 14:00)")
-        : (L?"supporting Olga S. with the lower stage (11:55–13:00), then lunch & prep of the upper stage — own group (12:50–14:00); on swimming days (Mon/Wed/Fri) the swimmers leave prep at 13:40"
-           :"на подхвате у Ольги С. с младшими (11:55–13:00), затем обед и самостоятельная работа старших — со своими (12:50–14:00); в дни плавания (Пн/Ср/Пт) пловцы уходят с самостоятельной в 13:40");
-      h += `<tr><td class="timecol">11:55–14:00</td><td class="brk" colspan="5" style="text-align:left"><span class="stick">${own}</span>` +
-           `<span class="r" style="display:inline-block">${L?"lower":"младшие"}: Alfa 1 · Alfa 2 · Alfa 3</span> ` +
-           `<span class="r" style="display:inline-block">${L?"upper":"старшие"}: Alfa 4 · Alfa 5</span></td></tr>`;
+    if (t === "4U" && isCurLower){
+      h += prepRow("11:55–13:00", L?"lunch & prep of the lower stage — own group, with the assistants Pee Ann & Pee Mon"
+                                   :"обед и самостоятельная работа младших — со своими, с ассистентами Пи Энн и Пи Мон", ROOMS_L);
       continue;
     }
-    if (t === "4L" && (isCurLower || isCurUpper)) continue;
+    if (t === "4L" && isCurUpper){
+      h += prepRow("12:50–14:00", L?"lunch & prep of the upper stage — own group, together with Maria Vetlova; on swimming days (Mon/Wed/Fri) the swimmers leave prep at 13:40"
+                                   :"обед и самостоятельная работа старших — со своими, вместе с Марией Ветловой; в дни плавания (Пн/Ср/Пт) пловцы уходят с самостоятельной в 13:40", ROOMS_U);
+      continue;
+    }
+    if (t === "4L" && isPrepHelper){
+      h += prepRow("13:10–14:00", L?"prep of the upper stage — together with Elizaveta":"самостоятельная работа старших — вместе с Елизаветой", ROOMS_U);
+      continue;
+    }
     if (t === "LUNCH"){
       if (isCurLower || isCurUpper) continue;
       h += `<tr><td class="timecol">${L?"Lunch":"Обед"} · 12:50–13:10</td><td class="brk" colspan="5" style="text-align:left"><span class="stick">${L?"lunch break — 20 minutes":"обеденный перерыв — 20 минут"}</span></td></tr>`;
@@ -311,8 +319,6 @@ function render(){
         let cls = v.subj.includes("Английск") ? "eng" : (v.subj.includes("электив") ? "elect" : "");
         const g = engGroup(v.subj, name, v.cls);
         h += `<td class="${cls}"><div class="s">${engSubj(v.subj, [name], v.cls)}</div><div class="t">${g ? engText(g) : v.cls.slice().sort().join(" + ")}</div>${roomLine(RT[name+"|"+d+"|"+t])}</td>`;
-      } else if (t === "3" && (isCurLower || isCurUpper)){
-        h += `<td class="brk" style="text-align:center"><span class="stick">${L?"lunch — own hour":"обед — свой час"}</span></td>`;
       } else {
         const m = MEET.find(x => x.day === d && x.slot === t && x.who.includes(name));
         if (m){
