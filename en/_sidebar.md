@@ -6,6 +6,9 @@
   - [Rooms](schedule/rooms.html?lang=en ':ignore')
 - [Lessons per module](en/ktp.md)
 - [Team meetings](en/meetings.md)
+- **Adaptation reports · Module I**
+  - [Table: teachers' notes by child (EN)](https://docs.google.com/spreadsheets/d/1phXujjPgASdF4m6prqmvdIGpVf4MlzLdW8v-H3edIF0)
+  - [Reports folder (PDF, English)](https://drive.google.com/drive/folders/1TlIKFOnUMYhailN-umbw1b2ZSlqPdgJ_)
 - **Memos**
   - [Challenging behaviour in class](en/povedenie.md)
 - [Courses](en/kursy.md)

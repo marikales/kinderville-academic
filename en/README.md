@@ -12,6 +12,11 @@ Working materials for the school: programmes, yearly planning, assessment criter
 
 - **[Courses](en/kursy.md)** — all school courses by year group: reading, science, and more as sections are added.
 
+## Adaptation reports · Module I
+
+- [Table: teachers' notes by child (EN)](https://docs.google.com/spreadsheets/d/1phXujjPgASdF4m6prqmvdIGpVf4MlzLdW8v-H3edIF0) — transcripts of the voice notes from the «Voice Notes: Kids» chat, by teacher and class
+- [Reports folder (PDF, English)](https://drive.google.com/drive/folders/1TlIKFOnUMYhailN-umbw1b2ZSlqPdgJ_) — the family reports in English, updated automatically after the Russian version
+
 ## Memos
 
 - [Challenging behaviour in class: what we handle ourselves and when to call the curator](en/povedenie.md) — draft, being refined
