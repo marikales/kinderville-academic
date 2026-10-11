@@ -18,7 +18,7 @@
 ## Адаптационные отчёты · Модуль I
 
 - [Таблица: слова педагогов по детям](https://docs.google.com/spreadsheets/d/14Nt21ZFOk0-T9DpZqjPnBn_yEe0jgfqIfGxGBMIbsqU) — расшифровки голосовых из чата «Voice Notes: Kids», по педагогам и классам; здесь же вопросы к записям
-- [Папка с отчётами (PDF)](https://drive.google.com/drive/folders/1I2la4GB0OKQHBmO7Tm_mH5sibWu5-3Ja) — готовые отчёты семьям, по мере вычитки
+- [Папка с отчётами (PDF)](https://drive.google.com/drive/folders/1qDZNKLSawzj8H9yy_m0f9I6Yh8x3W7ES) — готовые отчёты семьям, по мере вычитки
 
 ## Памятки
 
