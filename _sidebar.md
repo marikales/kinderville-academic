@@ -6,6 +6,9 @@
   - [Кабинеты](schedule/rooms.html ':ignore')
 - [Уроки по модулям (для КТП)](ktp.md)
 - [Встречи команды](meetings.md)
+- **Адаптационные отчёты · Модуль I**
+  - [Таблица: слова педагогов по детям](https://docs.google.com/spreadsheets/d/14Nt21ZFOk0-T9DpZqjPnBn_yEe0jgfqIfGxGBMIbsqU)
+  - [Папка с отчётами (PDF)](https://drive.google.com/drive/folders/1I2la4GB0OKQHBmO7Tm_mH5sibWu5-3Ja)
 - **Памятки**
   - [Сложное поведение на уроке](povedenie.md)
 - [Курсы](kursy.md)

@@ -15,6 +15,11 @@
   - [Science — наука на двух языках · Y2–Y6](science/README.md)
   - дальше по мере наполнения
 
+## Адаптационные отчёты · Модуль I
+
+- [Таблица: слова педагогов по детям](https://docs.google.com/spreadsheets/d/14Nt21ZFOk0-T9DpZqjPnBn_yEe0jgfqIfGxGBMIbsqU) — расшифровки голосовых из чата «Voice Notes: Kids», по педагогам и классам; здесь же вопросы к записям
+- [Папка с отчётами (PDF)](https://drive.google.com/drive/folders/1I2la4GB0OKQHBmO7Tm_mH5sibWu5-3Ja) — готовые отчёты семьям, по мере вычитки
+
 ## Памятки
 
 - [Сложное поведение на уроке: что делаем сами и когда зовём куратора](povedenie.md) — черновик, уточняется
