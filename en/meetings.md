@@ -6,23 +6,23 @@ The timetable has settled, and the regular methodological meetings were announce
 
 | Day | Time | Circle | Who | Language | Dates |
 |---|---|---|---|---|---|
-| Monday | 10:05–10:55 | Homeroom | Maria, Olga S., Elizaveta | RU | 28 Sep, 5 Oct, 19 Oct, 26 Oct, 2 Nov, 9 Nov, 16 Nov, 23 Nov, 30 Nov, 14 Dec |
+| Monday | 10:05–10:55 | Homeroom | Maria, Olga S., Elizaveta | RU | 19 Oct, 26 Oct, 2 Nov, 9 Nov, 16 Nov, 23 Nov, 30 Nov, 14 Dec |
 
 ## Every two weeks — by the parity of the week
 
-Week 1 is the week of 1 September (31 Aug – 6 Sep), and it is **odd**; weeks are then counted straight through the calendar, holiday weeks included. The current week is always visible from the dates in the table.
+Weeks are counted from the start of Module II: week 1 is the week of 19 October (19–25 Oct), and it is **odd**; weeks are then counted straight through the calendar. The current week is always visible from the dates in the table.
 
 | Day | Time | Circle | Who | Language | When |
 |---|---|---|---|---|---|
-| Wednesday | 12:00–12:50 | English | Maria, Albina, Sam, Marika (opt) | EN | on even weeks (23 Sep, 7 Oct, 21 Oct, 4 Nov, 18 Nov, 2 Dec, 16 Dec) |
-| Thursday | 12:00–12:50 | Russian | Maria, Gaiane, Margarita, Marika (opt) | RU | on even weeks (24 Sep, 8 Oct, 22 Oct, 5 Nov, 19 Nov, 3 Dec, 17 Dec) |
-| Friday | 15:15–16:05 | Science | Albina, Olga S., Elizaveta | RU | on odd weeks (2 Oct, 30 Oct, 13 Nov, 27 Nov, 11 Dec) |
+| Wednesday | 12:00–12:50 | English | Maria, Albina, Sam, Marika (opt) | EN | on even weeks (28 Oct, 11 Nov, 25 Nov, 9 Dec) |
+| Thursday | 12:00–12:50 | Russian | Maria, Gaiane, Margarita, Marika (opt) | RU | on even weeks (29 Oct, 12 Nov, 26 Nov, 10 Dec) |
+| Friday | 15:15–16:05 | Science | Albina, Olga S., Elizaveta | RU | on odd weeks (23 Oct, 6 Nov, 20 Nov, 4 Dec) |
 
 ## Every three weeks
 
 | Day | Time | Circle | Who | Language | Dates |
 |---|---|---|---|---|---|
-| Friday | 16:30–17:30 | **Whole-team circle** | the whole primary team | RU | 2 Oct, 23 Oct, 13 Nov, 4 Dec |
+| Friday | 16:30–17:30 | **Whole-team circle** | the whole primary team | RU | 23 Oct, 13 Nov, 4 Dec |
 
 ## The whole-team circle
 
@@ -38,7 +38,7 @@ No circle sits on reflection or home time: Homeroom, English, Russian and Scienc
 
 - **Homeroom** moved from Monday 15:10 to Monday 10:05–10:55.
 - Circles now alternate **by week**, not by the parity of the date.
-- Each circle now lists its dates up to the winter break next to its frequency; the autumn break (12–16 Oct), the 7 Dec holiday and 18 Dec (concerts) are skipped.
+- Each circle now lists its Module II dates (from 19 Oct) up to the winter break next to its frequency; the 7 Dec holiday and 18 Dec (concerts) are skipped.
 - There is no **Mathematics** circle in the regular schedule: the mathematics vertical runs in writing (the Peterson ↔ Cambridge mapping) and on signal.
 
 Earlier, on 11 September, the circles became fewer and larger: the Y2 pair, the Y4–Y5 pair, Y4 Science and the academic circle were discontinued; the language-and-literature vertical was folded into the Russian circle.
@@ -63,4 +63,4 @@ Separate from the circles is the curators' daily 8:15 briefing. That one is abou
 
 The science topic table (Russian → English), the Peterson ↔ Cambridge mapping a module ahead, and the shared standard for presenting written work. Anything that passes on a fact rather than works out a decision.
 
-*Checked against the timetable in force (checked 22 Sep): on Monday at 10:05 Maria, Olga S. and Elizaveta have no lessons. Windows kept free of circles: the morning circle; 11:05–11:55, both curators' lunch; 11:55–14:00, lunch and prep with the children (closed for the curators; teachers who have no children at that time are free in it — that is where English and Russian sit, and their 12:50–13:10 lunch stays intact). Re-check the slots whenever the master timetable is rebuilt.*
+*Checked against the timetable in force (checked 22 Sep): on Monday at 10:05 Maria, Olga S. and Elizaveta have no lessons. Windows kept free of circles: the morning circle; 11:55–14:00, lunch and prep with the children (closed for the curators, and for Maria during upper-stage prep 13:10–14:00; teachers who have no children at that time are free in it — that is where English and Russian sit, and their 12:50–13:10 lunch stays intact). Re-check the slots whenever the master timetable is rebuilt.*
