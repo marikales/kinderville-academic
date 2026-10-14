@@ -25,6 +25,7 @@ Working materials for the school: programmes, yearly planning, assessment criter
 
 - [School calendar 2026/27 (Y2–Y6)](https://marikales.github.io/kinderville-calendar/year2-6.html) — the page is bilingual
 - [School timetable 2026/27](en/raspisanie.md) — day · by class · by teacher (bilingual pages)
+- 🎃 [29–30 October · Halloween — special timetable](schedule/halloween-2026-10-30.html?lang=en ':ignore') — a short Friday, the whole school together from 13:10; on Thursday Y5 has Russian instead of prep
 - [Lessons per module for planning](en/ktp.md)
 - [Events planning · Modules 1–2](https://docs.google.com/document/d/1mrBUkv-P2KU_4ed8Ozs0nRjznJxHSOB2hkKwxsiN550/edit) — working document: which events we run and who prepares them (in Russian)
 

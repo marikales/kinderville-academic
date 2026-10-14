@@ -4,6 +4,7 @@
   - [По классам](schedule/classes.html ':ignore')
   - [По педагогам](schedule/teachers.html ':ignore')
   - [Кабинеты](schedule/rooms.html ':ignore')
+  - [29–30 октября · Хэллоуин](schedule/halloween-2026-10-30.html ':ignore')
 - [Уроки по модулям (для КТП)](ktp.md)
 - [Встречи команды](meetings.md)
 - **Адаптационные отчёты · Модуль I**

@@ -6,6 +6,10 @@ The timetable lives on interactive pages (filters, print, bilingual):
 - **[By class](schedule/classes.html?lang=en ':ignore')** — each class's week
 - **[By teacher](schedule/teachers.html?lang=en ':ignore')** — each teacher's week, with the 12:50–13:10 lunch break
 
+## Special days
+
+- **[29–30 October · Halloween](schedule/halloween-2026-10-30.html?lang=en ':ignore')** — Friday 30.10: lessons until 13:10, then the whole school together (film, scary stories in English, activities, barbecue with parents at 16:00); Thursday 29.10: Y5 Russian instead of prep.
+
 ## Bells from 2 October 2026
 
 The break before the last lesson is 20 minutes (14:55–15:15): the upper stage gets back from swimming, has a snack and starts lesson 6 on time. The first day on the new bells (1 October) showed that a 15-minute teachers' lunch is far too short, so from 2 October everything after lunch moves 5 minutes later: teachers' lunch 12:50–13:10 (20 minutes), reflection 16:10–16:25.
