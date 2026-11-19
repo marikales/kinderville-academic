@@ -4,6 +4,7 @@
     - [По классам](schedule/classes.html ':ignore')
     - [По педагогам](schedule/teachers.html ':ignore')
     - [Кабинеты](schedule/rooms.html ':ignore')
+  - [Календарь школы 2026/27](https://marikales.github.io/kinderville-calendar/year2-6.html)
   - [Уроки по модулям (для КТП)](ktp.md)
   - [Встречи команды](meetings.md)
   - **Адаптационные отчёты · Модуль I**

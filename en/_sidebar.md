@@ -4,6 +4,7 @@
     - [By class](schedule/classes.html?lang=en ':ignore')
     - [By teacher](schedule/teachers.html?lang=en ':ignore')
     - [Rooms](schedule/rooms.html?lang=en ':ignore')
+  - [School calendar 2026/27](https://marikales.github.io/kinderville-calendar/year2-6.html)
   - [Lessons per module](en/ktp.md)
   - [Team meetings](en/meetings.md)
   - **Adaptation reports · Module I**
@@ -27,5 +28,4 @@
   - [Courses](en/kursy.md)
     - [Reading in Russian (Melnikova method) · Reception–Y2](https://marikales.github.io/kinderville-reading/)
   - [Memo: challenging behaviour in class](en/povedenie.md)
-
-- [Полная версия (русский)](/README.md)
+  - [Полная версия (русский)](/README.md)
