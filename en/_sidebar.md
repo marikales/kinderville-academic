@@ -9,7 +9,7 @@
   - [Team meetings](en/meetings.md)
   - **Adaptation reports · Module I**
     - [Table: teachers' notes by child (EN)](https://docs.google.com/spreadsheets/d/1phXujjPgASdF4m6prqmvdIGpVf4MlzLdW8v-H3edIF0)
-    - [Reports folder (PDF, English)](https://drive.google.com/drive/folders/1TlIKFOnUMYhailN-umbw1b2ZSlqPdgJ_)
+    - [Sent to families (PDF, English)](https://drive.google.com/drive/folders/1ddhUax4JTleOTbfiMD6036cajsYGh7sa)
 - **Kindergarten · Rawai · Preschool – Year 1**
   - [Kindergarten timetable](kindergarten/schedule/?lang=en ':ignore')
     - [By group](kindergarten/schedule/groups.html?lang=en ':ignore')

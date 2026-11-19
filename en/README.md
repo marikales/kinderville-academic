@@ -15,7 +15,7 @@ Working materials for the school: programmes, yearly planning, assessment criter
 ## Adaptation reports · Module I
 
 - [Table: teachers' notes by child (EN)](https://docs.google.com/spreadsheets/d/1phXujjPgASdF4m6prqmvdIGpVf4MlzLdW8v-H3edIF0) — transcripts of the voice notes from the «Voice Notes: Kids» chat, by teacher and class
-- [Reports folder (PDF, English)](https://drive.google.com/drive/folders/1TlIKFOnUMYhailN-umbw1b2ZSlqPdgJ_) — the family reports in English, updated automatically after the Russian version
+- [Reports sent to families (PDF, English)](https://drive.google.com/drive/folders/1ddhUax4JTleOTbfiMD6036cajsYGh7sa) — English copies of the reports exactly as they went to families, by class
 
 ## Memos
 
