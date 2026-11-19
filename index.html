@@ -129,6 +129,8 @@
               var cur = null;
               try { cur = localStorage.getItem('kv-campus'); } catch (e) {}
               if (/(ktp|meetings|science)/.test(path)) cur = 'school';
+              var qc = vm.route.query && vm.route.query.campus;
+              if (qc === 'kg' || qc === 'school') { cur = qc; try { localStorage.setItem('kv-campus', qc); } catch (e) {} }
               if (cur !== 'kg') cur = 'school';
               var sw = nav.querySelector('#campus-switch');
               if (!sw) { sw = document.createElement('div'); sw.id = 'campus-switch'; nav.insertBefore(sw, ul); }
