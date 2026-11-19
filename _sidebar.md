@@ -10,14 +10,6 @@
   - **Адаптационные отчёты · Модуль I**
     - [Таблица: слова педагогов по детям](https://docs.google.com/spreadsheets/d/14Nt21ZFOk0-T9DpZqjPnBn_yEe0jgfqIfGxGBMIbsqU)
     - [Разосланные семьям (PDF)](https://drive.google.com/drive/folders/1NqA-cxU7UZcGGYDPFT9LH_F-r4TWje-I)
-  - **Science (наука на двух языках) · Y2–Y6**
-    - [Тематическое планирование](science/README.md)
-    - [Каркас урока-исследования](science/karkas-uroka.md)
-    - [Оценивание: умение исследовать](science/ocenivanie-issledovanie.md)
-    - [Оценивание Year 3](science/ocenivanie-year3.md)
-    - [Оценивание Year 4](science/ocenivanie-year4.md)
-    - [Оценивание Year 5](science/ocenivanie-year5.md)
-    - [Оценивание Year 6](science/ocenivanie-year6.md)
 - **Сад · Раваи · Preschool – Year 1**
   - [Расписание сада](kindergarten/schedule/ ':ignore')
     - [По группам](kindergarten/schedule/groups.html ':ignore')
@@ -25,6 +17,5 @@
   - [Календарь сада 2026/27](https://marikales.github.io/kinderville-calendar/kindergarten.html)
 - **Общее**
   - [Брошюра педагога](https://docs.google.com/document/d/1Kvk0EIqtJUKuqSlDjduAK7ikIaB-WcHY/edit?usp=sharing)
-  - [Курсы](kursy.md)
-    - [Чтение на русском по Мельниковой · Reception–Y2](https://marikales.github.io/kinderville-reading/)
-  - [Памятка: сложное поведение на уроке](povedenie.md)
+  - [Курс чтения по Мельниковой · Reception–Y2](https://marikales.github.io/kinderville-reading/)
+  - [В разработке](razrabotka.md)
