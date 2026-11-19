@@ -1,23 +1,14 @@
 - [Home](en/README.md)
-- [Teacher handbook](https://docs.google.com/document/d/1Kvk0EIqtJUKuqSlDjduAK7ikIaB-WcHY/edit?usp=sharing)
-- [Timetable · day](schedule/day.html?lang=en ':ignore')
-  - [By class](schedule/classes.html?lang=en ':ignore')
-  - [By teacher](schedule/teachers.html?lang=en ':ignore')
-  - [Rooms](schedule/rooms.html?lang=en ':ignore')
-- **Kindergarten · Rawai**
-  - [Kindergarten timetable · day](kg/day.html?lang=en ':ignore')
-  - [By group](kg/groups.html?lang=en ':ignore')
-  - [By teacher](kg/teachers.html?lang=en ':ignore')
-- [Lessons per module](en/ktp.md)
-- [Team meetings](en/meetings.md)
-- **Adaptation reports · Module I**
-  - [Table: teachers' notes by child (EN)](https://docs.google.com/spreadsheets/d/1phXujjPgASdF4m6prqmvdIGpVf4MlzLdW8v-H3edIF0)
-  - [Reports folder (PDF, English)](https://drive.google.com/drive/folders/1TlIKFOnUMYhailN-umbw1b2ZSlqPdgJ_)
-- **Memos**
-  - [Challenging behaviour in class](en/povedenie.md)
-- [Courses](en/kursy.md)
-  - **Reading in Russian · Reception–Y2**
-    - [Reading course (Melnikova method)](https://marikales.github.io/kinderville-reading/)
+- **School · Chalong · Year 2 – Year 6**
+  - [Timetable · day](schedule/day.html?lang=en ':ignore')
+    - [By class](schedule/classes.html?lang=en ':ignore')
+    - [By teacher](schedule/teachers.html?lang=en ':ignore')
+    - [Rooms](schedule/rooms.html?lang=en ':ignore')
+  - [Lessons per module](en/ktp.md)
+  - [Team meetings](en/meetings.md)
+  - **Adaptation reports · Module I**
+    - [Table: teachers' notes by child (EN)](https://docs.google.com/spreadsheets/d/1phXujjPgASdF4m6prqmvdIGpVf4MlzLdW8v-H3edIF0)
+    - [Reports folder (PDF, English)](https://drive.google.com/drive/folders/1TlIKFOnUMYhailN-umbw1b2ZSlqPdgJ_)
   - **Science · Y2–Y6**
     - [Yearly plan and course aims](en/science/README.md)
     - [Enquiry lesson framework](en/science/karkas-uroka.md)
@@ -26,5 +17,15 @@
     - [Assessment Year 4](en/science/ocenivanie-year4.md)
     - [Assessment Year 5](en/science/ocenivanie-year5.md)
     - [Assessment Year 6](en/science/ocenivanie-year6.md)
+- **Kindergarten · Rawai · Preschool – Year 1**
+  - [Kindergarten timetable](kindergarten/schedule/?lang=en ':ignore')
+    - [By group](kindergarten/schedule/groups.html?lang=en ':ignore')
+    - [By teacher](kindergarten/schedule/teachers.html?lang=en ':ignore')
+  - [Kindergarten calendar 2026/27](https://marikales.github.io/kinderville-calendar/kindergarten.html)
+- **General**
+  - [Teacher handbook](https://docs.google.com/document/d/1Kvk0EIqtJUKuqSlDjduAK7ikIaB-WcHY/edit?usp=sharing)
+  - [Courses](en/kursy.md)
+    - [Reading in Russian (Melnikova method) · Reception–Y2](https://marikales.github.io/kinderville-reading/)
+  - [Memo: challenging behaviour in class](en/povedenie.md)
 
 - [Полная версия (русский)](/README.md)

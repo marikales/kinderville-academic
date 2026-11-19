@@ -35,5 +35,5 @@
 
 ### Другие кампусы
 
-- [Расписание сада](kg/day.html ':ignore') · [по группам](kg/groups.html ':ignore') · [по педагогам](kg/teachers.html ':ignore') — текущее (как в октябре): Preschool, Early Years, Year 1 + Reception
+- [Расписание сада](kindergarten/schedule/ ':ignore') · [по группам](kindergarten/schedule/groups.html ':ignore') · [по педагогам](kindergarten/schedule/teachers.html ':ignore') — текущее (как в октябре): Preschool, Early Years, Year 1 + Reception
 - [Календарь сада 2026/27 (Preschool – Year 1)](https://marikales.github.io/kinderville-calendar/kindergarten.html) — кампус в Раваи, для педагогов сада

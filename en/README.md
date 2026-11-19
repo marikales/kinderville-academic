@@ -32,7 +32,7 @@ Working materials for the school: programmes, yearly planning, assessment criter
 
 ### Other campuses
 
-- [Kindergarten timetable](kg/day.html?lang=en ':ignore') · [by group](kg/groups.html?lang=en ':ignore') · [by teacher](kg/teachers.html?lang=en ':ignore') — current (as of October): Preschool, Early Years, Year 1 + Reception
+- [Kindergarten timetable](kindergarten/schedule/?lang=en ':ignore') · [by group](kindergarten/schedule/groups.html?lang=en ':ignore') · [by teacher](kindergarten/schedule/teachers.html?lang=en ':ignore') — current (as of October): Preschool, Early Years, Year 1 + Reception
 - [Kindergarten calendar 2026/27 (Preschool – Year 1)](https://marikales.github.io/kinderville-calendar/kindergarten.html) — Rawai campus, for kindergarten staff
 
 ---

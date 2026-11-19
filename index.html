@@ -65,6 +65,12 @@
       .markdown-section { padding-top: 44px; }
       body.close #lang-toggle { display: none; }
     }
+    /* Переключатель кампуса в меню: школа / сад, «Общее» видно всегда (Марика 19.11) */
+    #campus-switch { display:flex; gap:4px; margin:4px 15px 10px; background:#eef4f2; border-radius:10px; padding:3px; }
+    #campus-switch button { flex:1; border:0; background:transparent; padding:7px 6px; border-radius:8px; font-size:13px; color:#4d6a64; cursor:pointer; }
+    #campus-switch button.on { background:#fff; color:var(--theme-color); font-weight:600; box-shadow:0 1px 3px rgba(0,0,0,.12); }
+    .sidebar-nav li[data-campus] { margin-top:6px; }
+    .sidebar-nav li[hidden] { display:none !important; }
   </style>
 </head>
 <body>
@@ -105,6 +111,45 @@
             }
             document.title = isEn ? 'Kinderville teacher portal' : 'Портал педагогов Kinderville';
             document.documentElement.lang = isEn ? 'en' : 'ru';
+
+            // Кампус в меню: показываем пункты одного кампуса + «Общее»
+            (function () {
+              var nav = document.querySelector('.sidebar-nav');
+              var ul = nav && nav.querySelector(':scope > ul');
+              if (!ul) return;
+              var tops = [].slice.call(ul.children);
+              tops.forEach(function (li) {
+                var st = li.querySelector(':scope > strong, :scope > p > strong');
+                if (!st) return;
+                var t = st.textContent.trim().toLowerCase();
+                if (/^(школа|school)/.test(t)) li.setAttribute('data-campus', 'school');
+                else if (/^(сад|kindergarten)/.test(t)) li.setAttribute('data-campus', 'kg');
+                else if (/^(общее|general)/.test(t)) li.setAttribute('data-campus', 'common');
+              });
+              var cur = null;
+              try { cur = localStorage.getItem('kv-campus'); } catch (e) {}
+              if (/(ktp|meetings|science)/.test(path)) cur = 'school';
+              if (cur !== 'kg') cur = 'school';
+              var sw = nav.querySelector('#campus-switch');
+              if (!sw) { sw = document.createElement('div'); sw.id = 'campus-switch'; nav.insertBefore(sw, ul); }
+              var labels = isEn ? { school: 'School', kg: 'Kindergarten' } : { school: 'Школа', kg: 'Сад' };
+              function apply(c) {
+                sw.innerHTML = ['school', 'kg'].map(function (k) {
+                  return '<button type="button" data-c="' + k + '" class="' + (k === c ? 'on' : '') + '">' + labels[k] + '</button>';
+                }).join('');
+                tops.forEach(function (li) {
+                  var k = li.getAttribute('data-campus');
+                  li.hidden = !!k && k !== 'common' && k !== c;
+                });
+                [].forEach.call(sw.querySelectorAll('button'), function (b) {
+                  b.onclick = function () {
+                    try { localStorage.setItem('kv-campus', b.getAttribute('data-c')); } catch (e) {}
+                    apply(b.getAttribute('data-c'));
+                  };
+                });
+              }
+              apply(cur);
+            })();
           });
         }
       ],

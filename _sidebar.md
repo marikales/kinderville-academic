@@ -1,23 +1,14 @@
 - [Главная](README.md)
-- [Брошюра педагога](https://docs.google.com/document/d/1Kvk0EIqtJUKuqSlDjduAK7ikIaB-WcHY/edit?usp=sharing)
-- [Расписание · день](schedule/day.html ':ignore')
-  - [По классам](schedule/classes.html ':ignore')
-  - [По педагогам](schedule/teachers.html ':ignore')
-  - [Кабинеты](schedule/rooms.html ':ignore')
-- **Сад · Раваи**
-  - [Расписание сада · день](kg/day.html ':ignore')
-  - [По группам](kg/groups.html ':ignore')
-  - [По педагогам](kg/teachers.html ':ignore')
-- [Уроки по модулям (для КТП)](ktp.md)
-- [Встречи команды](meetings.md)
-- **Адаптационные отчёты · Модуль I**
-  - [Таблица: слова педагогов по детям](https://docs.google.com/spreadsheets/d/14Nt21ZFOk0-T9DpZqjPnBn_yEe0jgfqIfGxGBMIbsqU)
-  - [Разосланные семьям (PDF)](https://drive.google.com/drive/folders/1NqA-cxU7UZcGGYDPFT9LH_F-r4TWje-I)
-- **Памятки**
-  - [Сложное поведение на уроке](povedenie.md)
-- [Курсы](kursy.md)
-  - **Чтение на русском · Reception–Y2**
-    - [Курс чтения (по Мельниковой)](https://marikales.github.io/kinderville-reading/)
+- **Школа · Чалонг · Year 2 – Year 6**
+  - [Расписание · день](schedule/day.html ':ignore')
+    - [По классам](schedule/classes.html ':ignore')
+    - [По педагогам](schedule/teachers.html ':ignore')
+    - [Кабинеты](schedule/rooms.html ':ignore')
+  - [Уроки по модулям (для КТП)](ktp.md)
+  - [Встречи команды](meetings.md)
+  - **Адаптационные отчёты · Модуль I**
+    - [Таблица: слова педагогов по детям](https://docs.google.com/spreadsheets/d/14Nt21ZFOk0-T9DpZqjPnBn_yEe0jgfqIfGxGBMIbsqU)
+    - [Разосланные семьям (PDF)](https://drive.google.com/drive/folders/1NqA-cxU7UZcGGYDPFT9LH_F-r4TWje-I)
   - **Science (наука на двух языках) · Y2–Y6**
     - [Тематическое планирование](science/README.md)
     - [Каркас урока-исследования](science/karkas-uroka.md)
@@ -26,3 +17,13 @@
     - [Оценивание Year 4](science/ocenivanie-year4.md)
     - [Оценивание Year 5](science/ocenivanie-year5.md)
     - [Оценивание Year 6](science/ocenivanie-year6.md)
+- **Сад · Раваи · Preschool – Year 1**
+  - [Расписание сада](kindergarten/schedule/ ':ignore')
+    - [По группам](kindergarten/schedule/groups.html ':ignore')
+    - [По педагогам](kindergarten/schedule/teachers.html ':ignore')
+  - [Календарь сада 2026/27](https://marikales.github.io/kinderville-calendar/kindergarten.html)
+- **Общее**
+  - [Брошюра педагога](https://docs.google.com/document/d/1Kvk0EIqtJUKuqSlDjduAK7ikIaB-WcHY/edit?usp=sharing)
+  - [Курсы](kursy.md)
+    - [Чтение на русском по Мельниковой · Reception–Y2](https://marikales.github.io/kinderville-reading/)
+  - [Памятка: сложное поведение на уроке](povedenie.md)
