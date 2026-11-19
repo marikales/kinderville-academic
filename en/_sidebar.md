@@ -4,7 +4,6 @@
   - [By class](schedule/classes.html?lang=en ':ignore')
   - [By teacher](schedule/teachers.html?lang=en ':ignore')
   - [Rooms](schedule/rooms.html?lang=en ':ignore')
-  - [29–30 October · Halloween](schedule/halloween-2026-10-30.html?lang=en ':ignore')
 - **Kindergarten · Rawai**
   - [Kindergarten timetable · day](kg/day.html?lang=en ':ignore')
   - [By group](kg/groups.html?lang=en ':ignore')
