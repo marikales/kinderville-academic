@@ -7,6 +7,7 @@
   - [Календарь школы 2026/27](https://marikales.github.io/kinderville-calendar/year2-6.html)
   - [Уроки по модулям (для КТП)](ktp.md)
   - [Встречи команды](meetings.md)
+  - [Анкеты поступающих](ankety.md)
   - **Адаптационные отчёты · Модуль I**
     - [Таблица: слова педагогов по детям](https://docs.google.com/spreadsheets/d/14Nt21ZFOk0-T9DpZqjPnBn_yEe0jgfqIfGxGBMIbsqU)
     - [Разосланные семьям (PDF)](https://drive.google.com/drive/folders/1NqA-cxU7UZcGGYDPFT9LH_F-r4TWje-I)
