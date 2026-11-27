@@ -6,7 +6,7 @@ The timetable has settled, and the regular methodological meetings were announce
 
 | Day | Time | Circle | Who | Language | Dates |
 |---|---|---|---|---|---|
-| Monday | 10:05–10:55 | Homeroom | Maria, Olga S., Elizaveta | RU | 19 Oct, 26 Oct, 2 Nov, 9 Nov, 16 Nov, 23 Nov, 30 Nov, 14 Dec |
+| Monday | 15:00–15:50 | Homeroom | Maria, Olga S., Elizaveta | RU | 19 Oct, 26 Oct, 2 Nov, 9 Nov, 16 Nov, 23 Nov, 30 Nov, 14 Dec |
 
 ## Every two weeks — by the parity of the week
 
@@ -34,9 +34,13 @@ It starts at 16:30 — after the children have gone and home time is over. This 
 
 No circle sits on reflection or home time: Homeroom, English, Russian and Science run inside the school day, when the children are with other adults, and the whole-team circle starts at 16:30, once home time is finished. Reflection stays daily, with its own curator, in its own place at the end of the day.
 
+## What changed on 27 November
+
+- **Homeroom** moved from Monday 10:05 to Monday 15:00–15:50. Same day.
+
 ## What changed on 22 September
 
-- **Homeroom** moved from Monday 15:10 to Monday 10:05–10:55.
+- **Homeroom** moved from Monday 15:10 to Monday 10:05–10:55 (from 27 November — 15:00, see above).
 - Circles now alternate **by week**, not by the parity of the date.
 - Each circle now lists its Module II dates (from 19 Oct) up to the winter break next to its frequency; the 7 Dec holiday and 18 Dec (concerts) are skipped.
 - There is no **Mathematics** circle in the regular schedule: the mathematics vertical runs in writing (the Peterson ↔ Cambridge mapping) and on signal.
@@ -63,4 +67,4 @@ Separate from the circles is the curators' daily 8:15 briefing. That one is abou
 
 The science topic table (Russian → English), the Peterson ↔ Cambridge mapping a module ahead, and the shared standard for presenting written work. Anything that passes on a fact rather than works out a decision.
 
-*Checked against the timetable in force (checked 22 Sep): on Monday at 10:05 Maria, Olga S. and Elizaveta have no lessons. Windows kept free of circles: the morning circle; 11:55–14:00, lunch and prep with the children (closed for the curators, and for Maria during upper-stage prep 13:10–14:00; teachers who have no children at that time are free in it — that is where English and Russian sit, and their 12:50–13:10 lunch stays intact). Re-check the slots whenever the master timetable is rebuilt.*
+*Checked against the timetable in force (checked 22 Sep; Homeroom 27 Nov): on Monday after 14:55 Maria, Olga S. and Elizaveta have no lessons. Windows kept free of circles: the morning circle; 11:55–14:00, lunch and prep with the children (closed for the curators, and for Maria during upper-stage prep 13:10–14:00; teachers who have no children at that time are free in it — that is where English and Russian sit, and their 12:50–13:10 lunch stays intact). Re-check the slots whenever the master timetable is rebuilt.*
